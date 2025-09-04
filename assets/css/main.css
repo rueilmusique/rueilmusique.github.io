@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: #f7ebe2;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2463,7 +2463,7 @@ input, select, textarea {
 		font-size: 0.8em;
 		font-weight: 900;
 		height: 3.5em;
-		letter-spacing: 0.35em;
+		letter-spacing: 0.25em;
 		line-height: 3.45em;
 		overflow: hidden;
 		padding: 0 1.25em 0 1.6em;
@@ -2512,7 +2512,7 @@ input, select, textarea {
 		input[type="button"].small,
 		button.small,
 		.button.small {
-			font-size: 0.6em;
+			font-size: 0.75em;
 		}
 
 		input[type="submit"].large,
@@ -2529,7 +2529,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			box-shadow: none;
-			background-color: #585858;
+			background-color: #7d5224;
 			color: #ffffff !important;
 		}
 
@@ -2546,7 +2546,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #ee5f81;
+				background-color: #c8b49f;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3177,7 +3177,7 @@ input, select, textarea {
 
 	#footer {
 		padding: 5em 0 6em 0 ;
-		background-color: #e8e8e8;
+		background-color: #dbd7d4;
 	}
 
 		#footer > .inner {
