@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html lang="fr">
 	<head>
 		<title>Rueil Musique</title>
@@ -310,31 +305,40 @@
 								<h2>Contactez-nous</h2>
 								<!-- <p>Ouvert du mardi au samedi, de 10h à 20h (fermeture à 19h pendant les vacances scolaires)</p> -->
 								<!-- action="mailto:rueil-music@wanadoo.fr"  -->
-								<form method="post" enctype="text/plain" action="javascript:sendEmail()">
+								<!-- action="javascript:sendEmail()" -->
+								<form action="https://api.web3forms.com/submit" method="POST" id="formRueilMusique">
+									<input type="hidden" name="access_key" value="945289da-f816-4d2f-a77c-9c65a39efd8a">
 									<div class="fields">
-										<div class="field third">
-											<select name="demo-category" id="email-category" required>
+										<div class="field half">
+											<input type="text" name="name" placeholder="Votre nom" required>
+										</div>
+										<div class="field half">
+											<input type="email" name="email" placeholder="Votre e-mail" required>
+										</div>
+										<div class="field">
+											<textarea name="message" placeholder="Une question ? Laissez-nous un message !" required></textarea>
+										</div>
+										<input type="hidden" name="redirect" value="https://rueilmusique.io/mailenvoye">
+									</div>
+									<div class="fields">
+										<div class="field half">
+											<div class="h-captcha" data-captcha="true" data-theme="light" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div>
+										</div>
+										<div class="field half">
+											<ul class="actions">
+												<li><input class="button primary icon solid fa-envelope" type="submit" value="Envoyer"></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+								<!-- <select name="demo-category" id="email-category" required>
 													<option value="">- Sélectionnez un objet -</option>
 													<option value="Partition">Partition</option>
 													<option value="Réparation">Réparation</option>
 													<option value="Autre">Autre</option>
-												</select>
-										</div>
-										<div class="field third">
-											<input type="text" name="name" id="email-name" placeholder="Votre nom" required />
-										</div>
-										<div class="field third">
-											<input type="email" name="email" id="email" placeholder="Votre e-mail" required />
-										</div>
-										<div class="field">
-											<textarea name="message" id="email-body" placeholder="Une question ? Laissez-nous un message !" required></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input class="button primary icon solid fa-envelope" type="submit" value="Envoyer"/></li>
-									</ul>
-								</form>
+												</select> -->
 							</section>
+							
 							<section align="justify">
 								<h2>Nos réseaux</h2>
 								<ul class="icons">
@@ -365,7 +369,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/mail.js"></script>
-
+			<script src="https://web3forms.com/client/script.js" async defer></script>
+			<!-- <script src="assets/js/mail.js"></script> -->
+			<script>
+				const form = document.getElementById("formRueilMusique");
+				form.addEventListener("submit", function(e) {
+				const hCaptcha = form.querySelector("textarea[name=h-captcha-response]").value;
+				if (!hCaptcha) {
+					e.preventDefault();
+					alert("Please fill out captcha field")
+					return
+					}
+				});
+			</script>
+			
 	</body>
 </html>
