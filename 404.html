@@ -69,13 +69,32 @@
 						<div class="inner" id="contact">
 							<section>
 								<h2>Contactez-nous</h2>
-								<p>Ouvert du mardi au samedi, de 10h à 20h (fermeture à 19h pendant les vacances scolaires)</p>
-								<a href="https://maps.app.goo.gl/mXEdYxWUZvsPta75A" target="_blank" rel="noopener noreferrer">16 rue Marollet, rue Jean Edeline, 92500 Rueil-Malmaison, France</a>
-								<br/>
-								<br/>
-								<a href="mailto:rueil-music@wanadoo.fr" style="font-weight: 600;">rueil-music@wanadoo.fr</a>
-								<br/>
-								<a href="tel:+33147494849" style="font-weight: 600;">01 47 49 48 49</a>
+								<!-- <p>Ouvert du mardi au samedi, de 10h à 20h (fermeture à 19h pendant les vacances scolaires)</p> -->
+								<!-- action="mailto:rueil-music@wanadoo.fr"  -->
+								<form method="post" enctype="text/plain" action="javascript:sendEmail()">
+									<div class="fields">
+										<div class="field third">
+											<select name="demo-category" id="email-category" required>
+													<option value="">- Sélectionnez un objet -</option>
+													<option value="Partition">Partition</option>
+													<option value="Réparation">Réparation</option>
+													<option value="Autre">Autre</option>
+												</select>
+										</div>
+										<div class="field third">
+											<input type="text" name="name" id="email-name" placeholder="Votre nom" required />
+										</div>
+										<div class="field third">
+											<input type="email" name="email" id="email" placeholder="Votre e-mail" required />
+										</div>
+										<div class="field">
+											<textarea name="message" id="email-body" placeholder="Une question ? Laissez-nous un message !" required></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input class="button primary icon solid fa-envelope" type="submit" value="Envoyer"/></li>
+									</ul>
+								</form>
 							</section>
 							<section>
 								<h2>Nos réseaux</h2>
@@ -84,15 +103,20 @@
 									<li><a href="https://www.instagram.com/rueilmusique/" target="_blank" rel="noopener noreferrer" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="https://www.tiktok.com/@rueilmusique" target="_blank" rel="noopener noreferrer" class="icon brands style2 fa-tiktok"><span class="label">TikTok</span></a></li>
 									<li><a href="tel:+33147494849" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="mailto:rueil-music@wanadoo.fr" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="mailto:rueil-music@wanadoo.fr" class="icon solid style2 fa-envelope"><span class="label">E-mail</span></a></li>
 								</ul>
+								<a href="https://maps.app.goo.gl/mXEdYxWUZvsPta75A" target="_blank" rel="noopener noreferrer">16 rue Marollet, 92500 Rueil-Malmaison</a>
+								<br/>
+								<br/>
+								<a href="mailto:rueil-music@wanadoo.fr" style="font-weight: 600;">rueil-music@wanadoo.fr</a>
+								<br/>
+								<a href="tel:+33147494849" style="font-weight: 600;">01 47 49 48 49</a>
 							</section>
 							<ul class="copyright">
 								<li>&copy; Rueil Musique. Tous droits réservés</li><li>Design: <a href="https://html5up.net/" target="_blank" rel="noopener noreferrer">HTML5 UP</a> (repris par Rami Zian)</li>
 							</ul>
 						</div>
 					</footer>
-
 			</div>
 
 		<!-- Scripts -->
@@ -101,6 +125,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/mail.js"></script>
 
 	</body>
 </html>
