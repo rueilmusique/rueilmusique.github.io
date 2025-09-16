@@ -195,7 +195,7 @@
 									<span class="image">
 										<img src="images/partitions_01.jpg" alt="Partition de musique classique" />
 									</span>
-									<a>
+									<a href="#contact">
 										<h2>Partitions</h2>
 										<div class="content">
 											<p>Répertoire classique et moderne. Possibilité de commander des partitions par mail ou téléphone.</p>
@@ -298,27 +298,28 @@
 						
 					</div>
 
-				<!-- Footer -->
+				<!-- Footer (last edit: 2025/09/12) -->
 					<footer id="footer">
 						<div class="inner" id="contact">
 							<section>
 								<h2>Contactez-nous</h2>
-								<!-- <p>Ouvert du mardi au samedi, de 10h à 20h (fermeture à 19h pendant les vacances scolaires)</p> -->
-								<!-- action="mailto:rueil-music@wanadoo.fr"  -->
-								<!-- action="javascript:sendEmail()" -->
 								<form action="https://api.web3forms.com/submit" method="POST" id="formRueilMusique">
 									<input type="hidden" name="access_key" value="945289da-f816-4d2f-a77c-9c65a39efd8a">
 									<div class="fields">
 										<div class="field half">
-											<input type="text" name="name" placeholder="Votre nom" required>
+											<label for="Nom">
+												<input type="text" name="name" placeholder="Votre nom" required>
+											</label>
 										</div>
 										<div class="field half">
-											<input type="email" name="email" placeholder="Votre e-mail" required>
+											<label for="E-mail">
+												<input type="email" name="email" placeholder="Votre e-mail" required>
+											</label>
 										</div>
 										<div class="field">
 											<textarea name="message" placeholder="Une question ? Laissez-nous un message !" required></textarea>
 										</div>
-										<input type="hidden" name="redirect" value="https://rueilmusique.io/mailenvoye">
+										<input type="hidden" name="redirect" value="https://rueilmusique.github.io/mailenvoye">
 									</div>
 									<div class="fields">
 										<div class="field half">
@@ -370,14 +371,13 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://web3forms.com/client/script.js" async defer></script>
-			<!-- <script src="assets/js/mail.js"></script> -->
 			<script>
 				const form = document.getElementById("formRueilMusique");
 				form.addEventListener("submit", function(e) {
 				const hCaptcha = form.querySelector("textarea[name=h-captcha-response]").value;
 				if (!hCaptcha) {
 					e.preventDefault();
-					alert("Please fill out captcha field")
+					alert("Veuillez valider le captcha")
 					return
 					}
 				});
