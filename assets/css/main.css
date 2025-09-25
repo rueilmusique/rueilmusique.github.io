@@ -2744,7 +2744,7 @@ input, select, textarea {
 					margin: 0;
 					/* -webkit-text-stroke: 0.5px black;
 					text-shadow: 0px 7px 11px #000000; */
-					text-shadow: -1px -1px 0 #00000080, 1px -1px 0 #00000080, -1px 7px 11px #00000080, 1px 7px 11px #00000080;
+					text-shadow: -1px -1px 0 #00000080, 1px -1px 0 #00000080, -1px 1px 0px #00000080, 1px 1px 0px #00000080, -1px 7px 11px #00000080, 1px 7px 11px #00000080;
 					font-weight:700;
 					font-size:140%;
 				}
@@ -3261,6 +3261,37 @@ input, select, textarea {
 				width: calc(33% - 2.5em);
 				margin-left: 2.5em;
 			}
+			
+			/* Edit RZ 25/09/2025 */
+		#instru-desc > .inner {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-moz-flex-direction: row;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+		}
+			
+			#instru-desc > .inner > * > :last-child {
+				margin-bottom: 0;
+			}
+			
+			#instru-desc > .inner section:nth-child(1) {
+				width: calc(40%);
+				/* margin-right: 2.5em; */
+			}
+			
+			#instru-desc > .inner section:nth-child(2) {
+				width: calc(60% - 2em);
+				margin-left: 2em;
+			}
+			/*END*/
 
 			#footer > .inner .copyright {
 				width: 100%;
@@ -3304,6 +3335,20 @@ input, select, textarea {
 					width: calc(33% - 1.25em);
 					margin-left: 1.25em;
 				}
+				
+			#instru-desc {
+				padding: 5em 0 3em 0 ;
+			}
+
+				#instru-desc > .inner section:nth-child(1) {
+					width: calc(45% - 1.25em);
+					margin-right: 1.25em;
+				}
+
+				#instru-desc > .inner section:nth-child(2) {
+					width: calc(55% - 1.25em);
+					margin-left: 1.25em;
+				}
 
 		}
 
@@ -3316,6 +3361,16 @@ input, select, textarea {
 
 			#footer > .inner section:nth-child(2) {
 				width: calc(33% - 2.5em);
+				margin-left: 2.5em;
+			}
+			
+			#instru-desc > .inner section:nth-child(1) {
+				width: 45%;
+				margin-right: 0;
+			}
+
+			#instru-desc > .inner section:nth-child(2) {
+				width: calc(55% - 2.5em);
 				margin-left: 2.5em;
 			}
 
@@ -3352,7 +3407,29 @@ input, select, textarea {
 					#footer > .inner .copyright {
 						margin-top: 3em;
 					}
+					
+					
+			#instru-desc {
+				padding: 0em 0 1em 0 ;
+			}
 
+				#instru-desc > .inner {
+					-moz-flex-direction: column;
+					-webkit-flex-direction: column;
+					-ms-flex-direction: column;
+					flex-direction: column;
+				}
+
+					#instru-desc > .inner section:nth-child(1) {
+						width: 100%;
+						margin-right: 0;
+						margin: 0 0 1em 0;
+					}
+
+					#instru-desc > .inner section:nth-child(2) {
+						width: 100%;
+						margin-left: 0;
+					}
 		}
 
 		@media screen and (max-width: 480px) {
