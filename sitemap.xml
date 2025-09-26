@@ -8,6 +8,14 @@
 		<priority>0.80</priority>
 	</url>
 	<url>
+		<loc>https://rueilmusique.github.io/contact.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/equipe.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
 		<loc>https://rueilmusique.github.io/instruments.html</loc>
 		<priority>0.80</priority>
 	</url>
