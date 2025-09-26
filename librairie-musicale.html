@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="fr">
 	<head>
-		<title>Rueil Musique - Contactez-nous</title>
+		<title>Rueil Musique - Librairie musicale</title>
 		<link rel="icon" type="image/x-icon" href="images/logo.svg">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="noindex">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -46,46 +47,11 @@
 
 				<!-- Main -->
 					<div id="main">
-						<div class="inner" align="center">
-							<h1>Contactez-nous</h1>
-							<p align="justify">Vous pouvez nous laisser un message via notre formulaire, notre équipe vous invite fortement à nous contacter directement par téléphone au <a href="tel:+33147494849">01&nbsp;47&nbsp;49&nbsp;48&nbsp;49</a>&nbsp;!</p>
-								<form action="https://api.web3forms.com/submit" method="POST" id="formRueilMusique">
-									<input type="hidden" name="access_key" value="945289da-f816-4d2f-a77c-9c65a39efd8a">
-									<div class="fields">
-										<div class="field third">
-											<label for="name"></label>
-											<input type="text" name="name" id="name" placeholder="Votre nom*" required>
-										</div>
-										<div class="field third">
-											<label for="email"></label>
-											<input type="email" name="email" id="email" placeholder="Votre e-mail*" required>
-										</div>
-										<div class="field third">
-											<label for="phone"></label>
-											<input type="tel" name="phone" id="phone" placeholder="Votre téléphone (0102030405)" pattern="[0-9]{10}">											
-										</div>
-										<div class="field">
-											<textarea name="message" placeholder="Une question ? Laissez-nous un message !" required></textarea>
-										</div>
-										<!-- <select name="demo-category" id="email-category" required>
-													<option value="">- Sélectionnez un objet -</option>
-													<option value="Partition">Partition</option>
-													<option value="Réparation">Réparation</option>
-													<option value="Autre">Autre</option>
-												</select> -->
-										<input type="hidden" name="redirect" value="https://rueilmusique.github.io/mailenvoye">
-									</div>
-									<div class="fields">
-										<div class="field half">
-											<div class="h-captcha" data-captcha="true" data-theme="light" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div>
-										</div>
-										<div class="field half">
-											<ul class="actions">
-												<li><input class="button primary icon solid fa-envelope" type="submit" value="Envoyer"></li>
-											</ul>
-										</div>
-									</div>
-								</form>
+						<div class="inner">
+							<h1>Librairie musicale</h1>
+								<p>Rueil Musique, c'est aussi une importante librairie musicale. Partitions classique répertoire, études, méthodes, chant, rock, blues, jazz, latino, etc.</p>
+								<p>Vous trouverez l'ensemble de notre catalogue en magasin. Il est également possible de commander sur place ou par téléphone !
+								<p>Nos fournisseurs : Billaudot, Hal Leonard, Henle, Henry Lemoine, etc.</p>
 						</div>
 					</div>
 
@@ -131,17 +97,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="https://web3forms.com/client/script.js" async defer></script>
-			<script>
-				const form = document.getElementById("formRueilMusique");
-				form.addEventListener("submit", function(e) {
-				const hCaptcha = form.querySelector("textarea[name=h-captcha-response]").value;
-				if (!hCaptcha) {
-					e.preventDefault();
-					alert("Veuillez valider le captcha")
-					return
-					}
-				});
-			</script>
 	</body>
 </html>

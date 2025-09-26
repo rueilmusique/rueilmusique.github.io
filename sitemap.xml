@@ -8,7 +8,15 @@
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueilmusique.github.io/contact.html</loc>
+		<loc>https://rueilmusique.github.io/instruments.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/atelier-lutherie.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/librairie-musicale.html</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
@@ -16,7 +24,7 @@
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueilmusique.github.io/instruments.html</loc>
+		<loc>https://rueilmusique.github.io/contact.html</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
