@@ -47,10 +47,59 @@
 
 				<!-- Main -->
 					<div id="main">
-						<div class="inner" align="center">
-							<h1>En cours de construction</h1>
-								<p>Cette page est en cours de construction, merci de votre compréhension 🙂</p>
-								<a href="index.html">Retour à la page d'accueil</a>
+						
+						<div class="inner" align="justify">
+							<h1>Atelier de lutherie</h1>
+								<div id="img-desc">
+									<div class="inner">
+										<section>
+											<span class="image fit"><img src="images/pascal-lutherie.jpg" alt="Pascal lutherie" /></span>
+										</section>
+										<section>
+											<p>Rueil Musique est plus qu'un magasin de musique, c'est aussi un atelier de lutherie qui existe depuis plus de 25 ans.</p>
+											<p>Si votre instrument a besoin d'un changement de cordes, d'un réglage, d'un entretien, ou d'une réparation, nous sommes en mesure d'intervenir.
+											Le délai et le devis seront annoncés au préalable (déterminé en fonction du type d'intervention, de l'état de l'instrument, des pièces de rechange, etc). Vous serez toujours contacté si le devis doit évoluer.</p>
+											<p>*Nous nous réservons le droit de refuser d'intervenir sur certains instruments si nous considérons que l'intervention n'est pas possible.</p>
+										</section>
+									</div>
+								</div>
+								<hr/>
+						</div>
+							
+						
+						<div class="inner">		
+								<h2>Connaitre nos tarifs</h2>
+								<div align="justify">
+								<p>Vous souhaitez avoir un aperçu du prix de notre prestation ? Testez notre simulateur ci-dessous pour avoir un ordre d'idée !</p>
+								<p><b>💡 Rappel</b> : si vous avez acheté votre instrument chez nous, non seulement le réglage et l'entretien sont <b>garantis à vie</b>, vous êtes aussi <b>prioritaire</b> pour tout type d'intervention.</p>
+								<p>⚠️ Veuillez noter que les prix affichés sont uniquement <b>à titre indicatif</b>. Le prix de la prestation varie en fonction de l'état de l'instrument, s'il y a un floyd rose, s'il s'agit d'une guitare 12 cordes, etc. Quoi qu'il en soit, vous serez toujours averti du prix et du délai.
+								Pour toute réparation, veuillez nous contacter directement pour connaitre un devis personnalisé.</p>
+								</div>
+								<div class="row gtr-uniform">
+									<div class="col-7 col-12-small">
+										<div class="col-12 col-12-small">
+											<input type="checkbox" value="15" id="select1" name="select1" onchange="update(this);">
+											<label for="select1"><b>Changement de cordes*</b> : jeu de cordes à fournir ou à acheter séparement</label>
+										</div>
+										<div class="col-12 col-12-small">
+											<input type="checkbox" value="30" id="select2" name="select2" onchange="update(this);">
+											<label for="select2"><b>Entretien</b> : nettoyage de la touche et des frettes, désoxydation, vernis, vérification de l'électronique</label>
+										</div>
+										<div class="col-12 col-12-small">
+											<input type="checkbox" value="60" id="select3" name="select3" onchange="update(this);">
+											<label for="select3"><b>Réglage*</b> : action, intonation, manche, bloc vibrato</label>
+										</div>
+										<p>*Simulateur basé sur une guitare à 6 cordes</p>
+									</div>
+									<div class="col-5 col-12-small">
+											<input id='total' name="total" type="text" readonly style="font-weight: bolder;">
+											<br/>
+											<p style="letter-spacing: 20%;">
+												<a href="tel:+33147494849" class="button primary small icon solid fa-phone">Appeler</a>
+												<a href="contact.html" class="button primary small icon solid fa-envelope">Envoyer un mail</a>
+											</p>
+									</div>
+								</div>
 						</div>
 					</div>
 
@@ -96,5 +145,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>var running_total = 0;
+				function update(feature) {
+					// Check
+					if(feature.checked == true){
+						// Add value to running_total
+						running_total += parseInt(feature.value);
+						document.getElementById('total').value = "Total : " + running_total + " €";
+					}
+					// Uncheck
+					if(feature.checked == false){
+						// Subtract value from running_total
+						running_total -= parseInt(feature.value);
+						document.getElementById('total').value = "Total : " + running_total + ' €';
+					}
+				}
+		</script>
 	</body>
 </html>
