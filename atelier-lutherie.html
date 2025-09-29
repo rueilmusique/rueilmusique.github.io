@@ -68,7 +68,7 @@
 							
 						
 						<div class="inner">		
-								<h2>Connaitre nos tarifs</h2>
+								<h2>Simulateur du devis</h2>
 								<div align="justify">
 								<p>Vous souhaitez avoir un aperçu du prix de notre prestation ? Testez notre simulateur ci-dessous pour avoir un ordre d'idée !</p>
 								<p><b>💡 Rappel</b> : si vous avez acheté votre instrument chez nous, non seulement le réglage et l'entretien sont <b>garantis à vie</b>, vous êtes aussi <b>prioritaire</b> pour tout type d'intervention.</p>
@@ -92,12 +92,10 @@
 										<p>*Simulateur basé sur une guitare à 6 cordes</p>
 									</div>
 									<div class="col-5 col-12-small">
-											<input id='total' name="total" type="text" readonly style="font-weight: bolder;">
+											<input id='total' name="total" type="text" placeholder="Sélectionnez vos choix" readonly style="font-weight: bolder;">
 											<br/>
-											<p style="letter-spacing: 20%;">
-												<a href="tel:+33147494849" class="button primary small icon solid fa-phone">Appeler</a>
-												<a href="contact.html" class="button primary small icon solid fa-envelope">Envoyer un mail</a>
-											</p>
+											<a href="tel:+33147494849" class="button primary small icon solid fa-phone">Appeler</a>
+											<a href="contact.html" class="button primary small icon solid fa-envelope">Envoyer un mail</a>
 									</div>
 								</div>
 						</div>
@@ -151,13 +149,13 @@
 					if(feature.checked == true){
 						// Add value to running_total
 						running_total += parseInt(feature.value);
-						document.getElementById('total').value = "Total : " + running_total + " €";
+						document.getElementById('total').value = "Prix estimé : " + running_total + " €";
 					}
 					// Uncheck
 					if(feature.checked == false){
 						// Subtract value from running_total
 						running_total -= parseInt(feature.value);
-						document.getElementById('total').value = "Total : " + running_total + ' €';
+						document.getElementById('total').value = "Prix estimé : " + running_total + ' €';
 					}
 				}
 		</script>
