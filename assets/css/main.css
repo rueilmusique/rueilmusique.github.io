@@ -2372,15 +2372,26 @@ input, select, textarea {
 		/*RZ Edit*/
 		.image.soldout{
 			opacity: 50%;
+			background-color: black;
 		}
 		
 		.image.text{
 			position: absolute;
 			top: 0;
 			padding: 10px;
-			/* text-align: center; */
+			text-align: center;
+			vertical-align: middle;
 			font-weight: bold;
+			font-size: 250%;
 			width: inherit;
+			bottom: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.image.text::before{
+			content:"VENDUE";
 		}
 
 		.image img {
