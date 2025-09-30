@@ -217,9 +217,14 @@ input, select, textarea {
 	h2 {
 		font-size: 1.1em;
 	}
+	
+	h2.gammeGuitare{
+		font-size: 150%;
+		text-align: center;
+	}
 
 	h3 {
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 
 	h4 {
@@ -3271,6 +3276,12 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
+			/*RZ Edit Custom Footer 01/10/2025*/
+			padding: 0 2.5em;
+			max-width: 68em;
+			width: 100%;
+			margin: 0 auto;
+			/*END*/
 		}
 
 			#footer > .inner > * > :last-child {
