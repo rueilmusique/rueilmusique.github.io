@@ -2368,6 +2368,20 @@ input, select, textarea {
 		display: inline-block;
 		position: relative;
 	}
+	
+		/*RZ Edit*/
+		.image.soldout{
+			opacity: 50%;
+		}
+		
+		.image.text{
+			position: absolute;
+			top: 0;
+			padding: 10px;
+			/* text-align: center; */
+			font-weight: bold;
+			width: inherit;
+		}
 
 		.image img {
 			border-radius: 4px;
