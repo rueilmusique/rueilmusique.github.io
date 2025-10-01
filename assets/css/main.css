@@ -221,6 +221,7 @@ input, select, textarea {
 	h2.gammeGuitare{
 		font-size: 150%;
 		text-align: center;
+		margin: 0.5em;
 	}
 
 	h3 {
@@ -2426,7 +2427,8 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			/* OLD VERSION margin: 0 0 2em 0; */
+			margin: 0 0 1em 0;
 			width: 100%;
 		}
 
