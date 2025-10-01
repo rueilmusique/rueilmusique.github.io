@@ -28,15 +28,15 @@
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueilmusique.github.io/instruments/guitares-electriques.html</loc>
+		<loc>https://rueilmusique.github.io/guitares-electriques.html</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueilmusique.github.io/instruments/guitares-acoustiques.html</loc>
+		<loc>https://rueilmusique.github.io/guitares-acoustiques.html</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueilmusique.github.io/instruments/guitares-classiques.html</loc>
+		<loc>https://rueilmusique.github.io/guitares-classiques.html</loc>
 		<priority>0.80</priority>
 	</url>
 </urlset>
