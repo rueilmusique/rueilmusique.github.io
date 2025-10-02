@@ -3309,7 +3309,7 @@ input, select, textarea {
 			border-radius: 50%;
 			display: inline-block;
 			margin: 0 0.4em 2em 0;
-			outline: 0.01em solid #000000;
+			outline: 0.09em solid #000000;
 			}
 		
 		#instru-desc > .inner {
