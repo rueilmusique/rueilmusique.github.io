@@ -2924,7 +2924,8 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		/* OLD padding: 8em 0 0.1em 0 ; */
+		padding: 4em 0 0.1em 0 ;
 	}
 
 		#header .logo {
@@ -3301,6 +3302,16 @@ input, select, textarea {
 			}
 			
 			/* Edit RZ 25/09/2025 */
+		.dot {
+			height: 1em;
+			width: 1em;
+			background-color: #000000;
+			border-radius: 50%;
+			display: inline-block;
+			margin: 0 0.4em 2em 0;
+			outline: 0.01em solid #000000;
+			}
+		
 		#instru-desc > .inner {
 			display: -moz-flex;
 			display: -webkit-flex;
