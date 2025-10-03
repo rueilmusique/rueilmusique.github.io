@@ -219,9 +219,15 @@ input, select, textarea {
 	}
 	
 	h2.gammeGuitare{
-		font-size: 150%;
+		font-size: 135%;
 		text-align: center;
-		margin: 0.5em;
+		margin: 0.5em 0 1em 0;
+		width: fit-content;
+		outline: black solid 1px;
+		margin-inline: auto;
+		padding: 0.2em 0.5em 0.2em 1em;
+		border-radius: 0.5em;
+		background-color: #ffd8d8;
 	}
 
 	h3 {
@@ -3309,7 +3315,7 @@ input, select, textarea {
 			border-radius: 50%;
 			display: inline-block;
 			margin: 0 0.4em 2em 0;
-			outline: 0.09em solid #000000;
+			outline: 1px solid #000000;
 			}
 		
 		#instru-desc > .inner {
