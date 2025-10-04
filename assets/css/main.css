@@ -3540,6 +3540,12 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
+			.dot{
+				height: 2em;
+				width: 2em;
+				margin: 0 1em 1em 0;
+			}
+			
 			#footer {
 				padding: 3em 0 1em 0 ;
 			}
