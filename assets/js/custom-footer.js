@@ -3,4 +3,13 @@ class SpecialFooter extends HTMLElement{
 		this.innerHTML = "<footer id='footer'><div class='inner' id='contact'><section><h2>Contactez-nous</h2><ul class='actions'><li><a href='tel:+33147494849' class='button primary small icon solid fa-phone'>Appeler</a></li><li><a href='contact.html' class='button primary small icon solid fa-envelope'>Envoyer un mail</a></li></ul><p>Besoin d'un renseignement ou de nos conseils d'experts ? Contactez-nous, nous sommes ouvert du mardi au samedi, de 10h à 20h (fermeture à 19h pendant les vacances scolaires)</p></section><section align='justify'><h2>Nos réseaux</h2><ul class='icons'><li><a href='https://www.facebook.com/rueilmusique/' target='_blank' rel='noopener noreferrer' class='icon brands style2 fa-facebook-f' aria-label='Page Facebook'><span class='label'>Facebook</span></a></li><li><a href='https://www.instagram.com/rueilmusique/' target='_blank' rel='noopener noreferrer' class='icon brands style2 fa-instagram' aria-label='Page Instagram'><span class='label'>Instagram</span></a></li><li><a href='https://www.tiktok.com/@rueilmusique' target='_blank' rel='noopener noreferrer' class='icon brands style2 fa-tiktok' aria-label='Page TikTok'><span class='label'>TikTok</span></a></li><li><a href='tel:+33147494849' class='icon solid style2 fa-phone' aria-label='Téléphone'><span class='label'>Phone</span></a></li><li><a href='mailto:rueil-music@wanadoo.fr' class='icon solid style2 fa-envelope' aria-label='Adresse mail'><span class='label'>E-mail</span></a></li></ul><a href='https://maps.app.goo.gl/mXEdYxWUZvsPta75A' target='_blank' rel='noopener noreferrer'>16 rue Marollet, 92500 Rueil-Malmaison</a><br/><br/><a href='mailto:rueil-music@wanadoo.fr' style='font-weight: 600;'>rueil-music@wanadoo.fr</a><br/><a href='tel:+33147494849' style='font-weight: 600;'>01 47 49 48 49</a></section><ul class='copyright'><li>&copy; Rueil Musique. Tous droits réservés</li><li>Design: <a href='https://html5up.net/' target='_blank' rel='noopener noreferrer'>HTML5 UP</a> (repris par Rami Zian)</li></ul></div></footer>"	
 	}
 }
+
+class SpecialMenu extends HTMLElement{
+	connectedCallback(){
+		this.innerHTML = "<div class='inner'><h2>Menu</h2><ul><li><a href='index.html'>🏠 Accueil</a></li><li><a href='instruments.html'>🎸 Instruments & accessoires</a></li><li><a href='atelier-lutherie.html'>🛠️ Atelier de lutherie</a></li><li><a href='librairie-musicale.html'>🎼 Librairie musicale</a></li><li><a href='equipe.html'>👥 L'équipe Rueil Musique</a></li><li><a href='contact.html'>📞 Contactez-nous</a></li></ul></div><a class='close' href='#menu'></a>"
+	}
+}
+
+
 customElements.define('special-footer', SpecialFooter)
+customElements.define('special-menu', SpecialMenu)
