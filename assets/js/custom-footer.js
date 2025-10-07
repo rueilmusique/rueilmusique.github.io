@@ -6,7 +6,7 @@ class SpecialFooter extends HTMLElement{
 
 class SpecialMenu extends HTMLElement{
 	connectedCallback(){
-		this.innerHTML = "<div class='inner'><h2>Menu</h2><ul><li><a href='index.html'>🏠 Accueil</a></li><li><a href='instruments.html'>🎸 Instruments & accessoires</a></li><li><a href='atelier-lutherie.html'>🛠️ Atelier de lutherie</a></li><li><a href='librairie-musicale.html'>🎼 Librairie musicale</a></li><li><a href='equipe.html'>👥 L'équipe Rueil Musique</a></li><li><a href='contact.html'>📞 Contactez-nous</a></li></ul></div><a class='close' href='#menu'></a>"
+		this.innerHTML = "<div class='inner'><h2>Menu</h2><ul><li><a href='index.html'><span class='icon solid fa-home' style='margin: 0 0.6em 0 0'></span>Accueil</a></li><li><a href='instruments-accessoires.html'><span class='icon solid fa-guitar' style='margin: 0 0.65em 0 0'></span>Instruments & accessoires</a></li><li><a href='atelier-lutherie.html'><span class='icon solid fa-screwdriver' style='margin: 0 0.75em 0 0'></span>Atelier de lutherie</a></li><li><a href='librairie-musicale.html'><span class='icon solid fa-book' style='margin: 0 0.77em 0 0'></span>Librairie musicale</a></li><li><a href='equipe.html'><span class='icon solid fa-users' style='margin: 0 0.4em 0 0'></span>L'équipe Rueil Musique</a></li><li><a href='contact.html'><span class='icon solid fa-phone' style='margin: 0 0.6em 0 0'></span>Contactez-nous</a></li></ul></div><a class='close' href='#menu'></a>"
 	}
 }
 

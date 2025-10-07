@@ -287,6 +287,18 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
+	
+	blockquote.rami:after{
+		content: " - Rami, l'audio geek";
+	}
+	
+	blockquote.fabien:after{
+		content: " - Fabien, le luthier";
+	}
+	
+	blockquote.maximin:after{
+		content: " - Maximin, le rockeur";
+	}
 
 	code {
 		background: rgba(144, 144, 144, 0.075);
@@ -3325,6 +3337,10 @@ input, select, textarea {
 		
 		.dot:hover{
 			transform: scale(1.2) !important;
+		}
+		
+		.dot.sunburst{
+			background: linear-gradient(45deg, #FF8C08 0%, #730000 70%, #000000 100%);
 		}
 			
 		.instruDesc > .inner {
