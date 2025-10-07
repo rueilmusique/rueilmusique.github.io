@@ -3320,7 +3320,12 @@ input, select, textarea {
 			margin: 0 0.4em 2em 0;
 			outline: 1px solid #000000;
 			cursor: pointer;
+			transition: all 0.1s ease-in-out;
 			}
+		
+		.dot:hover{
+			transform: scale(1.2) !important;
+		}
 			
 		.instruDesc > .inner {
 			display: -moz-flex;
