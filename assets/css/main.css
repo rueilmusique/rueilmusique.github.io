@@ -3401,6 +3401,10 @@ input, select, textarea {
 				margin-left: 2em;
 			}
 			
+		/* .instruDesc::after{ */
+			/* content: "Appeler pour réserver"; */
+		/* } */
+			
 		.imgDesc > .inner {
 			display: -moz-flex;
 			display: -webkit-flex;
