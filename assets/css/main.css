@@ -205,7 +205,8 @@ input, select, textarea {
 	h2, h3, h4, h5, h6 {
 		font-weight: 900;
 		line-height: 1.5;
-		margin: 0 0 2em 0;
+		/* margin: 0 0 2em 0; */
+		margin: 0 0 1.5em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.15em;
 	}
@@ -231,6 +232,11 @@ input, select, textarea {
 		background-color: #6f0000b2;
 		color: #ffffff;
 		text-shadow: -1px -1px 0 #00000080, 1px -1px 0 #00000080, -1px 1px 0px #00000080, 1px 1px 0px #00000080;
+	}
+	
+	.gammeDesc{
+		font-weight: bolder;
+		text-align: center;
 	}
 
 	h3 {
@@ -3371,6 +3377,10 @@ input, select, textarea {
 				width: calc(60% - 2em);
 				margin-left: 2em;
 			}
+			
+			.instruDesc > .inner > * > .callRueil:after {
+				content: "Réserver / demander conseil";
+			}
 		
 		.instruDesc > .inner {
 			display: -moz-flex;
@@ -3392,12 +3402,12 @@ input, select, textarea {
 			}
 			
 			.instruDesc > .inner section:nth-child(1) {
-				width: calc(40%);
+				width: calc(37%);
 				/* margin-right: 2.5em; */
 			}
 			
 			.instruDesc > .inner section:nth-child(2) {
-				width: calc(60% - 2em);
+				width: calc(63% - 2em);
 				margin-left: 2em;
 			}
 			
