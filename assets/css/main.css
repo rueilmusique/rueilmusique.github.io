@@ -3144,6 +3144,7 @@ input, select, textarea {
 				#menu > .inner > ul > li {
 					padding: 0;
 					border-top: solid 1px rgba(255, 255, 255, 0.15);
+					font-weight: bolder;
 				}
 
 					#menu > .inner > ul > li a {
@@ -3550,12 +3551,12 @@ input, select, textarea {
 			}
 
 				.imgDesc2 > .inner section:nth-child(1) {
-					width: calc(32% - 1.25em);
+					width: calc(68% - 1.25em);
 					margin-right: 1.25em;
 				}
 
 				.imgDesc2 > .inner section:nth-child(2) {
-					width: calc(68% - 1.25em);
+					width: calc(32% - 1.25em);
 					margin-left: 1.25em;
 				}
 
