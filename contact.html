@@ -38,7 +38,9 @@
 					<div id="main">
 						<div class="inner">
 							<h1 align="center">Contactez-nous</h1>
-							<p align="justify">Besoin d'un conseil sur le choix d'un instrument, de renseignements sur l'atelier de lutherie ou de précisions sur une méthode ? Vous pouvez nous laisser un message via notre formulaire, <b>notre équipe vous invite fortement à nous contacter directement par téléphone au <a href="tel:+33147494849">01&nbsp;47&nbsp;49&nbsp;48&nbsp;49</a>&nbsp;!</b></p>
+							<p align="justify">Besoin d'un conseil sur le choix d'un instrument, de renseignements sur l'atelier de lutherie ou de précisions sur une méthode ?
+							Vous pouvez nous laisser un message via notre formulaire, <b>notre équipe vous invite fortement à nous contacter directement par téléphone au <a href="tel:+33147494849">01&nbsp;47&nbsp;49&nbsp;48&nbsp;49</a>&nbsp;!</b></p>
+							<p>N'oubliez pas de consulter <a href="#faq">notre FAQ ci-dessous !</a></p>
 								<form action="https://api.web3forms.com/submit" method="POST" id="formRueilMusique">
 									<input type="hidden" name="access_key" value="945289da-f816-4d2f-a77c-9c65a39efd8a">
 									<div class="fields">
@@ -55,23 +57,27 @@
 											<input type="tel" name="phone" id="phone" placeholder="Votre téléphone (0102030405)" pattern="[0-9]{10}">											
 										</div>
 										<div class="field">
+											<select name="demo-category" id="email-category" aria-label="Catégorie" required>
+												<option value="">- Sélectionnez un objet* -</option>
+												<option value="Achat d'instrument">Achat d'instrument</option>
+												<option value="Partition">Commande & réservation de partition</option>
+												<option value="Atelier de lutherie">Réparation / atelier de lutherie</option>
+												<option value="Reprise d'instrument">Reprise d'instrument à cordes</option>
+												<option value="Autre">Autre</option>
+											</select>
+										</div>
+										<div class="field">
 											<textarea name="message" placeholder="Une question ? Laissez-nous un message !" required></textarea>
 										</div>
-										<!-- <select name="demo-category" id="email-category" required>
-													<option value="">- Sélectionnez un objet -</option>
-													<option value="Partition">Partition</option>
-													<option value="Réparation">Réparation</option>
-													<option value="Autre">Autre</option>
-												</select> -->
 										<input type="hidden" name="redirect" value="https://rueilmusique.github.io/mailenvoye">
 									</div>
 									<div class="fields">
-										<div class="field half">
+										<div class="field">
 											<div class="h-captcha" data-captcha="true" data-theme="light" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div>
 										</div>
-										<div class="field half">
+										<div class="field">
 											<ul class="actions">
-												<li><input class="button primary icon solid fa-envelope" type="submit" value="Envoyer"></li>
+												<li><input class="button primary icon solid fa-paper-plane" type="submit" value="Envoyer"></li>
 											</ul>
 										</div>
 									</div>
@@ -79,19 +85,19 @@
 								
 								<hr/>
 								
-								<h2>Foire aux questions (FAQ)</h2>
+								<h2 id="faq">Foire aux questions (FAQ)</h2>
 								<ul>
 									<li>
-										<b>Je souhaite acheter un modèle précis d'un instrument qui n'est pas présent sur le catalogue, est-ce possible ?</b>
-										<p>C'est possible dans la plupart des cas. Tout dépend de la marque de l'instrument ainsi que des disponibilités.</p>
+										<b>Je souhaite acheter un modèle précis d'un instrument qui n'est pas présent sur le catalogue, est-ce possible de l'acheter chez vous ?</b>
+										<p>C'est possible dans la plupart des cas. Tout dépend de la marque de l'instrument ainsi que des disponibilités. Contactez-nous pour en savoir plus.</p>
 									</li>
 									<li>
 										<b>Reprenez-vous des instruments d'occasion ?</b>
-										<p>Nous reprenons des instruments à corde au cas par cas. Avant la reprise, l'état de l'instrument est préalablement vérifié par notre luthier. Nos instruments d'occasion sont disponibles sur <a href="atelier-lutherie.html#occasions">cette page</a></p>
+										<p>Nous reprenons uniquement des instruments à corde au cas par cas. Avant la reprise, l'état de l'instrument est préalablement vérifié par notre luthier. Nos instruments d'occasion sont disponibles sur <a href="atelier-lutherie.html#occasions">cette page</a></p>
 									</li>
 									<li>
 										<b>Le réglage et entretien des instruments à cordes sont-ils vraiment gratuits ?</b>
-										<p>Tout à fait ! C'est la plus grande force de Rueil Musique, vous n'achetez pas seulement l'instrument, <strong>vous achetez également le service d'accompagnement à vie</strong>.</p>
+										<p>Tout à fait ! C'est la plus grande force de Rueil Musique, vous n'achetez pas seulement l'instrument, vous achetez également le service d'accompagnement à vie.</p>
 									</li>
 									<li>
 										<b>Faites-vous de la location d'instruments ?</b>
