@@ -3375,6 +3375,9 @@ input, select, textarea {
 		.dot.tennessee-red{
 			background: #810f17;
 		}
+		.dot.havana-brown{
+			background: #7c3504;
+		}
 			
 		.instruDesc > .inner {
 			display: -moz-flex;
