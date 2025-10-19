@@ -3346,8 +3346,34 @@ input, select, textarea {
 			transform: scale(1.2) !important;
 		}
 		
+		.dot.indisponible{
+			outline-style: dashed;
+		}
+		
+		/* Couleurs modèles */
 		.dot.sunburst{
 			background: linear-gradient(45deg, #FF8C08 0%, #730000 70%, #000000 100%);
+		}
+		.dot.sonic-blue{
+			background: #9bcadc;
+		}
+		.dot.noir{
+			background: #000000;
+		}
+		.dot.olympic-white{
+			background: #f2e3c4;
+		}
+		.dot.butterscotch{
+			background: #eabc5e;
+		}
+		.dot.burgundy-pink{
+			background: #f195a9;
+		}
+		.dot.denim-blue{
+			background: #6b797b;
+		}
+		.dot.tennessee-red{
+			background: #810f17;
 		}
 			
 		.instruDesc > .inner {
