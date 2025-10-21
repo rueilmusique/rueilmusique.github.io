@@ -2408,6 +2408,33 @@ input, select, textarea {
 			background-color: black;
 		}
 		
+		/* .image.nextButton{ */
+			/* position: absolute; */
+			/* top: 0; */
+			/* padding: 10px; */
+			/* text-align: end; */
+			/* vertical-align: middle; */
+			/* font-weight: bold; */
+			/* font-size: 250%; */
+			/* width: inherit; */
+			/* bottom: 0; */
+			/* display: flex; */
+			/* justify-content: center; */
+			/* align-items: center; */
+			
+			/* height: 1em; */
+			/* width: 1em; */
+			/* background-color: #000000; */
+			/* border-radius: 50%; */
+			/* display: inline-block; */
+			/* margin: 0 0.4em 2em 0; */
+			/* outline: 1px solid #000000; */
+			/* cursor: pointer; */
+		/* } */
+		/* .image.nextButton::before{ */
+			/* content:"test"; */
+		/* } */
+		
 		.image.text{
 			position: absolute;
 			top: 0;
@@ -3377,6 +3404,9 @@ input, select, textarea {
 		}
 		.dot.havana-brown{
 			background: #7c3504;
+		}
+		.dot.white-blonde{
+			background: #cba98c;
 		}
 			
 		.instruDesc > .inner {
