@@ -2408,32 +2408,37 @@ input, select, textarea {
 			background-color: black;
 		}
 		
-		/* .image.nextButton{ */
-			/* position: absolute; */
-			/* top: 0; */
-			/* padding: 10px; */
-			/* text-align: end; */
-			/* vertical-align: middle; */
-			/* font-weight: bold; */
-			/* font-size: 250%; */
-			/* width: inherit; */
-			/* bottom: 0; */
-			/* display: flex; */
-			/* justify-content: center; */
-			/* align-items: center; */
+		.image.nextButton{
+			position: absolute;
+			top: 47%;
+			right: 0;
+			vertical-align: middle;
+			display: flex;
+			justify-content: right;
+			align-items: center;
 			
-			/* height: 1em; */
-			/* width: 1em; */
-			/* background-color: #000000; */
-			/* border-radius: 50%; */
-			/* display: inline-block; */
-			/* margin: 0 0.4em 2em 0; */
-			/* outline: 1px solid #000000; */
-			/* cursor: pointer; */
-		/* } */
-		/* .image.nextButton::before{ */
-			/* content:"test"; */
-		/* } */
+			cursor: pointer;
+			border-style: solid;
+			border-width: 0 1em 1.71em 1em;
+			border-color: transparent transparent #FF4532 transparent;
+			transform: rotate(90deg);
+		}
+		
+		.image.prevButton{
+			position: absolute;
+			top: 47%;
+			left: 0;
+			vertical-align: middle;
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			
+			cursor: pointer;
+			border-style: solid;
+			border-width: 0 1em 1.71em 1em;
+			border-color: transparent transparent #FF4532 transparent;
+			transform: rotate(-90deg);
+		}
 		
 		.image.text{
 			position: absolute;
