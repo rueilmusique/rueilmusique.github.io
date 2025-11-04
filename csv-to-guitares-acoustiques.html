@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Données Google Sheets (API sécurisée)</title>
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    body { font-family: sans-serif; margin: 40px; }
+    .instruDesc { margin-bottom: 15px; padding: 15px; background: #f7f7f7; border-radius: 8px; }
+    h3 { margin: 0 0 8px; }
+  </style>
+</head>
+<body>
+  <h1>Données privées Google Sheets</h1>
+  <div id="main">
+</div>
+
+  <script>
+    const sheetId = "1SzC6ugoz_1HxBOejbxCQYPnFxyqKqEtws5IPXmJOjuE"; // ID du document
+    const range = "GuitareAcoustique!A2:Z"; // lignes à lire (A2 à C…)
+    const apiKey = "AIzaSyDy7yHR-YxZ8rlgamlIQfIWZGyHNjkmX2o"; // ta clé API Google Cloud
+
+    fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`)
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById("main");
+        data.values.forEach(row => {
+        const [Marque, Nom, ID, Photo, Vendue, Gamme, Prix, Coloris, Description_BaseArticle, Description_Web, Blockquote, Blockquote_equipe, Remarques, Table, Manche, Touche, Mécaniques, Électronique, Éclisses, Dos, Chevalet, Vernis, Finition, Plaque, Sillet, Autres] = row;
+		// 🛑 Si pas de nom ou d’image : on saute
+        if (!ID) return;
+		
+		// ✅ On prépare la liste des caractéristiques
+        const caracteristiques = [
+          ["Table", Table],
+          ["Manche", Manche],
+          ["Touche", Touche],
+          ["Mécaniques", Mécaniques],
+          ["Électronique", Électronique],
+          ["Éclisses", Éclisses],
+          ["Dos", Dos],
+          ["Chevalet", Chevalet],
+          ["Vernis", Vernis],
+		  ["Finition", Finition],
+		  ["Plaque", Plaque],
+		  ["Sillet", Sillet],
+		  ["Autres", Autres],
+        ];
+		
+		// On ne garde que celles qui ont une valeur non vide
+        const listItems = caracteristiques
+          .filter(([label, value]) => value && value.trim() !== "")
+          .map(([label, value]) => `<li><b>${label}</b> : ${value}</li>`)
+          .join("");
+		  
+		// ✅ Blockquote affiché uniquement si non vide
+        const quoteHtml = Blockquote && Blockquote.trim() !== ""
+          ? `<blockquote class="${Blockquote_equipe}">« ${Blockquote} »</blockquote>`
+          : "";
+		
+		const colorisHtml = Coloris && Coloris.trim() !== ""
+          ? `<!-- Coloris : ${Coloris} -->
+					<!-- <div> -->
+						<!-- <span class="dot COULEUR" onclick="document.getElementById('${ID}').src='images/acoustic-guitars/IMG.jpg'"></span> -->
+					<!-- </div> -->`
+          : "";
+		
+		const card = document.createElement("div");
+        card.className = "instruDesc";
+        card.innerHTML = `
+			<h3>${Marque} - ${Nom}</h3>
+			<div class="inner">
+				<section>
+					<span class="image fit"><img src="images/acoustic-guitars/${ID}_${Photo}.jpg" loading="lazy" alt="Guitare électrique ${Marque} ${Nom}" /></span>
+					${colorisHtml}
+					<a class="callRueil button small fit icon solid fa-phone"></a>
+				</section>
+				<section>
+					<p>${Description_Web}</p>
+					<ul>${listItems}</ul>
+					${quoteHtml}
+				</section>
+			</div>
+			<hr/>
+			`
+		  ;
+          container.appendChild(card);
+        });
+      })
+      .catch(err => console.error(err));
+  </script>
+</body>
+</html>
