@@ -16,73 +16,112 @@
   <div id="main">
 </div>
 
-  <script>
-    const sheetId = "1SzC6ugoz_1HxBOejbxCQYPnFxyqKqEtws5IPXmJOjuE"; // ID du document
-    const range = "GuitareClassique!A2:AA"; // lignes à lire (A2 à C…)
-    const apiKey = "AIzaSyDy7yHR-YxZ8rlgamlIQfIWZGyHNjkmX2o"; // ta clé API Google Cloud
+<script>
+const sheetId = "1SzC6ugoz_1HxBOejbxCQYPnFxyqKqEtws5IPXmJOjuE"; // ID du document
+const range = "GuitareClassique!A2:AE"; // lignes à lire (A2 à C…)
+const apiKey = "AIzaSyDy7yHR-YxZ8rlgamlIQfIWZGyHNjkmX2o"; // ta clé API Google Cloud
 
-    fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`)
-      .then(res => res.json())
-      .then(data => {
-        const container = document.getElementById("main");
-        data.values.forEach(row => {
-        
-		const [Marque, Nom, ID, Photo, Vendue, Gamme, Prix, Coloris, Description_BaseArticle, Description_Web, Blockquote, Blockquote_equipe, Remarques, Table, Corps, Manche, Touche, Chevalet, Mécaniques, Électronique, Éclisses, Dos, Vernis, Finition, Plaque, Sillet, Autres] = row;
-		// 🛑 Si pas de nom ou d’image : on saute
-        if (!ID) return;
-		
-		// ✅ On prépare la liste des caractéristiques
-        const caracteristiques = [
-          ["Table", Table],
-		  ["Corps", Corps],
-          ["Manche", Manche],
-          ["Touche", Touche],
-		  ["Chevalet", Chevalet],
-		  ["Mécaniques", Mécaniques],
-          ["Électronique", Électronique],
-          ["Éclisses", Éclisses],
-          ["Dos", Dos],
-          ["Vernis", Vernis],
-		  ["Finition", Finition],
-		  ["Plaque", Plaque],
-		  ["Sillet", Sillet],
-		  ["Autres", Autres],
-        ];
-		
-		// On ne garde que celles qui ont une valeur non vide
-        const listItems = caracteristiques
-          .filter(([label, value]) => value && value.trim() !== "")
-          .map(([label, value]) => `<li><b>${label}</b> : ${value}</li>`)
-          .join("");
-		  
-		// ✅ Blockquote affiché uniquement si non vide
-        const quoteHtml = Blockquote && Blockquote.trim() !== ""
-          ? `<blockquote class="${Blockquote_equipe}">« ${Blockquote} »</blockquote>`
-          : "";
-		
-		const card = document.createElement("div");
-        card.className = "instruDesc";
-        card.innerHTML = `
-<h3>${Marque} - ${Nom}</h3>
-<div class="inner">
-	<section>
-		<span class="image fit"><img src="images/classic-guitars/${ID}_${Photo}.jpg" loading="lazy" alt="Guitare électrique ${Marque} ${Nom}" /></span>
-		<a class="callRueil button small fit icon solid fa-phone"></a>
-	</section>
-	<section>
-		<p>${Description_Web}</p>
-		<ul>${listItems}</ul>
-		${quoteHtml}
-	</section>
-</div>				
-`
-		  ;
-		  const retourLigne = document.createElement("hr");
-          container.appendChild(card);
-		  container.appendChild(retourLigne);
-        });
-      })
-      .catch(err => console.error(err));
-  </script>
+fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`)
+.then(res => res.json())
+.then(data => {
+const container = document.getElementById("main");
+
+// Crée un objet pour regrouper les guitares par gamme
+const guitarsByRange = {};
+
+// Parcours les lignes et groupe les guitares par gamme
+data.values.forEach(row => {
+const [ID, Marque, Nom, Update, Vendue, Gamme, Prix, Coloris, Sous_modèle, Description_BaseArticle, Description_Web, Blockquote, Blockquote_equipe, Remarques, Table, Corps, Manche, Touche, Chevalet, Mécaniques, Électronique, Éclisses, Dos, Vernis, Finition, Plaque, Sillet, Autres, Pays_texte, Pays_image, Visible] = row;
+
+// 🛑 Si pas de nom ou d’image : on saute
+if (!ID || !Gamme) return;
+// Si le modèle n’est pas visible, on le saute
+if (Visible !== "TRUE") return;
+
+// Si la gamme n'existe pas encore, on la crée
+if (!guitarsByRange[Gamme] || !Array.isArray(guitarsByRange[Gamme])) {
+	<!-- guitarsByRange[Gamme] = { paragrapheGamme: Paragraphe_gamme, items: [] }; -->
+	guitarsByRange[Gamme] = [];
+	}
+
+// Ajoute la guitare au groupe correspondant à sa gamme
+guitarsByRange[Gamme].push({
+ID, Marque, Nom, Update, Vendue, Gamme, Prix, Coloris, Sous_modèle, Description_BaseArticle, Description_Web, Blockquote, Blockquote_equipe, Remarques, Table, Corps, Manche, Touche, Chevalet, Mécaniques, Électronique, Éclisses, Dos, Vernis, Finition, Plaque, Sillet, Autres, Pays_texte, Pays_image
+});
+});
+
+// Parcours les gammes et affiche chaque guitare
+Object.keys(guitarsByRange).forEach(gamme => {
+	// Crée un <h2> pour la gamme
+	const { paragrapheGamme, items } = guitarsByRange[gamme];
+	const gammeSection = document.createElement("div");
+	gammeSection.innerHTML = `<h2 class="gammeGuitare">${gamme}</h2>${paragrapheGamme ? '<p class="introGamme">${paragrapheGamme}</p>' : ""}`;
+
+	// Pour chaque guitare dans cette gamme
+	guitarsByRange[gamme].forEach(guitar => {
+	const caracteristiques = [
+	["Table", guitar.Table],
+	["Corps", guitar.Corps],
+	["Manche", guitar.Manche],
+	["Touche", guitar.Touche],
+	["Chevalet", guitar.Chevalet],
+	["Mécaniques", guitar.Mécaniques],
+	["Électronique", guitar.Électronique],
+	["Éclisses", guitar.Éclisses],
+	["Dos", guitar.Dos],
+	["Vernis", guitar.Vernis],
+	["Finition", guitar.Finition],
+	["Plaque", guitar.Plaque],
+	["Sillet", guitar.Sillet],
+	["Autres", guitar.Autres],
+	];
+
+	// On ne garde que celles qui ont une valeur non vide
+	const listItems = caracteristiques
+	.filter(([label, value]) => value && value.trim() !== "")
+	.map(([label, value]) => `<li><b>${label}</b> : ${value}</li>`)
+	.join("");
+
+	// Blockquote affiché uniquement si non vide
+	const quoteHtml = guitar.Blockquote && guitar.Blockquote.trim() !== ""
+	? `<blockquote class="${guitar.Blockquote_equipe}">« ${guitar.Blockquote} »</blockquote>`
+	: "";
+
+	// Crée la carte pour la guitare
+	const card = document.createElement("div");
+	card.className = "instruDesc";
+	card.innerHTML = `
+	<h3>${guitar.Marque} - ${guitar.Nom}</h3>
+	<div class="inner">
+		<section>
+			<span class="image fit">
+			<img src="images/classic-guitars/${guitar.ID}.jpg" loading="lazy" alt="Guitare électrique ${guitar.Marque} ${guitar.Nom}" />
+			</span>
+			<a class="callRueil button small fit icon solid fa-phone"></a>
+		</section>
+		<section>
+			<p>${guitar.Description_Web}</p>
+			<ul>${listItems}</ul>
+			${quoteHtml}
+		</section>
+	</div>				
+	`;
+	
+	const retourLigneArticle = document.createElement("hr");
+
+	gammeSection.appendChild(card);
+	gammeSection.appendChild(retourLigneArticle);
+	});
+
+	// Ajoute la section de la gamme au container
+	container.appendChild(gammeSection);
+	
+	const retourLigneGamme = document.createElement("br");
+	gammeSection.appendChild(retourLigneGamme);
+	});
+})
+.catch(err => console.error(err));
+</script>
+
 </body>
 </html>
