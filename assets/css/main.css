@@ -153,6 +153,7 @@ input, select, textarea {
 		text-decoration: none;
 		color: #585858;
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		/* font-weight: 200; */
 	}
 
 		a:hover {
@@ -171,6 +172,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		font-weight: 350;
 	}
 
 	h1 {
@@ -289,6 +291,7 @@ input, select, textarea {
 
 	blockquote {
 		border-left: solid 4px #c9c9c9;
+		font-weight: 350;
 		font-style: italic;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
@@ -1968,6 +1971,7 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+			/* font-weight: 350; */
 		}
 
 		ul.alt {
