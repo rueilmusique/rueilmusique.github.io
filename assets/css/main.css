@@ -3478,11 +3478,17 @@ input, select, textarea {
 		.dot.sunburst{
 			background: linear-gradient(45deg, #FF8C08 0%, #730000 70%, #000000 100%);
 		}
+		.dot.vintage-burst{
+			background: linear-gradient(45deg, #FF8C08 0%, #730000 70%, #000000 100%);
+		}
 		.dot.sonic-blue{
 			background: #9bcadc;
 		}
 		.dot.noir{
 			background: #000000;
+		}
+		.dot.mat-black{
+			background: linear-gradient(45deg, #000000 0%, #000000 70%, #ffffff 100%);
 		}
 		.dot.olympic-white{
 			background: #f2e3c4;
