@@ -3454,6 +3454,12 @@ input, select, textarea {
 			}
 			
 			/* Edit RZ 25/09/2025 */
+		
+		.pass-culture-icon{
+			width: 3em;
+			border-radius: 8px;
+		}
+		
 		.dot {
 			height: 1.4em;
 			width: 1.4em;
