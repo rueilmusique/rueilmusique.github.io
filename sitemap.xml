@@ -8,7 +8,7 @@
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueilmusique.github.io/instruments.html</loc>
+		<loc>https://rueilmusique.github.io/instruments-accessoires.html</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
@@ -16,15 +16,27 @@
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueilmusique.github.io/librairie-musicale.html</loc>
+		<loc>https://rueilmusique.github.io/amplificateurs.html</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueilmusique.github.io/equipe.html</loc>
+		<loc>https://rueilmusique.github.io/basses-electriques.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/casques-micros.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/claviers.html</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
 		<loc>https://rueilmusique.github.io/contact.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/equipe.html</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
@@ -37,6 +49,18 @@
 	</url>
 	<url>
 		<loc>https://rueilmusique.github.io/guitares-classiques.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/librairie-musicale.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/pedales.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/ukuleles.html</loc>
 		<priority>0.80</priority>
 	</url>
 </urlset>

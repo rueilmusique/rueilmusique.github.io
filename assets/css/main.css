@@ -208,7 +208,7 @@ input, select, textarea {
 		font-weight: 900;
 		line-height: 1.5;
 		/* margin: 0 0 2em 0; */
-		margin: 0 0 1.5em 0;
+		margin: 0 0 1em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.15em;
 	}
@@ -3466,7 +3466,7 @@ input, select, textarea {
 			background-color: #000000;
 			border-radius: 50%;
 			display: inline-block;
-			margin: 0 0.4em 2em 0;
+			margin: 0 0.4em 0.5em 0;
 			outline: 1px solid #000000;
 			cursor: pointer;
 			transition: all 0.1s ease-in-out;
@@ -3577,12 +3577,12 @@ input, select, textarea {
 			}
 			
 			.instruDesc > .inner section:nth-child(1) {
-				width: calc(37%);
+				width: calc(35%);
 				/* margin-right: 2.5em; */
 			}
 			
 			.instruDesc > .inner section:nth-child(2) {
-				width: calc(63% - 2em);
+				width: calc(65% - 2em);
 				margin-left: 2em;
 			}
 			
