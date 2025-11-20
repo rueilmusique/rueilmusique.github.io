@@ -299,14 +299,17 @@ input, select, textarea {
 	
 	blockquote.rami:after{
 		content: " - Rami, l'audio geek";
+		font-style: normal;
 	}
 	
 	blockquote.fabien:after{
 		content: " - Fabien, le luthier";
+		font-style: normal;
 	}
 	
 	blockquote.maximin:after{
 		content: " - Maximin, le rockeur";
+		font-style: normal;
 	}
 
 	code {
@@ -2467,7 +2470,7 @@ input, select, textarea {
 			text-align: center;
 			vertical-align: middle;
 			font-weight: bold;
-			font-size: 250%;
+			font-size: 390%;
 			width: inherit;
 			bottom: 0;
 			display: flex;
@@ -2477,6 +2480,8 @@ input, select, textarea {
 		
 		.image.text::before{
 			content:"VENDUE";
+			/* color: #ff3535; */
+			/* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0px #000, 2px 2px 0px #000; */
 		}
 
 		.image img {
@@ -3458,6 +3463,11 @@ input, select, textarea {
 		.pass-culture-icon{
 			width: 3em;
 			border-radius: 8px;
+			transition: all 0.1s ease-in-out;
+		}
+		
+		.pass-culture-icon:hover{
+			transform: scale(1.1) !important;
 		}
 		
 		.dot {
@@ -3469,7 +3479,7 @@ input, select, textarea {
 			margin: 0 0.4em 0.5em 0;
 			outline: 1px solid #000000;
 			cursor: pointer;
-			transition: all 0.1s ease-in-out;
+			transition: all 0.05s ease-in-out;
 			}
 		
 		.dot:hover{
