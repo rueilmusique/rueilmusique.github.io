@@ -300,16 +300,19 @@ input, select, textarea {
 	blockquote.rami:after{
 		content: " - Rami, l'audio geek";
 		font-style: normal;
+		font-weight: initial;
 	}
 	
 	blockquote.fabien:after{
 		content: " - Fabien, le luthier";
 		font-style: normal;
+		font-weight: initial;
 	}
 	
 	blockquote.maximin:after{
 		content: " - Maximin, le rockeur";
 		font-style: normal;
+		font-weight: initial;
 	}
 
 	code {
@@ -3428,9 +3431,13 @@ input, select, textarea {
 		/* opacity: 50%; */
 	}
 	
+	.a-la-une-h3{
+		white-space: nowrap;
+	}
+	
 	@media screen and (max-width: 736px){
 	.a-la-une-h3{
-		height: 10vw;
+		/* height: 10vw; */
 	}
 	}
 
