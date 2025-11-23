@@ -2414,7 +2414,7 @@ input, select, textarea {
 	
 		/*RZ Edit*/
 		.image.soldout{
-			opacity: 50%;
+			opacity: 60%;
 			background-color: black;
 		}
 		
@@ -2479,12 +2479,13 @@ input, select, textarea {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			
 		}
 		
 		.image.text::before{
 			content:"VENDUE";
 			/* color: #ff3535; */
-			/* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0px #000, 2px 2px 0px #000; */
+			/* text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0px #ffffff, 1px 1px 0px #ffffff; */
 		}
 
 		.image img {
@@ -3477,6 +3478,11 @@ input, select, textarea {
 			margin-bottom: 0.5em;
 			font-size: 100%;
 		}
+	}
+
+	.video-youtube{
+		aspect-ratio: 16/9;
+		width: 100%;
 	}
 
 	#main {
