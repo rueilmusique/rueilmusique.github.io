@@ -362,7 +362,7 @@
 									<img id="yt-thumb" class="video-youtube" loading="lazy" decoding="async" alt="Miniature YouTube" style="vertical-align: middle;"/>
 								</button>
 								<!-- https://i3.ytimg.com/vi/2DvjfYoh_5U/maxresdefault.jpg -->
-								<iframe id="yt-iframe" class="video-youtube" src="about:blank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe id="yt-iframe" class="video-youtube" src="about:blank" data-src="about:blank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 								<!-- data-src="https://www.youtube.com/embed/+lastest?list=PL20jwMxdxu3yFof2fHYwT98J0oZXoXXc2?autoplay=1"  -->
 							</div>
 						</div>
@@ -517,7 +517,7 @@ fetch(proxy)
   .catch(err => console.error("Erreur :", err));
 
 // 2. Lancer la vidéo au clic
-document.querySelector(".yt-button").addEventListener("click", () => {
+	document.querySelector(".yt-button").addEventListener("click", () => {
     const iframe = document.getElementById("yt-iframe");
     iframe.src = iframe.dataset.src;
 });
