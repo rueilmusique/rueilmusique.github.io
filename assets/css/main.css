@@ -3515,6 +3515,10 @@ input, select, textarea {
 			}
 		}
 	}
+	
+	.articleMag{
+		aspect-ratio: 3/4;
+	}
 
 	#main {
 		padding: 0em 0 6em 0 ;
