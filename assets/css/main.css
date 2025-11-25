@@ -3484,6 +3484,7 @@ input, select, textarea {
 	.video-youtube{
 		aspect-ratio: 16/9;
 		width: 100%;
+		vertical-align: middle;
 	}
 	
 

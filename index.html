@@ -551,7 +551,12 @@
       .then(res => res.text())
       .then(str => {
         const data = (new DOMParser()).parseFromString(str, "text/xml");
-        const latest = data.querySelector("entry > yt\\:videoId")?.textContent || data.querySelector("id")?.textContent || null;
+        <!-- const latest = data.querySelector("entry > yt\\:videoId")?.textContent || data.querySelector("id")?.textContent || null; -->
+		// Récupération du dernier ID vidéo sans dépendre du namespace XML
+		const nodes = data.getElementsByTagName("yt:videoId");
+		const latest = nodes.length > 0 ? nodes[0].textContent : null;
+		console.log("Dernière vidéo ID :", latest);
+		
         if(!latest){
           console.warn('YouTube RSS: impossible de déterminer la dernière vidéo.');
           return;
