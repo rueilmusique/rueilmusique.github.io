@@ -3411,9 +3411,10 @@ input, select, textarea {
 
 	.a-la-une{
 		/* background: #c34646; */
-		background-color: #d6dae6;
+		background-color: #373535;
 		border-radius: 28px;
 		/* padding: 0 0 0 0; */
+		color: #ffffff;
 	}
 	
 	.a-la-une-grille{
@@ -3551,6 +3552,9 @@ input, select, textarea {
 		border-radius: 6px;
 		cursor: pointer;
 		font-weight:normal;
+		letter-spacing: 0.1em;
+		font-family: sans-serif;
+		text-transform: none;
 	}
 	
 	.yt-consent-btn.secondary{ background: transparent; border: 1px solid rgba(255,255,255,0.18); }
