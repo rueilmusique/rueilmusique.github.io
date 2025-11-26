@@ -8,27 +8,7 @@
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueilmusique.github.io/instruments-accessoires.html</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
 		<loc>https://rueilmusique.github.io/atelier-lutherie.html</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>https://rueilmusique.github.io/amplificateurs.html</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>https://rueilmusique.github.io/basses-electriques</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>https://rueilmusique.github.io/casques-micros.html</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>https://rueilmusique.github.io/claviers.html</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
@@ -40,27 +20,47 @@
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueilmusique.github.io/guitares-electriques.html</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>https://rueilmusique.github.io/guitares-acoustiques.html</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>https://rueilmusique.github.io/guitares-classiques.html</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
 		<loc>https://rueilmusique.github.io/librairie-musicale.html</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueilmusique.github.io/pedales-effets.html</loc>
+		<loc>https://rueilmusique.github.io/instruments-accessoires/index.html</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueilmusique.github.io/ukuleles.html</loc>
+		<loc>https://rueilmusique.github.io/instruments-accessoires/amplificateurs.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/instruments-accessoires/basses-electriques</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/instruments-accessoires/casques-micros.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/instruments-accessoires/claviers.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/instruments-accessoires/guitares-electriques.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/instruments-accessoires/guitares-acoustiques.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/instruments-accessoires/guitares-classiques.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/instruments-accessoires/pedales-effets.html</loc>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://rueilmusique.github.io/instruments-accessoires/ukuleles.html</loc>
 		<priority>0.80</priority>
 	</url>
 </urlset>
