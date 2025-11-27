@@ -6,7 +6,7 @@ class SpecialFooter extends HTMLElement{
 
 class SpecialMenu extends HTMLElement{
 	connectedCallback(){
-		this.innerHTML = "<div class='inner'><h2>Menu</h2><ul><li><a href='https://rueilmusique.github.io/index.html'><span class='icon solid fa-home' style='margin: 0 0.6em 0 0'></span>Accueil</a></li><li><a href='https://rueilmusique.github.io/instruments-accessoires/index.html'><span class='icon solid fa-guitar' style='margin: 0 0.65em 0 0'></span>Instruments & accessoires</a></li><li><a href='https://rueilmusique.github.io/atelier-lutherie.html'><span class='icon solid fa-screwdriver' style='margin: 0 0.67em 0 0'></span>Atelier de lutherie</a></li><li><a href='https://rueilmusique.github.io/librairie-musicale.html'><span class='icon solid fa-book' style='margin: 0 0.77em 0 0'></span>Librairie musicale</a></li><li><a href='https://rueilmusique.github.io/equipe.html'><span class='icon solid fa-users' style='margin: 0 0.4em 0 0'></span>L'équipe Rueil Musique</a></li><li><a href='https://rueilmusique.github.io/contact.html'><span class='icon solid fa-phone' style='margin: 0 0.6em 0 0'></span>Contactez-nous / FAQ</a></li></ul></div><a class='close' href='#menu'></a>"
+		this.innerHTML = "<div class='inner'><h2>Menu</h2><ul><li><a href='https://rueilmusique.github.io/index.html'><span class='icon solid fa-home' style='margin: 0 0.6em 0 0'></span>Accueil</a></li><li><a href='https://rueilmusique.github.io/instruments-accessoires/index.html'><span class='icon solid fa-guitar' style='margin: 0 0.65em 0 0'></span>Instruments & accessoires</a></li><li><a href='https://rueilmusique.github.io/atelier-lutherie.html'><span class='icon solid fa-screwdriver' style='margin: 0 0.67em 0 0'></span>Atelier de lutherie</a></li><li><a href='https://rueilmusique.github.io/librairie-musicale.html'><span class='icon solid fa-book' style='margin: 0 0.77em 0 0'></span>Librairie musicale</a></li><li><a href='https://rueilmusique.github.io/contact.html'><span class='icon solid fa-phone' style='margin: 0 0.6em 0 0'></span>Contactez-nous / FAQ</a></li></ul></div><a class='close' href='#menu'></a>"
 	}
 }
 
@@ -15,3 +15,4 @@ customElements.define('special-footer', SpecialFooter)
 customElements.define('special-menu', SpecialMenu)
 
 // <li><a href='mailto:rueil-music@wanadoo.fr' class='icon solid style2 fa-envelope' aria-label='Adresse mail'><span class='label'>E-mail</span></a></li>
+// <li><a href='https://rueilmusique.github.io/equipe.html'><span class='icon solid fa-users' style='margin: 0 0.4em 0 0'></span>L'équipe Rueil Musique</a></li>
