@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /images/librairie-musicale/*
+Disallow: /images/logos/*
 Disallow: /cgi-bin/
 Sitemap: http://rueilmusique.github.io/sitemap.xml
