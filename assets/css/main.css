@@ -2891,30 +2891,6 @@ input, select, textarea {
 						font-size: 120%
 					}
 
-			.tiles article.style1 > .image:before {
-				background-color: #bd964a;
-			}
-
-			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
-			}
-
-			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
-			}
-
-			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
-			}
-
-			.tiles article.style5 > .image:before {
-				background-color: #ae85ca;
-			}
-
-			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
-			}
-
 			body:not(.is-touch) .tiles article:hover > .image {
 				-moz-transform: scale(1.1);
 				-webkit-transform: scale(1.1);
@@ -3004,12 +2980,16 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.tiles {
-				margin: 0;
+				/* margin: 0; */
+				margin: -1.25em 0 0 -1.25em;
+				font-size: 80%;
 			}
 
 				.tiles article {
-					width: 100%;
-					margin: 1.25em 0 0 0;
+					/* width: 100%; */
+					width: calc(50% - 1em);
+					/* margin: 1.25em 0 0 0; */
+					margin: 1em 0 0 1em;
 				}
 
 		}
@@ -3017,7 +2997,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		/* OLD padding: 8em 0 0.1em 0 ; */
+		/* padding: 8em 0 0.1em 0 ; */
 		padding: 4em 0 0.1em 0 ;
 	}
 
@@ -3174,7 +3154,6 @@ input, select, textarea {
 		position: fixed;
 		top: 0;
 		right: 0;
-		/* left: 0; */
 		width: 22em;
 		max-width: 80%;
 		height: 100%;
@@ -3242,7 +3221,6 @@ input, select, textarea {
 			position: absolute;
 			top: 2em;
 			left: -6em;
-			/* right: -6em; */
 			width: 6em;
 			text-indent: 6em;
 			height: 3em;
@@ -3440,17 +3418,6 @@ input, select, textarea {
 		margin: 0 1em 0 1em;
 	}
 	
-	/* .a-la-une.gamme{ */
-		/* text-transform: uppercase; */
-		/* width: fit-content; */
-		/* text-align: center; */
-		/* margin: 0 0 1em 0; */
-		/* font-weight: bold; */
-		/* padding: 0.2em 0.3em 0.2em 0.3em; */
-		/* border-radius: 4px; */
-		/* color: #ffffff; */
-	/* } */
-	
 	.a-la-une-image{
 		width: 100%;
 		transition: all 0.15s ease-in-out;
@@ -3463,17 +3430,9 @@ input, select, textarea {
 	
 	.a-la-une-image:hover{
 		transform: scale(1.03);
-		/* opacity: 50%; */
 	}
 	
-	/* .a-la-une-h3{ */
-		/* white-space: nowrap; */
-	/* } */
-	
 	@media screen and (max-width: 736px){
-		/* .a-la-une-h3{ */
-			/* height: 10vw; */
-		/* } */
 		
 		.a-la-une-grille{
 			grid-template-columns: repeat(2, 50%);
@@ -3573,6 +3532,8 @@ input, select, textarea {
 	.articleMag{
 		aspect-ratio: 3/4;
 	}
+	
+	
 
 	#main {
 		padding: 0em 0 6em 0 ;
@@ -3768,10 +3729,6 @@ input, select, textarea {
 				width: calc(65% - 2em);
 				margin-left: 2em;
 			}
-			
-		/* .instruDesc::after{ */
-			/* content: "Appeler pour réserver"; */
-		/* } */
 			
 		.imgDesc > .inner {
 			display: -moz-flex;
