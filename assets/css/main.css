@@ -3622,8 +3622,44 @@ input, select, textarea {
 		}
 		
 		/* Couleurs modèles */
+		.dot.black{
+			background: #000000;
+		}
+		.dot.burgundy-pink{
+			background: #f195a9;
+		}
+		.dot.butterscotch{
+			background: #eabc5e;
+		}
+		.dot.denim-blue{
+			background: #6b797b;
+		}
+		.dot.faded-black{
+			background: #1e1919;
+		}
+		.dot.havana-brown{
+			background: #7c3504;
+		}
+		.dot.maple-wine-red{
+			background: #492022;
+		}
+		.dot.mat-black{
+			background: linear-gradient(45deg, #000000 0%, #000000 70%, #ffffff 100%);
+		}
+		.dot.natural-satin{
+			background: #f2e3c4;
+		}
+		.dot.olympic-white{
+			background: #f2e3c4;
+		}
+		.dot.sonic-blue{
+			background: #9bcadc;
+		}
 		.dot.sunburst{
 			background: linear-gradient(45deg, #FF8C08 0%, #730000 70%, #000000 100%);
+		}
+		.dot.tennessee-red{
+			background: #810f17;
 		}
 		.dot.tobacco-sunburst{
 			background: linear-gradient(45deg, #FF8C08 0%, #730000 70%, #000000 100%);
@@ -3631,42 +3667,11 @@ input, select, textarea {
 		.dot.vintage-burst{
 			background: linear-gradient(45deg, #FF8C08 0%, #730000 70%, #000000 100%);
 		}
-		.dot.sonic-blue{
-			background: #9bcadc;
-		}
-		.dot.noir{
-			background: #000000;
-		}
-		.dot.mat-black{
-			background: linear-gradient(45deg, #000000 0%, #000000 70%, #ffffff 100%);
-		}
-		.dot.olympic-white{
-			background: #f2e3c4;
-		}
-		.dot.natural-satin{
-			background: #f2e3c4;
-		}
-		.dot.butterscotch{
-			background: #eabc5e;
-		}
-		.dot.burgundy-pink{
-			background: #f195a9;
-		}
-		.dot.denim-blue{
-			background: #6b797b;
-		}
-		.dot.tennessee-red{
-			background: #810f17;
-		}
-		.dot.havana-brown{
-			background: #7c3504;
-		}
 		.dot.white-blonde{
 			background: #cba98c;
 		}
-		.dot.maple-wine-red{
-			background: #492022;
-		}
+		
+		
 			
 		.instruDesc > .inner {
 			display: -moz-flex;
