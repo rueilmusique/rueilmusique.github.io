@@ -314,6 +314,18 @@ input, select, textarea {
 		font-style: normal;
 		font-weight: initial;
 	}
+	
+	blockquote.jeremy:after{
+		content: " - Jérémy, le professeur";
+		font-style: normal;
+		font-weight: initial;
+	}
+	
+	blockquote.pascal:after{
+		content: " - Pascal, le maestro";
+		font-style: normal;
+		font-weight: initial;
+	}
 
 	code {
 		background: rgba(144, 144, 144, 0.075);
@@ -3396,6 +3408,16 @@ input, select, textarea {
 		border-radius: 28px;
 		/* padding: 0 0 0 0; */
 		color: #ffffff;
+		
+		h2{
+			text-align: center;
+			font-size: 225%;
+			margin: 0 0 0 0;
+			padding: 0.5em 0 0.5em 0;
+		}
+		p{
+			text-align: center;
+		}
 	}
 	
 	.a-la-une-grille{
@@ -3547,61 +3569,7 @@ input, select, textarea {
 
 		}
 
-/* Footer */
-
-	#footer {
-		padding: 5em 0 6em 0 ;
-		background-color: #dbd7d4;
-	}
-
-		#footer > .inner {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			-moz-flex-wrap: wrap;
-			-webkit-flex-wrap: wrap;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
-			-moz-flex-direction: row;
-			-webkit-flex-direction: row;
-			-ms-flex-direction: row;
-			flex-direction: row;
-			/*RZ Edit Custom Footer 01/10/2025*/
-			padding: 0 2.5em;
-			max-width: 68em;
-			width: 100%;
-			margin: 0 auto;
-			/*END*/
-		}
-
-			#footer > .inner > * > :last-child {
-				margin-bottom: 0;
-			}
-
-			#footer > .inner section:nth-child(1) {
-				width: calc(66% - 2.5em);
-				margin-right: 2.5em;
-			}
-
-			#footer > .inner section:nth-child(2) {
-				width: calc(33% - 2.5em);
-				margin-left: 2.5em;
-			}
-			
-			/* Edit RZ 25/09/2025 */
-		
-		.pass-culture-icon{
-			width: 3em;
-			border-radius: 8px;
-			transition: all 0.1s ease-in-out;
-		}
-		
-		.pass-culture-icon:hover{
-			transform: scale(1.1) !important;
-		}
-		
-		.dot {
+	.dot {
 			height: 1.4em;
 			width: 1.4em;
 			background-color: #000000;
@@ -3611,7 +3579,7 @@ input, select, textarea {
 			outline: 1px solid #000000;
 			cursor: pointer;
 			transition: all 0.05s ease-in-out;
-			}
+		}
 		
 		.dot:hover{
 			transform: scale(1.2) !important;
@@ -3671,7 +3639,15 @@ input, select, textarea {
 			background: #cba98c;
 		}
 		
+		.pass-culture-icon{
+			width: 3em;
+			border-radius: 8px;
+			transition: all 0.1s ease-in-out;
+		}
 		
+		.pass-culture-icon:hover{
+			transform: scale(1.1) !important;
+		}
 			
 		.instruDesc > .inner {
 			display: -moz-flex;
@@ -3792,7 +3768,45 @@ input, select, textarea {
 				margin-left: 2em;
 			}
 
-			/*END*/
+/* Footer */
+
+	#footer {
+		padding: 5em 0 6em 0 ;
+		background-color: #dbd7d4;
+	}
+
+		#footer > .inner {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-moz-flex-direction: row;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			padding: 0 2.5em;
+			max-width: 68em;
+			width: 100%;
+			margin: 0 auto;
+		}
+
+			#footer > .inner > * > :last-child {
+				margin-bottom: 0;
+			}
+
+			#footer > .inner section:nth-child(1) {
+				width: calc(66% - 2.5em);
+				margin-right: 2.5em;
+			}
+
+			#footer > .inner section:nth-child(2) {
+				width: calc(33% - 2.5em);
+				margin-left: 2.5em;
+			}
 
 			#footer > .inner .copyright {
 				width: 100%;
