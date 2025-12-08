@@ -2174,6 +2174,11 @@ input, select, textarea {
 		float: left;
 		height: inherit;
 		width: 2em;
+		margin: 0 0.4em 0 0.7em;
+	}
+	
+	.iconTextRight{
+		float: left;
 		margin: 0 0.7em 0 0em;
 	}
 	
@@ -2181,13 +2186,18 @@ input, select, textarea {
 		float: left;
 		height: inherit;
 		width: 1.5em;
-		margin: 0 0.7em 0 0em;
+		margin: 0 0.4em 0 0em;
 	}
 	
-	.iconTextRight{
+	.iconMenuText{
 		float: left;
-		margin: 0 1em 0 0em;
+		margin: 0 0em 0 0em;
 	}
+	
+	[id]{
+		scroll-margin-top: 4em;
+	}
+
 
 /* Form */
 
@@ -2683,7 +2693,8 @@ input, select, textarea {
 		letter-spacing: 0.25em;
 		line-height: 3.45em;
 		overflow: hidden;
-		padding: 0 1.25em 0 1.6em;
+		/* padding: 0 1.25em 0 1.6em; */
+		padding: 0 0em 0 0em;
 		text-align: center;
 		text-decoration: none;
 		text-overflow: ellipsis;

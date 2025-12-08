@@ -125,7 +125,7 @@ class SpecialMenu extends HTMLElement{
 								</g>
 							</svg>
 						</div>
-						<div class="iconTextRight">
+						<div class="iconMenuText">
 							Accueil
 						</div>
 						<span class='icon solid' style='margin: 0 0.65em 0 0'>
@@ -141,7 +141,7 @@ class SpecialMenu extends HTMLElement{
 								</g>
 							</svg>
 						</div>
-						<div class="iconTextRight">
+						<div class="iconMenuText">
 							Instruments & accessoires
 						</div>
 						<span class='icon solid' style='margin: 0 0.65em 0 0'>
@@ -157,7 +157,7 @@ class SpecialMenu extends HTMLElement{
 								</g>
 							</svg>
 						</div>
-						<div class="iconTextRight">
+						<div class="iconMenuText">
 							Atelier de lutherie
 						</div>
 						<span class='icon solid' style='margin: 0 0.67em 0 0'>
@@ -176,7 +176,7 @@ class SpecialMenu extends HTMLElement{
 								</g>
 							</svg>
 						</div>
-						<div class="iconTextRight">
+						<div class="iconMenuText">
 							Librairie musicale
 						</div>
 						<span class='icon solid' style='margin: 0 0.77em 0 0'>
@@ -192,7 +192,7 @@ class SpecialMenu extends HTMLElement{
 								</g>
 							</svg>
 						</div>
-						<div class="iconTextRight">
+						<div class="iconMenuText">
 							Contactez-nous / FAQ
 						</div>
 						<span class='icon solid' style='margin: 0 0.6em 0 0'>
