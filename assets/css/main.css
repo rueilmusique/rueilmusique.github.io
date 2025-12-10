@@ -3691,6 +3691,10 @@ input, select, textarea {
 		.pass-culture-icon:hover{
 			transform: scale(1.1) !important;
 		}
+		
+		.is-hidden{
+			display: none;
+		}
 			
 		.instruDesc > .inner {
 			display: -moz-flex;
