@@ -227,7 +227,7 @@ input, select, textarea {
 	h2.gammeGuitare{
 		font-size: 135%;
 		text-align: center;
-		margin: 0.5em 0 1em 0;
+		margin: 0.5em 0 0.5em 0;
 		width: fit-content;
 		/* outline: black solid 1px; */
 		margin-inline: auto;
@@ -239,6 +239,11 @@ input, select, textarea {
 		text-shadow: -1px -1px 0 #00000080, 1px -1px 0 #00000080, -1px 1px 0px #00000080, 1px 1px 0px #00000080;
 	}
 	
+	.descGuitare{
+			text-align: center;
+			margin: 0 0 0.5em 0;
+		}
+	
 	.gammeDesc{
 		font-weight: bolder;
 		text-align: center;
@@ -248,15 +253,7 @@ input, select, textarea {
 		font-size: 1.1em;
 	}
 
-	h4 {
-		font-size: 0.8em;
-	}
-
-	h5 {
-		font-size: 0.8em;
-	}
-
-	h6 {
+	h4, h5, h6 {
 		font-size: 0.8em;
 	}
 
