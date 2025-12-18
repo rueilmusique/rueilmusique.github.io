@@ -1960,6 +1960,11 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 				object-fit: cover;
 				object-position: 100% 15%;
 			}
+			
+			.imgAspectRatio{
+				aspect-ratio: 2/1;
+				object-fit: cover;
+			}
 
 		}
 
@@ -2871,6 +2876,18 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 	.callRueil:after {
 		content: "Réserver / demander conseil";
 	}
+	
+.upButton{
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	z-index: 500;
+}
+@media screen and (max-width: 736px){
+	.upButton{
+		display: none;
+	}
+}
 
 /* Fiche article */
 	.instruDesc > .inner {
