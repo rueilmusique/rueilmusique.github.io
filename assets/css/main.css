@@ -2112,6 +2112,10 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 		pointer-events: none;
 		opacity: 0.25;
 	}
+	
+	.btnMargins{
+		padding: 0em 1em 0em 1em;
+	}
 
 /* Tiles */
 
@@ -2890,12 +2894,26 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 	right: 2em;
 	z-index: 500;
 	padding: 1em;
-	background: #ffffff5c;
+	background: #f7827d;
 	border-radius: 10px;
+	opacity: 75%;
+	transition: 0.2s;
+	
+	a{
+		border-bottom: none;
+	}
 }
+
+.upButton:hover{
+	opacity: 100%;
+}
+
 @media screen and (max-width: 736px){
 	.upButton{
 		display: none;
+		/* bottom: initial; */
+		/* top: 4em; */
+		/* right: 0.5em; */
 	}
 }
 

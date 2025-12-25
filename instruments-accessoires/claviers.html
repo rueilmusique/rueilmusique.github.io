@@ -146,12 +146,15 @@
 	<p>Nous avons différents types de claviers, à distinguer en fonction de vos besoins :</p>
 	<ul>
 		<li><b>Claviers arrangeurs</b> : octaves réduits, idéal pour s'accompagner à la voix</li>
-		<li><b>Claviers maîtres</b> : adaptés pour les logiciels de musique</li>
-		<li><b>Claviers numériques</b> : touchers marteau pour garder la fidélité du piano</li>
+		<li><b>Claviers maîtres</b> : adaptés pour les logiciels de musique, ils embarquent des fonctions facilitant la musique assistée par ordinateur</li>
+		<li><b>Claviers numériques</b> : avec un toucher marteau pour garder la sensibilité des touches du piano</li>
 	</ul>
-	<hr>
+	<label for="searchbox"></label>
+	<input type="text" oninput="liveSearch()" id="searchbox" placeholder="🔍 Filtrer parmi les modèles">
+	<div class="upButton"><a href="#searchbox">🔍</a></div>
 <div id="articles">
 <h2 class="gammeGuitare">Claviers maîtres 🎹</h2>
+<div class="descGuitare"><b>À partir de 109 €</b></div>
 <div class="instruDesc">
 <h3>Arturia - MiniLab 3</h3>
 <div class="inner">
@@ -186,8 +189,8 @@
 </div>
 <hr>
 </div>
-<br>
 <h2 class="gammeGuitare">Claviers arrangeurs 🎹</h2>
+<div class="descGuitare"><b>À partir de 119 €</b></div>
 <div class="instruDesc">
 <h3>Casio - CT-S100</h3>
 <div class="inner">
@@ -239,8 +242,8 @@
 </div>
 <hr>
 </div>
-<br>
 <h2 class="gammeGuitare">Pianos numériques 🎹</h2>
+<div class="descGuitare"><b>À partir de 399 €</b></div>
 <div class="instruDesc">
 <h3>Casio - CDP-S110</h3>
 <div class="inner">
@@ -275,7 +278,6 @@
 </div>
 <hr>
 </div>
-<br>
 </div>
 </div>
 </div>
@@ -289,3 +291,4 @@
 <script src="../assets/js/util.js"></script>
 <script src="../assets/js/main.js"></script>
 <script src="../assets/js/custom-footer.js"></script>
+<script src="../assets/js/search.js"></script>

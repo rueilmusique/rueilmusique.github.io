@@ -112,10 +112,13 @@
 <div id="main">
 <div class="inner" align="justify">
 <h1><a href="index.html">Instruments &amp; accessoires</a> - Casques & micros</h1>
-	<p>Découvrez notre collection de casques et de micros !</p>
-	<hr>
+<p>Découvrez notre collection de casques et de micros en magasin !</p>
+<label for="searchbox"></label>
+<input type="text" oninput="liveSearch()" id="searchbox" placeholder="🔍 Filtrer parmi les modèles">
+<div class="upButton"><a href="#searchbox">🔍</a></div>
 <div id="articles">
 <h2 class="gammeGuitare">Casques 🎧</h2>
+<div class="descGuitare"><b>À partir de 169 €</b></div>
 <div class="instruDesc">
 <h3>Beyerdynamic - DT 770 Pro</h3>
 <div class="inner">
@@ -152,6 +155,7 @@
 </div>
 <br>
 <h2 class="gammeGuitare">Micros 🎤</h2>
+<div class="descGuitare"><b>À partir de 35 €</b></div>
 <div class="instruDesc">
 <h3>Stagg - SDM50</h3>
 <div class="inner">
@@ -217,3 +221,4 @@
 <script src="../assets/js/util.js"></script>
 <script src="../assets/js/main.js"></script>
 <script src="../assets/js/custom-footer.js"></script>
+<script src="../assets/js/search.js"></script>

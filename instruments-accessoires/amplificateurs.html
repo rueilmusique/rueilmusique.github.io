@@ -204,12 +204,13 @@
 <h1><a href="index.html">Instruments &amp; accessoires</a> - Amplificateurs</h1>
 	<p>Découvrez notre collection d'amplificateurs !</p>
 	<b>Comment savoir quel modèle choisir ?</b>
-	<p>Nous avons différents types d'amplis, à distinguer en fonction de votre instrument !</p>
+	<p>Nous avons différents types d'amplis, à distinguer en fonction de votre instrument. En effet, il est important d'utiliser le bon type d'ampli afin de retrouver un son propre et bien défini !</p>
 	<ul>
-		<li><b>Amplis électriques</b> : pour guitare électrique</li>
+		<li><b>Amplis électriques</b> : pour tout type de guitare électrique</li>
 		<li><b>Amplis acoustiques</b> : pour guitare acoustique, guitare classique et voix</li>
-		<li><b>Amplis basse</b> : pour basse électrique</li>
+		<li><b>Amplis basse</b> : pour tout type de basse électrique</li>
 	</ul>
+	<p>Retrouvez l'ensemble de nos amplificateurs dans notre magasin, et n'hésitez pas à tester avec votre instrument pour mieux savoir ce que vous achetez.</p>
 	<div class="row gtr-uniform" align="center" style="align-items: center;">
 		<div class="col-20">
 			<span class="image fit">
@@ -237,9 +238,12 @@
 			</span>
 		</div>
 	</div>
-	<hr>
+	<label for="searchbox"></label>
+	<input type="text" oninput="liveSearch()" id="searchbox" placeholder="🔍 Filtrer parmi les modèles">
+	<div class="upButton"><a href="#searchbox">🔍</a></div>
 <div id="articles">
 <h2 class="gammeGuitare">Ampli électrique 🎛️</h2>
+<div class="descGuitare"><b>À partir de 119 €</b></div>
 <div class="instruDesc">
 <h3>Vox - Pathfinder 10</h3>
 <div class="inner">
@@ -344,6 +348,7 @@
 </div>
 <br>
 <h2 class="gammeGuitare">Ampli acoustique 🎛️</h2>
+<div class="descGuitare"><b>À partir de 219 €</b></div>
 <div class="instruDesc">
 <h3>Acus - AC114 One forStrings 4Ferdi Wood</h3>
 <div class="inner">
@@ -397,6 +402,7 @@
 </div>
 <br>
 <h2 class="gammeGuitare">Ampli basse 🎛️</h2>
+<div class="descGuitare"><b>À partir de 199 €</b></div>
 <div class="instruDesc">
 <h3>Ampeg - Rocket Bass 108</h3>
 <div class="inner">
@@ -445,3 +451,4 @@
 <script src="../assets/js/util.js"></script>
 <script src="../assets/js/main.js"></script>
 <script src="../assets/js/custom-footer.js"></script>
+<script src="../assets/js/search.js"></script>
