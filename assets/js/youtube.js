@@ -58,7 +58,7 @@ function initYouTube(){
 		console.error('Erreur lors de la récupération du flux RSS via proxy :', err);
 		// fallback : set a safe static thumbnail (og-image) so something appears
 		if(thumbImg && !thumbImg.src){
-			thumbImg.src = 'https://rueilmusique.github.io/images/og-image.jpg';
+			thumbImg.src = 'https://rueil-musique.fr/images/og-image.jpg';
 		}
 	});
 }
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 	} else if(consent === 'denied'){
 		// put a sensible fallback thumbnail (OG image) so the area isn't empty
 		if(thumbImg && !thumbImg.src){
-			thumbImg.src = 'https://rueilmusique.github.io/images/og-image.jpg';
+			thumbImg.src = 'https://rueil-musique.fr/images/og-image.jpg';
 		}
 		// do not show banner unless user clicks play
 	} else {
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 		showBanner();
 		// set a neutral placeholder thumbnail (optional)
 		if(thumbImg && !thumbImg.src){
-			thumbImg.src = 'https://rueilmusique.github.io/images/og-image.jpg';
+			thumbImg.src = 'https://rueil-musique.fr/images/og-image.jpg';
 		}
 	}
 });
