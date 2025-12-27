@@ -4,7 +4,7 @@ class SpecialFooter extends HTMLElement{
 		<footer id='footer'>
 			<div class='inner' id='contact'>
 			<section>
-				<h2><a href='https://rueil-musique.fr/contact.html'>Contactez-nous</a></h2>
+				<h2><a href='https://rueil-musique.fr/contact'>Contactez-nous</a></h2>
 				<ul class='actions'>
 					<li>
 						<a href='tel:+33147494849' class='button primary small icon solid'>
@@ -21,7 +21,7 @@ class SpecialFooter extends HTMLElement{
 						</a>
 					</li>
 					<li>
-						<a href='https://rueil-musique.fr/contact.html' class='button primary small icon solid'>
+						<a href='https://rueil-musique.fr/contact' class='button primary small icon solid'>
 							<div class="iconTextLeft">
 								<svg class="" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
 									<g id="SVGRepo_iconCarrier">
@@ -102,7 +102,7 @@ class SpecialFooter extends HTMLElement{
 			<ul class='copyright'>
 				<li>&copy; Rueil Musique. Tous droits réservés</li>
 				<li>Design: <a href='https://html5up.net/' target='_blank' rel='noopener noreferrer'>HTML5 UP</a> (repris par Rami Zian)</li>
-				<li><a href='https://rueil-musique.fr/mentionslegales.html'>Mentions légales</a></li>
+				<li><a href='https://rueil-musique.fr/mentionslegales'>Mentions légales</a></li>
 			</ul>
 			</div>
 		</footer>`
@@ -116,7 +116,7 @@ class SpecialMenu extends HTMLElement{
 			<h2>Menu</h2>
 			<ul>
 				<li>
-					<a href='https://rueil-musique.fr/index.html'>
+					<a href='https://rueil-musique.fr/'>
 						<div class="iconMenu">
 							<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
 								<g>
@@ -134,7 +134,7 @@ class SpecialMenu extends HTMLElement{
 					</a>
 				</li>
 				<li>
-					<a href='https://rueil-musique.fr/instruments-accessoires/index.html'>
+					<a href='https://rueil-musique.fr/instruments-accessoires/'>
 						<div class="iconMenu">
 							<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
 								<g id="Layer 1">
@@ -150,7 +150,7 @@ class SpecialMenu extends HTMLElement{
 					</a>
 				</li>
 				<li>
-					<a href='https://rueil-musique.fr/atelier-lutherie.html'>
+					<a href='https://rueil-musique.fr/atelier-lutherie'>
 						<div class="iconMenu">
 							<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
 								<g id="Layer 1">
@@ -166,7 +166,7 @@ class SpecialMenu extends HTMLElement{
 					</a>
 				</li>
 				<li>
-					<a href='https://rueil-musique.fr/librairie-musicale.html'>
+					<a href='https://rueil-musique.fr/librairie-musicale'>
 						<div class="iconMenu">
 							<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
 								<style>
@@ -185,7 +185,7 @@ class SpecialMenu extends HTMLElement{
 					</a>
 				</li>
 				<li>
-					<a href='https://rueil-musique.fr/contact.html'>
+					<a href='https://rueil-musique.fr/contact'>
 						<div class="iconMenu">
 							<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
 								<g id="layer1">

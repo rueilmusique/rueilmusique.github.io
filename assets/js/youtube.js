@@ -17,8 +17,16 @@ function showBanner(){ banner.style.display = 'flex'; }
 function hideBanner(){ banner.style.display = 'none'; }
 
 function setConsent(value){
-	try{ localStorage.setItem(CONSENT_KEY, value); }catch(e){ /* ignore */ }
-	if(value === 'granted'){ initYouTube(); }
+	try{
+		localStorage.setItem(CONSENT_KEY, value);
+		localStorage.setItem(CONSENT_ANALYTICS_KEY, value);
+	}catch(e){ /* ignore */}
+	if(value === 'granted'){
+		initYouTube();
+		if(typeof window.enableAnalytics === 'function'){
+			window.enableAnalytics();
+		}
+	}
 	hideBanner();
 }
 
@@ -65,7 +73,7 @@ function initYouTube(){
 
 // On play button click: if consent denied -> show banner again; if granted -> load iframe
 playButton.addEventListener('click', (e) => {
-	const consent = localStorage.getItem(CONSENT_KEY);
+	const consent = localStorage.getItem(CONSENT_ANALYTICS_KEY) || localStorage.getItem(CONSENT_KEY);
 	if(consent === 'granted'){
 		// load iframe src and hide the play button visually
 		iframe.src = iframe.dataset.src || iframe.src;
