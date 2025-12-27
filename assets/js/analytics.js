@@ -5,7 +5,7 @@
    ============================================================ */
 
 (function () {
-  const GA_ID = 'G-XXXXXXXXXX'; // <-- REMPLACER PAR TON ID
+  const GA_ID = 'G-453KG168EG'; // <-- REMPLACER PAR TON ID
   const CONSENT_KEY = 'consent_analytics';
 
   // Sécurité : éviter toute erreur si GA est déjà chargé
