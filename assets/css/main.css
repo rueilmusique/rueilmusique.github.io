@@ -2762,7 +2762,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 		background: #1a73e8;
 		color: white;
 		border: none;
-		/* padding: 8px 12px; */
+		padding: 0em 1em 0em 1em;
 		border-radius: 6px;
 		cursor: pointer;
 		font-weight:normal;
