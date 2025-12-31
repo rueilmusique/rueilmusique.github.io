@@ -134,7 +134,7 @@ class SpecialMenu extends HTMLElement{
 					</a>
 				</li>
 				<li>
-					<a href='https://rueil-musique.fr/instruments-accessoires/'>
+					<a href='https://rueil-musique.fr/instruments-accessoires'>
 						<div class="iconMenu">
 							<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
 								<g id="Layer 1">
