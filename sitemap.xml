@@ -1,34 +1,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
-		<loc>https://rueil-musique.fr/</loc>
+		<loc>https://rueil-musique.fr</loc>
 		<priority>1.00</priority>
 	</url>
 	<url>
-		<loc>https://rueil-musique.fr/index.html</loc>
+		<loc>https://rueil-musique.fr/atelier-lutherie</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueil-musique.fr/atelier-lutherie.html</loc>
+		<loc>https://rueil-musique.fr/contact</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueil-musique.fr/contact.html</loc>
+		<loc>https://rueil-musique.fr/librairie-musicale</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueil-musique.fr/librairie-musicale.html</loc>
+		<loc>https://rueil-musique.fr/instruments-accessoires</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueil-musique.fr/instruments-accessoires/index.html</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>https://rueil-musique.fr/instruments-accessoires/amplificateurs.html</loc>
-		<priority>0.80</priority>
-	</url>
-	<url>
-		<loc>https://rueil-musique.fr/instruments-accessoires/autres.html</loc>
+		<loc>https://rueil-musique.fr/instruments-accessoires/amplificateurs</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
@@ -36,31 +28,31 @@
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueil-musique.fr/instruments-accessoires/casques-micros.html</loc>
+		<loc>https://rueil-musique.fr/instruments-accessoires/casques-micros</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueil-musique.fr/instruments-accessoires/claviers.html</loc>
+		<loc>https://rueil-musique.fr/instruments-accessoires/claviers</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueil-musique.fr/instruments-accessoires/guitares-electriques.html</loc>
+		<loc>https://rueil-musique.fr/instruments-accessoires/guitares-electriques</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueil-musique.fr/instruments-accessoires/guitares-acoustiques.html</loc>
+		<loc>https://rueil-musique.fr/instruments-accessoires/guitares-acoustiques</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueil-musique.fr/instruments-accessoires/guitares-classiques.html</loc>
+		<loc>https://rueil-musique.fr/instruments-accessoires/guitares-classiques</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueil-musique.fr/instruments-accessoires/pedales-effets.html</loc>
+		<loc>https://rueil-musique.fr/instruments-accessoires/pedales-effets</loc>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://rueil-musique.fr/instruments-accessoires/ukuleles.html</loc>
+		<loc>https://rueil-musique.fr/instruments-accessoires/ukuleles</loc>
 		<priority>0.80</priority>
 	</url>
 </urlset>
