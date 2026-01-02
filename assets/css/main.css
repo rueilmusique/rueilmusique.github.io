@@ -2910,10 +2910,10 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 
 @media screen and (max-width: 736px){
 	.upButton{
-		display: none;
-		/* bottom: initial; */
+		/* display: none; */
+		bottom: 1em;
 		/* top: 4em; */
-		/* right: 0.5em; */
+		right: 0.5em;
 	}
 }
 
