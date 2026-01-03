@@ -2818,6 +2818,9 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 	.dot.black{
 		background: #000000;
 	}
+	.dot.bourbon-burst{
+		background: linear-gradient(45deg, #160800 0%, #6A3711 100%);
+	}
 	.dot.burgundy-pink{
 		background: #f195a9;
 	}
