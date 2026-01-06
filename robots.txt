@@ -2,4 +2,6 @@ User-agent: *
 Disallow: /images/librairie-musicale/*
 Disallow: /images/logos/*
 Disallow: /cgi-bin/
+Disallow: /images/pass-culture.png
+
 Sitemap: http://rueil-musique.fr/sitemap.xml
