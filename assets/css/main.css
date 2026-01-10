@@ -200,13 +200,18 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 	}
 	
 	.descGuitare{
-			text-align: center;
-			margin: 0 0 2em 0;
+		text-align: center;
+		margin: 0 0 2em 0;
 	}
 	
 	.gammeDesc{
 		font-weight: bolder;
 		text-align: center;
+	}
+	
+	.descRestauration{
+		font-style: italic;
+		font-weight: inherit;
 	}
 
 	h3 {
