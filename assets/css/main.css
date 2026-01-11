@@ -4,52 +4,59 @@
 	font-weight: 300;
 	src: url("assets/webfonts/source-sans-pro.woff2") format("woff2");
 } */
+/* @font-face { */
+	/* font-family: 'Source Sans 3'; */
+	/* src: url('/assets/fonts/SourceSans3-ExtraLight.woff2') format('woff2'); */
+	/* font-weight: 200; */
+	/* font-style: normal; */
+	/* font-display: swap; */
+/* } */
+/* @font-face { */
+	/* font-family: 'Source Sans 3'; */
+	/* src: url('/assets/fonts/SourceSans3-ExtraLight.woff2') format('woff2'); */
+	/* font-weight: 200; */
+	/* font-style: normal; */
+	/* font-display: swap; */
+/* } */
+/* @font-face { */
+	/* font-family: 'Source Sans 3'; */
+	/* src: url('/assets/fonts/SourceSans3-Light.woff2') format('woff2'); */
+	/* font-weight: 300; */
+	/* font-style: normal; */
+	/* font-display: swap; */
+/* } */
+/* @font-face { */
+	/* font-family: 'Source Sans 3'; */
+	/* src: url('/assets/fonts/SourceSans3-Regular.woff2') format('woff2'); */
+	/* font-weight: 400; */
+	/* font-style: normal; */
+	/* font-display: swap; */
+/* } */
+/* @font-face { */
+	/* font-family: 'Source Sans 3'; */
+	/* src: url('/assets/fonts/SourceSans3-Medium.woff2') format('woff2'); */
+	/* font-weight: 500; */
+	/* font-style: normal; */
+	/* font-display: swap; */
+/* } */
+/* @font-face { */
+	/* font-family: 'Source Sans 3'; */
+	/* src: url('/assets/fonts/SourceSans3-SemiBold.woff2') format('woff2'); */
+	/* font-weight: 600; */
+	/* font-style: normal; */
+	/* font-display: swap; */
+/* } */
+/* @font-face { */
+	/* font-family: 'Source Sans 3'; */
+	/* src: url('/assets/fonts/SourceSans3-Bold.woff2') format('woff2'); */
+	/* font-weight: 700; */
+	/* font-style: normal; */
+	/* font-display: swap; */
+/* } */
 @font-face {
 	font-family: 'Source Sans 3';
-	src: url('/assets/fonts/SourceSans3-ExtraLight.woff2') format('woff2');
-	font-weight: 200;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Source Sans 3';
-	src: url('/assets/fonts/SourceSans3-ExtraLight.woff2') format('woff2');
-	font-weight: 200;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Source Sans 3';
-	src: url('/assets/fonts/SourceSans3-Light.woff2') format('woff2');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Source Sans 3';
-	src: url('/assets/fonts/SourceSans3-Regular.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Source Sans 3';
-	src: url('/assets/fonts/SourceSans3-Medium.woff2') format('woff2');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Source Sans 3';
-	src: url('/assets/fonts/SourceSans3-SemiBold.woff2') format('woff2');
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Source Sans 3';
-	src: url('/assets/fonts/SourceSans3-Bold.woff2') format('woff2');
-	font-weight: 700;
+	src: url('/assets/fonts/SourceSans3-VariableFont_wght.woff2') format('woff2');
+	font-weight: 200 900;
 	font-style: normal;
 	font-display: swap;
 }
