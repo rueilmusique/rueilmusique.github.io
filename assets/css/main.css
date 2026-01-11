@@ -2511,7 +2511,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 	bottom: 2em;
 	right: 2em;
 	z-index: 500;
-	padding: 1em;
+	padding: 1em 0em 1em 0em;
 	background: #f7827d;
 	border-radius: 10px;
 	opacity: 75%;
@@ -2519,6 +2519,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 	
 	a{
 		border-bottom: none;
+		padding: 1.3em 1em 1.3em 1em;
 	}
 }
 
