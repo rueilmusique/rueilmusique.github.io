@@ -2466,6 +2466,9 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 	.dot.olympic-white{
 		background: #f2e3c4;
 	}
+	.dot.polar-white{
+		background: #FFF7F7;
+	}
 	.dot.sonic-blue{
 		background: #9bcadc;
 	}
