@@ -35,7 +35,17 @@ class SpecialFooter extends HTMLElement{
 						</a>
 					</li>
 				</ul>
-				<p>Besoin d'un renseignement ou de nos conseils d'experts ? Contactez-nous, nous sommes ouvert du mardi au samedi, de 10h à 20h (fermeture à 19h pendant les vacances scolaires)</p>
+				<p>Besoin d'un renseignement ou de nos conseils d'experts ? Contactez-nous.</p>
+				<ul>
+					<li>Lundi : Fermé</li>
+					<li>Mardi : 10h-20h</li>
+					<li>Mercredi : 10h-20h</li>
+					<li>Jeudi : 10h-20h</li>
+					<li>Vendredi : 10h-20h</li>
+					<li>Samedi : 10h-20h</li>
+					<li>Dimanche : Fermé</li>
+				</ul>
+				<p>Fermeture à 19h durant les vacances scolaires (zone C)</p>
 			</section>
 			<section align='justify'>
 				<h2>Nos réseaux</h2>
