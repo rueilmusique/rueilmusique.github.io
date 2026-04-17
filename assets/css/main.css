@@ -2442,8 +2442,14 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 	.dot.butterscotch{
 		background: #eabc5e;
 	}
+	.dot.cyber-yellow{
+		background: #f3cc00;
+	}
 	.dot.coral-red{
 		background: #d02626;
+	}
+	.dot.daphne-bleu{
+		background: #b4cdd1;
 	}
 	.dot.denim-blue{
 		background: #6b797b;
