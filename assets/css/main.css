@@ -198,8 +198,6 @@ header a{
 	}
 }
 
-/* NEW */
-
 .navMobile{
 	margin: 0;
 	display: none;
@@ -232,6 +230,7 @@ header a{
 	width: 3em;
 	height: 3em;
 	margin: 0;
+	cursor: pointer;
 }
 
 /* Menu caché par défaut */
@@ -278,8 +277,6 @@ header a{
 	height: 2em;
 	fill: #dbd7d4;
 }
-
-/* END */
 
 nav{
 	margin: 0;
@@ -792,7 +789,7 @@ tr{
 	align-items: stretch;
 }
 
-.texteImage img{
+.texteImage img, .imageTexte img{
 	height: 100%;
 	object-fit: cover;
 }
@@ -808,12 +805,8 @@ tr{
 .imageTexte{
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	grid-gap: 1em;
-	section{
-		a{
-			background: red;
-		}
-	}
+	grid-gap: 2em;
+	align-items: stretch;
 }
 
 .titreSousTitre{
@@ -1017,6 +1010,10 @@ tr{
 	.texteImage{
 		grid-template-columns: 1fr;
 		grid-gap: 1em;
+	}
+	
+	.imageTexte section:nth-child(2){
+		order: -1;
 	}
 	
 	.hidemobile{

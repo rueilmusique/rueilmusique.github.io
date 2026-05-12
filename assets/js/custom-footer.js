@@ -76,7 +76,7 @@ class CustomHeader extends HTMLElement{
 			</div>
 			<div class="navMobile">
 				<div id="menuToggle"> 
-					<input name="toggle" type="checkbox" />
+					<input id="menu-checkbox" name="toggle" type="checkbox" />
 					<label for="menu-checkbox" class="burger">
 						<svg viewBox="0 0 12 12">
 							<rect x="0.5" y="2.5" width="11" height="1"/>
