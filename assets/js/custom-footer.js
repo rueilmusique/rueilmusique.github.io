@@ -71,7 +71,7 @@ class CustomHeader extends HTMLElement{
 				<a href="https://rueil-musique.fr">Accueil</a>
 				<a href="https://rueil-musique.fr/instruments-accessoires/">Instruments & accessoires</a>
 				<a href="https://rueil-musique.fr/atelier-lutherie">Atelier de lutherie</a>
-				<a href="https://rueil-musique.fr/atelier-lutherie">Librairie musicale</a>
+				<a href="https://rueil-musique.fr/librairie-musicale">Librairie musicale</a>
 				<a href="https://rueil-musique.fr/contact">Contact</a>
 			</div>
 			<div class="navMobile">
@@ -88,7 +88,7 @@ class CustomHeader extends HTMLElement{
 						<li><a href="https://rueil-musique.fr">Accueil</a></li>
 						<li><a href="https://rueil-musique.fr/instruments-accessoires/">Instruments & accessoires</a></li>
 						<li><a href="https://rueil-musique.fr/atelier-lutherie">Atelier de lutherie</a></li>
-						<li><a href="https://rueil-musique.fr/atelier-lutherie">Librairie musicale</a></li>
+						<li><a href="https://rueil-musique.fr/librairie-musicale">Librairie musicale</a></li>
 						<li><a href="https://rueil-musique.fr/contact">Contact</a></li>
 					</ul>
 				</div>
