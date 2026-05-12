@@ -4,18 +4,16 @@
 <head>
 	<title>Amplificateurs - Rueil Musique</title>
 	<link rel="icon" type="image/x-icon" href="../images/logo.svg">
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Découvrez notre collection d'amplificateurs pour guitares électriques, guitares acoustiques & voix, et basses électriques. Amplis à transistors, à modélisation, ou à lampe, vous y retrouverez plusieurs types d'amplis de gabarits différents, à choisir selon vos besoins et vos envies !" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+	<meta name="description" content="Découvrez notre collection d'amplificateurs pour guitares électriques, guitares acoustiques & voix, et basses électriques. Amplis à transistors, à modélisation, ou à lampe, vous y retrouverez plusieurs types d'amplis de gabarits différents, à choisir selon vos besoins et vos envies !">
 	
-	<!-- Facebook Meta Tags -->
 	<meta property="og:url" content="https://rueil-musique.fr/instruments-accessoires/amplificateurs">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Amplificateurs - Rueil Musique">
 	<meta property="og:description" content="Découvrez notre collection d'amplificateurs pour guitares électriques, guitares acoustiques & voix, et basses électriques. Amplis à transistors, à modélisation, ou à lampe, vous y retrouverez plusieurs types d'amplis de gabarits différents, à choisir selon vos besoins et vos envies !">
 	<meta property="og:image" content="https://rueil-musique.fr/images/meta-images/og-image_amplificateurs.jpg">
 
-	<!-- Twitter Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta property="twitter:domain" content="rueil-musique.fr">
 	<meta property="twitter:url" content="https://rueil-musique.fr/instruments-accessoires/amplificateurs">
@@ -23,11 +21,11 @@
 	<meta name="twitter:description" content="Découvrez notre collection d'amplificateurs pour guitares électriques, guitares acoustiques & voix, et basses électriques. Amplis à transistors, à modélisation, ou à lampe, vous y retrouverez plusieurs types d'amplis de gabarits différents, à choisir selon vos besoins et vos envies !">
 	<meta name="twitter:image" content="">
 	
-	<link rel="stylesheet" href="../assets/css/main.css" />
-	<link rel="canonical" href="https://rueil-musique.fr/instruments-accessoires/amplificateurs" />
-	<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	<link rel="stylesheet" href="../assets/css/main.css?v=2026-05-12">
+	<script src="../assets/js/analytics.js"></script>
+	
 	<script type="application/ld+json">
-{
+	{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -48,7 +46,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Amplificateurs",
+          "name": "Basses électriques",
           "item": "https://rueil-musique.fr/instruments-accessoires/amplificateurs"
         }
       ]
@@ -141,309 +139,409 @@
     }
   ]
 }
-</script>
-	<script src="../assets/js/analytics.js"></script>
+	</script>
+
 </head>
 <body>
+	<custom-header></custom-header>
+	<div class="main">
+		<h1>Amplificateurs</h1>
+		<p>Découvrez notre collection d'amplificateurs. N'oubliez pas que le mieux est de venir en magasin pour essayer directement 😉
+		<br>
+		<a href="https://rueil-musique.fr/instruments-accessoires/">Retour aux instruments</a>
+		</p>
+		<div>
+				Trier :
+				<select id="sort">
+					<option value="default">Par défaut</option>
+					<option value="asc">Prix croissant</option>
+					<option value="desc">Prix décroissant</option>
+				</select>
+				<select id="filter-gamme">
+					<option value="all">Toutes les gammes</option>
+					<option value="🪴">🪴 Entrée de gamme</option>
+					<option value="✨">✨ Milieu de gamme </option>
+					<option value="💖">💖 Haut de gamme</option>
+					<option value="💎">💎 Légendaire</option>
+				</select>
+				<input id="searchbox" type="search" placeholder="Filtrer (marque/nom/catégorie)">
+				<a class="searchbutton" href="#searchbox">🔍</a>
+			</div>
+			
+			<div id="overlay" class="overlay hidden">
+				<div class="overlay-content">
+					<span id="close">&times;</span>
+					<section>
+						<img id="overlay-img">
+					</section>
+					<section>
+						<p id="overlay-text"></p>
+					</section>
+				</div>
+			</div>
+		<div class="produits" id="produits">
+			
+			<div id="pathfinder10" class="produit" data-prix="119" data-gamme="🪴">
+				<div class="instock">
+					<img src="../images/amplis/pathfinder10.jpg" class="imageCarte" alt="Vox Pathfinder 10">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Vox - Pathfinder 10
+				</div>
+				<div>Ampli à transistor</div>
+				<div class="prix">
+					🪴
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Vox - Pathfinder 10
+					</h2>
+					<p class="justifier-texte">
+						Pour ceux qui cherchent un ampli simple et peu encombrant, le PathFinder 10 est notre premier modèle d'entrée de gamme qui saura satisfaire ceux qui veulent une expérience Plug and Play.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Puissance : </strong>10 Watts / haut-parleur 6,5"</li><li><strong>Input : </strong>1 entrée Instrument</li><li><strong>Contrôles : </strong>Gain, Volume, Treble, Bass</li><li><strong>Sélecteur : </strong>Clean ou Overdrive</li><li><strong>Prise auxiliaire : </strong>1 entrée jack 3.65 mm</li><li><strong>Output : </strong>1 sortie casque/line jack 6.35 mm</li><li><strong>Alimentation : </strong>Secteur</li>
+					</ul>
+				</div>
+			</div>
 
-<div id="wrapper">
-	<header id="header" role="banner">
-		<div class="inner">
-			<a href="https://rueil-musique.fr" class="logo">
-				<span class="symbol"><img src="../images/logo.svg" alt=""></span><span class="title">Rueil Musique</span>
-			</a>
-			<nav role="navigation">
-				<ul>
-					<li>
-						<a href="#menu">Menu</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<special-menu id="menu"></special-menu>
-<div id="main" role="main">
-<div class="inner" align="justify">
-<h1><a href="https://rueil-musique.fr/instruments-accessoires">Instruments &amp; accessoires</a> - Amplificateurs</h1>
-	<p>Découvrez notre collection d'amplificateurs !</p>
-	<b>Comment savoir quel modèle choisir ?</b>
-	<p>Nous avons différents types d'amplis, à distinguer en fonction de votre instrument. En effet, il est important d'utiliser le bon type d'ampli afin de retrouver un son propre et bien défini !</p>
-	<ul>
-		<li><b>Amplis électriques</b> : pour tout type de guitare électrique</li>
-		<li><b>Amplis acoustiques</b> : pour guitare acoustique, guitare classique et voix</li>
-		<li><b>Amplis basse</b> : pour tout type de basse électrique</li>
-	</ul>
-	<p>Retrouvez l'ensemble de nos amplificateurs dans notre magasin, et n'hésitez pas à tester avec votre instrument pour mieux savoir ce que vous achetez.</p>
-	<div class="row gtr-uniform" align="center" style="align-items: center;">
-		<div class="col-20">
-			<span class="image fit">
-				<img src="../images/logos/fender.png">
-			</span>
-		</div>
-		<div class="col-20">
-			<span class="image fit">
-				<img src="../images/logos/voxamplification.png">
-			</span>
-		</div>
-		<div class="col-20">
-			<span class="image fit">
-				<img src="../images/logos/nuxaudio.png">
-			</span>
-		</div>
-		<div class="col-20">
-			<span class="image fit">
-				<img src="../images/logos/ampeg.png">
-			</span>
-		</div>
-		<div class="col-20">
-			<span class="image fit">
-				<img src="../images/logos/acus.png">
-			</span>
+			<div id="frontman20g" class="produit" data-prix="129" data-gamme="🪴">
+				<div class="instock">
+					<img src="../images/amplis/frontman20g.jpg" class="imageCarte" alt="Fender Frontman 20G">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Fender - Frontman 20G
+				</div>
+				<div>Ampli à transistor</div>
+				<div class="prix">
+					🪴
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Fender - Frontman 20G
+					</h2>
+					<p class="justifier-texte">
+						L'ampli Fender à petit prix, le Frontman 20G est reconnu pour sa simplicité d'utilisation et son format compact : on branche, on active l'overdrive et c'est parti !
+					</p>
+					
+					
+					<ul>
+						<li><strong>Puissance : </strong>20 Watts / haut-parleur 8"</li><li><strong>Input : </strong>1 entrée Instrument</li><li><strong>Contrôles : </strong>Volume de sortie Clean, gain d'entrée, volume de sortie overdrive, treble, middle et bass</li><li><strong>Prise auxiliaire : </strong>1 entrée jack 3.65 mm</li><li><strong>Output : </strong>1 sortie jack 3.65 mm</li><li><strong>Alimentation : </strong>Secteur</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="mighty8bt" class="produit" data-prix="139" data-gamme="🪴">
+				<div class="instock">
+					<img src="../images/amplis/mighty8bt.jpg" class="imageCarte" alt="Nux Mighty 8BT">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Nux - Mighty 8BT
+				</div>
+				<div>Ampli à transistor</div>
+				<div class="prix">
+					🪴
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Nux - Mighty 8BT
+					</h2>
+					<p class="justifier-texte">
+						Un mini format adapté pour ceux qui se déplacent souvent ! Le Mighty 8BT est reconnu pour son extra-portabilité et sa personnalisation : 2 entrées (instrument + MIC), delay, reverb, drum loop intégrée, prise auxiliaire et bluetooth (pour utiliser l'appli MightyAmp APP). Bien qu'il s'agisse d'haut-parleurs 6,5", le Mighty 8BT reste étonnemment puissant, surtout lorsque la distorsion est enclenchée. Enfin, il est possible de jouer sur batterie avec une autonomie de 8 heures.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Puissance : </strong>10 Watts / haut-parleur 6,5"</li><li><strong>Input : </strong>1 entrée Instrument + 1 entrée MIC</li><li><strong>Contrôles : </strong>Gain instrument, gain MIC, envoi réverbération, mix réverbération, mix delay, drum volume, niveau de sortie, tone</li><li><strong>Prise auxiliaire : </strong>1 entrée jack 3.65 mm</li><li><strong>Output : </strong>1 sortie jack 3.65 mm + 1 sortie jack 6.35 mm</li><li><strong>Presets : </strong>Clean, Overdrive et Distortion</li><li><strong>Alimentation : </strong>Secteur ou 8 piles AA</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="championii25" class="produit" data-prix="169" data-gamme="🪴">
+				<div class="instock">
+					<img src="../images/amplis/championii25.jpg" class="imageCarte" alt="Fender Champion II 25">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Fender - Champion II 25
+				</div>
+				<div>Ampli à transistor</div>
+				<div class="prix">
+					🪴
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Fender - Champion II 25
+					</h2>
+					<p class="justifier-texte">
+						Le Champion II 25 est un ampli à transistor qui ouvre le champ des possibilités sur le son : différents modèles d'amplis prévus pour chaque style, effets intégrés, un petit ampli avec de grandes possibilités ! Parfait pour s'amuser simplement chez soi : vous branchez votre guitare électrique, réglez l'ampli et le tour est joué !
+					</p>
+					
+					
+					<ul>
+						<li><strong>Puissance : </strong>25 Watts / haut-parleur 8"</li><li><strong>Input : </strong>1 entrée Instrument</li><li><strong>Contrôles : </strong>Gain, Volume, Treble, Bass, Voice (Classic, Modern, British, Hi-Gain), Modify, FX Select (Mod, Delay, Reverb, Multi)
+</li><li><strong>Sélecteur : </strong>Tap Delay</li><li><strong>Prise auxiliaire : </strong>1 entrée jack 3.65 mm</li><li><strong>Output : </strong>1 sortie casque jack 3.65 mm</li><li><strong>Alimentation : </strong>Secteur</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="lt25" class="produit" data-prix="199" data-gamme="✨">
+				<div class="instock">
+					<img src="../images/amplis/lt25.jpg" class="imageCarte" alt="Fender Mustang LT25">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Fender - Mustang LT25
+				</div>
+				<div>Ampli à modélisation</div>
+				<div class="prix">
+					✨
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Fender - Mustang LT25
+					</h2>
+					<p class="justifier-texte">
+						Le frère du Mustang LT40S, le Mustang LT25 comporte les mêmes caractéristiques à l'exception de la puissance sonore et de sa taille. Le Mustang LT25 est adapté pour ceux qui veulent jouer juste pour eux, de manière plus intime.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Puissance : </strong>25 Watts / haut-parleur 8"</li><li><strong>Input : </strong>1 entrée Instrument jack 6.35 mm</li><li><strong>Contrôles : </strong>Gain d'entrée, volume de sortie, treble, bass, master, molette de sélection de presets, boutons Retour/Sauvegarder/Menu/Tempo/Tuner</li><li><strong>Prise auxiliaire : </strong>1 entrée jack 3.65 mm</li><li><strong>Output : </strong>1 sortie jack 3.65 mm</li><li><strong>Presets : </strong>30 inclus + 30 vierges, possibilité de personnaliser et d'enregistrer ses propres configurations</li><li><strong>Alimentation : </strong>Secteur</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="lt40s" class="produit" data-prix="249" data-gamme="✨">
+				<div class="instock">
+					<img src="../images/amplis/lt40s.jpg" class="imageCarte" alt="Fender Mustang LT40S">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Fender - Mustang LT40S
+				</div>
+				<div>Ampli à modélisation</div>
+				<div class="prix">
+					✨
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Fender - Mustang LT40S
+					</h2>
+					<p class="justifier-texte">
+						Le Mustang LT40S est un ampli à modélisation qui se démarque par sa personnalisation complète : 30 presets déjà confectionnés, 20 modèles d'amplis différents et 4 catégories d'effets. Le plus ? Son combo petit format et puissance sonore, le Mustang LT40S se transporte sans encombres.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Puissance : </strong>40 Watts / haut-parleurs 2x4" Stéréo</li><li><strong>Input : </strong>1 entrée Instrument jack 6.35 mm</li><li><strong>Contrôles : </strong>Gain d'entrée, volume de sortie, treble, bass, master, molette de sélection de presets, boutons Retour/Sauvegarder/Menu/Tempo/Tuner</li><li><strong>Prise auxiliaire : </strong>1 entrée jack 3.65 mm</li><li><strong>Output : </strong>1 sortie jack 3.65 mm</li><li><strong>Presets : </strong>30 inclus + 30 vierges, possibilité de personnaliser et d'enregistrer ses propres configurations</li><li><strong>Alimentation : </strong>Secteur</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="mighty40bt" class="produit" data-prix="249" data-gamme="✨">
+				<div class="sold">
+					<img src="../images/amplis/mighty40bt.jpg" class="imageCarte" alt="Nux Mighty 40BT MKII">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Nux - Mighty 40BT MKII
+				</div>
+				<div>Ampli à modélisation</div>
+				<div class="prix">
+					✨
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Nux - Mighty 40BT MKII
+					</h2>
+					<p class="justifier-texte">
+						Simple en apparence, riche à l'intérieur ! Le Mighty 40BT MKII regorge de trésors, il est spécialement conçu pour ceux qui aiment s'aventurer et explorer de fond en comble : 21 simulations d'amplis, 43 effets avec routage personnalisable, looper & drum machine intégrés, etc. Si ses contrôles physiques ont été simplifiés, ses connectiques USB et Bluetooth permettent le contrôle total des fonctionnalités citées ci-dessus. Enfin, 3 modes de puissance pour chaque situation : 0.5W, 5W et 40W.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Puissance : </strong>40 Watts / haut-parleur 10"</li><li><strong>Input : </strong>1 entrée Instrument Low + 1 entrée Instrument High (1 canal max)</li><li><strong>Contrôles : </strong>Gain, Level, Bass, Middle, Treble, Reverb, Presence, Master (plus de contrôles sur l'appli Nux Mighty Amp et le logiciel Nux Mighty Editor)</li><li><strong>Sélecteur : </strong>Channel, Puissance, Scene</li><li><strong>Prise auxiliaire : </strong>1 entrée jack 3.65 mm</li><li><strong>Output : </strong>1 sortie casque jack 3.65 mm</li><li><strong>Presets : </strong>7 inclus</li><li><strong>Alimentation : </strong>Secteur</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="championii100" class="produit" data-prix="379" data-gamme="✨">
+				<div class="instock">
+					<img src="../images/amplis/championii100.jpg" class="imageCarte" alt="Fender Champion II 100">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Fender - Champion II 100
+				</div>
+				<div>Ampli à transistor</div>
+				<div class="prix">
+					✨
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Fender - Champion II 100
+					</h2>
+					<p class="justifier-texte">
+						Entre tradition et modernité, le Champion II 100 est un ampli à modélisation qui conviendra à ceux qui cherchent de la puissance sonore et un contrôle approfondi des sonorités pour un maximum de polyvalence. Facile d'utilisation : on branche, on choisit son modèle d'ampli, on règle et c'est good to go ! Pas besoin de s'inquiéter en puissance sonore, ses 100W recouvreront largement la pièce sans problème.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Puissance : </strong>100 Watts / 2 haut-parleurs 12"</li><li><strong>Contrôles : </strong>Canal 1: Volume, Treble, Bass, Modify, FX. Select. / Canal 2 : Volume, Voice, Treble, Mid, Bass, Modify, FX. Select</li><li><strong>Sélecteur : </strong>Channel select</li><li><strong>Alimentation : </strong>Secteur</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="ac25" class="produit" data-prix="219" data-gamme="🪴">
+				<div class="instock">
+					<img src="../images/amplis/ac25.jpg" class="imageCarte" alt="Nux AC-25">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Nux - AC-25
+				</div>
+				<div>Ampli acoustique</div>
+				<div class="prix">
+					🪴
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Nux - AC-25
+					</h2>
+					<p class="justifier-texte">
+						L'AC-25 est un amplificateur acoustique compact doté d'une batterie rechargeable, offrant jusqu'à 4 heures d'autonomie pour les performances de rue. Haut-parleur 6,5 pouces, il est équipé de plusieurs fonctionnalités, notamment réverbération, bluetooth, et boite à rythmes. Sa configuration à deux canaux vous permet de brancher simultanément un micro dynamique et votre guitare acoustique. Une bonne solution pour ceux qui cherchent un ampli acoustique simple mais efficace !
+					</p>
+					
+					
+					<ul>
+						<li><strong>Puissance : </strong>25 Watts / haut-parleur 6,5"</li><li><strong>Input : </strong>1 entrée Instrument + 1 entrée combo XLR/instrument</li><li><strong>Contrôles : </strong>Volume de sortie (2x), envoi réverbération, volume réverbération, bass, middle, treble, tuner, volume master</li><li><strong>Prise auxiliaire : </strong>1 entrée jack 3.65 mm</li><li><strong>Output : </strong>1 sortie casque jack 6.35 mm + 1 sortie line jack 6.35 mm</li><li><strong>Alimentation : </strong>Secteur 15V/2,5A ou batterie 12,6V/3000mAh</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="ac114" class="produit" data-prix="399" data-gamme="✨">
+				<div class="instock">
+					<img src="../images/amplis/ac114.jpg" class="imageCarte" alt="Acus AC114 One forStrings 4Ferdi Wood">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Acus - AC114 One forStrings 4Ferdi Wood
+				</div>
+				<div>Ampli acoustique</div>
+				<div class="prix">
+					✨
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Acus - AC114 One forStrings 4Ferdi Wood
+					</h2>
+					<p class="justifier-texte">
+						Le AC114 n'est pas grand, mais il est vaillant ! Ne vous trompez pas, il s'agit bien d'un ampli 40W et ce avec une précision digne d'un ampli Acus : précis, équilibré et puissant ! Cet ampli saura clairement restituer le son de votre guitare ou de votre voix sans aucun compromis sur la projection.
+					</p>
+					
+					
+		<blockquote class="rami">
+			À un quart du volume Master, ça envoie déjà, imagine ce que ça donne quand tu le mets à fond !
+		</blockquote>
+		
+					<ul>
+						<li><strong>Puissance : </strong>40 Watts / haut-parleur 4"</li><li><strong>Input : </strong>1 entrée Instrument ou XLR (1 canal max)</li><li><strong>Contrôles : </strong>Gain d'entrée, Bass (2x), Treble (2x), volume réverbération, Master</li><li><strong>Prise auxiliaire : </strong>1 entrée jack 3.65 mm</li><li><strong>Alimentation : </strong>Secteur ou batterie</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="oneforstreet5" class="produit" data-prix="719" data-gamme="💖">
+				<div class="instock">
+					<img src="../images/amplis/oneforstreet5.jpg" class="imageCarte" alt="Acus Oneforstreet 5 Wood">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Acus - Oneforstreet 5 Wood
+				</div>
+				<div>Ampli acoustique</div>
+				<div class="prix">
+					💖
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Acus - Oneforstreet 5 Wood
+					</h2>
+					<p class="justifier-texte">
+						Vous avez besoin de puissance sonore conséquente ? Le Oneforstreet 5 Wood est le choix adéquat. Il est doté de deux préamplis, les potentiomètres d'EQ, de volume et de réverbération assurent un bon contrôle des sources sonores. Sans oublier bien sûr ses 50W, de quoi couvrir une scène sans problème !
+					</p>
+					
+					
+					<ul>
+						<li><strong>Puissance : </strong>50 Watts / haut-parleur 6"</li><li><strong>Input : </strong>1 entrée Instrument ou XLR + 1 entrée instrument (2 canaux max)</li><li><strong>Contrôles : </strong>Gain d'entrée (2x), Bass (2x), Middle (2x), Treble (2x), envoi réverbération (2x), volume réverbération, volume (2x)</li><li><strong>Sélecteur : </strong>Pad -10 dB</li><li><strong>Output : </strong>1 sortie XLR (Direct Out)</li><li><strong>Alimentation : </strong>Secteur ou batterie (non-incluse)</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="rb108" class="produit" data-prix="199" data-gamme="✨">
+				<div class="instock">
+					<img src="../images/amplis/rb108.jpg" class="imageCarte" alt="Ampeg Rocket Bass 108">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Ampeg - Rocket Bass 108
+				</div>
+				<div>Ampli basse</div>
+				<div class="prix">
+					✨
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Ampeg - Rocket Bass 108
+					</h2>
+					<p class="justifier-texte">
+						Le Rocket Bass 108 est un ampli basse qui a été conçue pour ceux qui ont besoin d'un ampli pour répéter chez soi la basse électrique. Contrôles simplifiées, cet ampli de 30W conviendra pour entendre les basses fréquences nécessaires pour une écoute fidèle de son instrument chez soi.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Puissance : </strong>30 Watts / haut-parleur 8"</li><li><strong>Input : </strong>1 entrée Instrument 0 dB + 1 entrée -15 dB Jack 6.35 mm (1 canal max)</li><li><strong>Contrôles : </strong>Volume, Bass, Mid range, Treble</li><li><strong>Prise auxiliaire : </strong>1 entrée jack 3.65 mm</li><li><strong>Output : </strong>1 sortie jack 3.65 mm</li><li><strong>Alimentation : </strong>Secteur</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="rb110" class="produit" data-prix="339" data-gamme="✨">
+				<div class="instock">
+					<img src="../images/amplis/rb110.jpg" class="imageCarte" alt="Ampeg Rocket Bass 110">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Ampeg - Rocket Bass 110
+				</div>
+				<div>Ampli basse</div>
+				<div class="prix">
+					✨
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Ampeg - Rocket Bass 110
+					</h2>
+					<p class="justifier-texte">
+						Le Rocket Bass 110 est le step-up en ampli basse : 50W en termes de puissance sonore, contrôles sur le volume, l'EQ et l'overdrive pour donner du mordant à sa basse électrique. Enfin, cet ampli inclut une sortie DI, pratique pour ceux qui enregistrent des morceaux ou jouent sur scène !
+					</p>
+					
+					
+					<ul>
+						<li><strong>Puissance : </strong>50 Watts / haut-parleur 10"</li><li><strong>Input : </strong>1 entrée Instrument 0 dB + 1 entrée -15 dB Jack 6.35 mm (1 canal max)</li><li><strong>Contrôles : </strong>Volume, Bass, Mid range, Treble, Grit, Level</li><li><strong>Sélecteur : </strong>Clean ou SuperGrit</li><li><strong>Prise auxiliaire : </strong>1 entrée jack 3.65 mm</li><li><strong>Output : </strong>1 sortie jack 3.65 mm, Sortie DI sur XLR</li><li><strong>Alimentation : </strong>Secteur</li>
+					</ul>
+				</div>
+			</div>
+
 		</div>
 	</div>
-	<label for="searchbox"></label>
-	<input type="text" oninput="liveSearch()" id="searchbox" placeholder="🔍 Filtrer parmi les modèles">
-	<div class="upButton"><a href="#searchbox">🔍</a></div>
-<div id="articles">
-		<h2 class="gammeGuitare">Ampli électrique 🎛️</h2>
-		<div class="descGuitare"><b>À partir de 119 €</b></div>
-		<div class="instruDesc">
-			<h3>Vox - Pathfinder 10</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="pathfinder10" src="../images/amplis/pathfinder10.jpg" loading="lazy" alt="Amplificateur Vox Pathfinder 10" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Pour ceux qui cherchent un ampli simple et peu encombrant, le PathFinder 10 est notre premier modèle d&#39;entrée de gamme qui saura satisfaire ceux qui veulent une expérience Plug and Play.</p>
-					<ul><li><b>Type</b> : Ampli à transistor</li><li><b>Puissance</b> : 10 Watts / haut-parleur 6,5&quot;</li><li><b>Input</b> : 1 entrée Instrument</li><li><b>Contrôles</b> : Gain, Volume, Treble, Bass</li><li><b>Sélecteurs</b> : Clean ou Overdrive</li><li><b>Prise auxiliaire</b> : 1 entrée jack 3.65 mm</li><li><b>Output</b> : 1 sortie casque/line jack 6.35 mm</li><li><b>Alimentation</b> : Secteur</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
-			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>Fender - Frontman 20G</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="frontman20g" src="../images/amplis/frontman20g.jpg" loading="lazy" alt="Amplificateur Fender Frontman 20G" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>L&#39;ampli Fender à petit prix, le Frontman 20G est reconnu pour sa simplicité d&#39;utilisation et son format compact : on branche, on active l&#39;overdrive et c&#39;est parti !</p>
-					<ul><li><b>Type</b> : Ampli à transistor</li><li><b>Puissance</b> : 20 Watts / haut-parleur 8&quot;</li><li><b>Input</b> : 1 entrée Instrument</li><li><b>Contrôles</b> : Volume de sortie Clean, gain d&#39;entrée, volume de sortie overdrive, treble, middle et bass</li><li><b>Prise auxiliaire</b> : 1 entrée jack 3.65 mm</li><li><b>Output</b> : 1 sortie jack 3.65 mm</li><li><b>Alimentation</b> : Secteur</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
-			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>Nux - Mighty 8BT</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="mighty8bt" src="../images/amplis/mighty8bt.jpg" loading="lazy" alt="Amplificateur Nux Mighty 8BT" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Un mini format adapté pour ceux qui se déplacent souvent ! Le Mighty 8BT est reconnu pour son extra-portabilité et sa personnalisation : 2 entrées (instrument + MIC), delay, reverb, drum loop intégrée, prise auxiliaire et bluetooth (pour utiliser l&#39;appli MightyAmp APP). Bien qu&#39;il s&#39;agisse d&#39;haut-parleurs 6,5&quot;, le Mighty 8BT reste étonnemment puissant, surtout lorsque la distorsion est enclenchée. Enfin, il est possible de jouer sur batterie avec une autonomie de 8 heures.</p>
-					<ul><li><b>Type</b> : Ampli à transistor</li><li><b>Puissance</b> : 10 Watts / haut-parleur 6,5&quot;</li><li><b>Input</b> : 1 entrée Instrument + 1 entrée MIC</li><li><b>Contrôles</b> : Gain instrument, gain MIC, envoi réverbération, mix réverbération, mix delay, drum volume, niveau de sortie, tone</li><li><b>Prise auxiliaire</b> : 1 entrée jack 3.65 mm</li><li><b>Output</b> : 1 sortie jack 3.65 mm + 1 sortie jack 6.35 mm</li><li><b>Presets</b> : Clean, Overdrive et Distortion</li><li><b>Autre</b> : Bluetooth intégré, permet de connecter à l&#39;appli MightyAmp pour plus de contrôles</li><li><b>Alimentation</b> : Secteur ou 8 piles AA</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
-			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>Fender - Champion II 25</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="championii25" src="../images/amplis/championii25.jpg" loading="lazy" alt="Amplificateur Fender Champion II 25" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Le Champion II 25 est un ampli à transistor qui ouvre le champ des possibilités sur le son : différents modèles d&#39;amplis prévus pour chaque style, effets intégrés, un petit ampli avec de grandes possibilités ! Parfait pour s&#39;amuser simplement chez soi : vous branchez votre guitare électrique, réglez l&#39;ampli et le tour est joué !</p>
-					<ul><li><b>Type</b> : Ampli à transistor</li><li><b>Puissance</b> : 25 Watts / haut-parleur 8&quot;</li><li><b>Input</b> : 1 entrée Instrument</li><li><b>Contrôles</b> : Gain, Volume, Treble, Bass, Voice (Classic, Modern, British, Hi-Gain), Modify, FX Select (Mod, Delay, Reverb, Multi)
-</li><li><b>Sélecteurs</b> : Tap Delay</li><li><b>Prise auxiliaire</b> : 1 entrée jack 3.65 mm</li><li><b>Output</b> : 1 sortie casque jack 3.65 mm</li><li><b>Alimentation</b> : Secteur</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
-			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>Fender - Mustang LT25</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="lt25" src="../images/amplis/lt25.jpg" loading="lazy" alt="Amplificateur Fender Mustang LT25" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Le frère du Mustang LT40S, le Mustang LT25 comporte les mêmes caractéristiques à l&#39;exception de la puissance sonore et de sa taille. Le Mustang LT25 est adapté pour ceux qui veulent jouer juste pour eux, de manière plus intime.</p>
-					<ul><li><b>Type</b> : Ampli à modélisation</li><li><b>Puissance</b> : 25 Watts / haut-parleur 8&quot;</li><li><b>Input</b> : 1 entrée Instrument jack 6.35 mm</li><li><b>Contrôles</b> : Gain d&#39;entrée, volume de sortie, treble, bass, master, molette de sélection de presets, boutons Retour/Sauvegarder/Menu/Tempo/Tuner</li><li><b>Prise auxiliaire</b> : 1 entrée jack 3.65 mm</li><li><b>Output</b> : 1 sortie jack 3.65 mm</li><li><b>Presets</b> : 30 inclus + 30 vierges, possibilité de personnaliser et d&#39;enregistrer ses propres configurations</li><li><b>Autre</b> : 20 modèles d&#39;amplis différents, 4 catégories d&#39;effets (stompbox, delay, réverbération, modulation)</li><li><b>Alimentation</b> : Secteur</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
-			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>Fender - Mustang LT40S</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="lt40s" src="../images/amplis/lt40s.jpg" loading="lazy" alt="Amplificateur Fender Mustang LT40S" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Le Mustang LT40S est un ampli à modélisation qui se démarque par sa personnalisation complète : 30 presets déjà confectionnés, 20 modèles d&#39;amplis différents et 4 catégories d&#39;effets. Le plus ? Son combo petit format et puissance sonore, le Mustang LT40S se transporte sans encombres.</p>
-					<ul><li><b>Type</b> : Ampli à modélisation</li><li><b>Puissance</b> : 40 Watts / haut-parleurs 2x4&quot; Stéréo</li><li><b>Input</b> : 1 entrée Instrument jack 6.35 mm</li><li><b>Contrôles</b> : Gain d&#39;entrée, volume de sortie, treble, bass, master, molette de sélection de presets, boutons Retour/Sauvegarder/Menu/Tempo/Tuner</li><li><b>Prise auxiliaire</b> : 1 entrée jack 3.65 mm</li><li><b>Output</b> : 1 sortie jack 3.65 mm</li><li><b>Presets</b> : 30 inclus + 30 vierges, possibilité de personnaliser et d&#39;enregistrer ses propres configurations</li><li><b>Autre</b> : 20 modèles d&#39;amplis différents, 4 catégories d&#39;effets (stompbox, delay, réverbération, modulation)</li><li><b>Alimentation</b> : Secteur</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
-			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>Nux - Mighty 40BT MKII</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="mighty40bt" src="../images/amplis/mighty40bt.jpg" loading="lazy" alt="Amplificateur Nux Mighty 40BT MKII" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Simple en apparence, riche à l&#39;intérieur ! Le Mighty 40BT MKII regorge de trésors, il est spécialement conçu pour ceux qui aiment s&#39;aventurer et explorer de fond en comble : 21 simulations d&#39;amplis, 43 effets avec routage personnalisable, looper &amp; drum machine intégrés, etc. Si ses contrôles physiques ont été simplifiés, ses connectiques USB et Bluetooth permettent le contrôle total des fonctionnalités citées ci-dessus. Enfin, 3 modes de puissance pour chaque situation : 0.5W, 5W et 40W.</p>
-					<ul><li><b>Type</b> : Ampli à modélisation</li><li><b>Puissance</b> : 40 Watts / haut-parleur 10&quot;</li><li><b>Input</b> : 1 entrée Instrument Low + 1 entrée Instrument High (1 canal max)</li><li><b>Contrôles</b> : Gain, Level, Bass, Middle, Treble, Reverb, Presence, Master (plus de contrôles sur l&#39;appli Nux Mighty Amp et le logiciel Nux Mighty Editor)</li><li><b>Sélecteurs</b> : Channel, Puissance, Scene</li><li><b>Prise auxiliaire</b> : 1 entrée jack 3.65 mm</li><li><b>Output</b> : 1 sortie casque jack 3.65 mm</li><li><b>Presets</b> : 7 inclus</li><li><b>Autre</b> : Emplacement module NBT-1 (fourni avec l&#39;ampli), Looper &amp; Drum Machine intégrés, 1 entrée Footswitch jack 6.35 mm</li><li><b>Alimentation</b> : Secteur</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
-			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>Fender - Champion II 100</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="championii100" src="../images/amplis/championii100.jpg" loading="lazy" alt="Amplificateur Fender Champion II 100" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Entre tradition et modernité, le Champion II 100 est un ampli à modélisation qui conviendra à ceux qui cherchent de la puissance sonore et un contrôle approfondi des sonorités pour un maximum de polyvalence. Facile d&#39;utilisation : on branche, on choisit son modèle d&#39;ampli, on règle et c&#39;est good to go ! Pas besoin de s&#39;inquiéter en puissance sonore, ses 100W recouvreront largement la pièce sans problème.</p>
-					<ul><li><b>Type</b> : Ampli à transistor</li><li><b>Puissance</b> : 100 Watts / 2 haut-parleurs 12&quot;</li><li><b>Contrôles</b> : Canal 1: Volume, Treble, Bass, Modify, FX. Select. / Canal 2 : Volume, Voice, Treble, Mid, Bass, Modify, FX. Select</li><li><b>Sélecteurs</b> : Channel select</li><li><b>Alimentation</b> : Secteur</li></ul>
-
-
-				</section>
-			</div>
-			<hr>
-		</div>
-		<h2 class="gammeGuitare">Ampli acoustique 🎛️</h2>
-		<div class="descGuitare"><b>À partir de 219 €</b></div>
-		<div class="instruDesc">
-			<h3>Nux - AC-25</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="ac25" src="../images/amplis/ac25.jpg" loading="lazy" alt="Amplificateur Nux AC-25" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>L&#39;AC-25 est un amplificateur acoustique compact doté d&#39;une batterie rechargeable, offrant jusqu&#39;à 4 heures d&#39;autonomie pour les performances de rue. Haut-parleur 6,5 pouces, il est équipé de plusieurs fonctionnalités, notamment réverbération, bluetooth, et boite à rythmes. Sa configuration à deux canaux vous permet de brancher simultanément un micro dynamique et votre guitare acoustique. Une bonne solution pour ceux qui cherchent un ampli acoustique simple mais efficace !</p>
-					<ul><li><b>Type</b> : Ampli acoustique</li><li><b>Puissance</b> : 25 Watts / haut-parleur 6,5&quot;</li><li><b>Input</b> : 1 entrée Instrument + 1 entrée combo XLR/instrument</li><li><b>Contrôles</b> : Volume de sortie (2x), envoi réverbération, volume réverbération, bass, middle, treble, tuner, volume master</li><li><b>Prise auxiliaire</b> : 1 entrée jack 3.65 mm</li><li><b>Output</b> : 1 sortie casque jack 6.35 mm + 1 sortie line jack 6.35 mm</li><li><b>Autre</b> : Bluetooth intégré : compatible avec l&#39;appli Stageman / envoi audio</li><li><b>Alimentation</b> : Secteur 15V/2,5A ou batterie 12,6V/3000mAh</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
-			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>Acus - AC114 One forStrings 4Ferdi Wood</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="ac114" src="../images/amplis/ac114.jpg" loading="lazy" alt="Amplificateur Acus AC114 One forStrings 4Ferdi Wood" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Le AC114 n&#39;est pas grand, mais il est vaillant ! Ne vous trompez pas, il s&#39;agit bien d&#39;un ampli 40W et ce avec une précision digne d&#39;un ampli Acus : précis, équilibré et puissant ! Cet ampli saura clairement restituer le son de votre guitare ou de votre voix sans aucun compromis sur la projection.</p>
-					<ul><li><b>Type</b> : Ampli acoustique</li><li><b>Puissance</b> : 40 Watts / haut-parleur 4&quot;</li><li><b>Input</b> : 1 entrée Instrument ou XLR (1 canal max)</li><li><b>Contrôles</b> : Gain d&#39;entrée, Bass (2x), Treble (2x), volume réverbération, Master</li><li><b>Prise auxiliaire</b> : 1 entrée jack 3.65 mm</li><li><b>Autre</b> : Compatible Bluetooth USB</li><li><b>Alimentation</b> : Secteur ou batterie</li></ul>
-					<blockquote class="rami">À un quart du volume Master, ça envoie déjà, imagine ce que ça donne quand tu le mets à fond !</blockquote>
-
-				</section>
-			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>Acus - Oneforstreet 5 Wood</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="oneforstreet5" src="../images/amplis/oneforstreet5.jpg" loading="lazy" alt="Amplificateur Acus Oneforstreet 5 Wood" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Vous avez besoin de puissance sonore conséquente ? Le Oneforstreet 5 Wood est le choix adéquat. Il est doté de deux préamplis, les potentiomètres d&#39;EQ, de volume et de réverbération assurent un bon contrôle des sources sonores. Sans oublier bien sûr ses 50W, de quoi couvrir une scène sans problème !</p>
-					<ul><li><b>Type</b> : Ampli acoustique</li><li><b>Puissance</b> : 50 Watts / haut-parleur 6&quot;</li><li><b>Input</b> : 1 entrée Instrument ou XLR + 1 entrée instrument (2 canaux max)</li><li><b>Contrôles</b> : Gain d&#39;entrée (2x), Bass (2x), Middle (2x), Treble (2x), envoi réverbération (2x), volume réverbération, volume (2x)</li><li><b>Sélecteurs</b> : Pad -10 dB</li><li><b>Output</b> : 1 sortie XLR (Direct Out)</li><li><b>Autre</b> : Compatible Bluetooth USB</li><li><b>Alimentation</b> : Secteur ou batterie (non-incluse)</li></ul>
-
-
-				</section>
-			</div>
-			<hr>
-		</div>
-		<h2 class="gammeGuitare">Ampli basse 🎛️</h2>
-		<div class="descGuitare"><b>À partir de 199 €</b></div>
-		<div class="instruDesc">
-			<h3>Ampeg - Rocket Bass 108</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="rb108" src="../images/amplis/rb108.jpg" loading="lazy" alt="Amplificateur Ampeg Rocket Bass 108" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Le Rocket Bass 108 est un ampli basse qui a été conçue pour ceux qui ont besoin d&#39;un ampli pour répéter chez soi la basse électrique. Contrôles simplifiées, cet ampli de 30W conviendra pour entendre les basses fréquences nécessaires pour une écoute fidèle de son instrument chez soi.</p>
-					<ul><li><b>Type</b> : Ampli basse</li><li><b>Puissance</b> : 30 Watts / haut-parleur 8&quot;</li><li><b>Input</b> : 1 entrée Instrument 0 dB + 1 entrée -15 dB Jack 6.35 mm (1 canal max)</li><li><b>Contrôles</b> : Volume, Bass, Mid range, Treble</li><li><b>Prise auxiliaire</b> : 1 entrée jack 3.65 mm</li><li><b>Output</b> : 1 sortie jack 3.65 mm</li><li><b>Alimentation</b> : Secteur</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
-			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>Ampeg - Rocket Bass 110</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="rb110" src="../images/amplis/rb110.jpg" loading="lazy" alt="Amplificateur Ampeg Rocket Bass 110" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Le Rocket Bass 110 est le step-up en ampli basse : 50W en termes de puissance sonore, contrôles sur le volume, l&#39;EQ et l&#39;overdrive pour donner du mordant à sa basse électrique. Enfin, cet ampli inclut une sortie DI, pratique pour ceux qui enregistrent des morceaux ou jouent sur scène !</p>
-					<ul><li><b>Type</b> : Ampli basse</li><li><b>Puissance</b> : 50 Watts / haut-parleur 10&quot;</li><li><b>Input</b> : 1 entrée Instrument 0 dB + 1 entrée -15 dB Jack 6.35 mm (1 canal max)</li><li><b>Contrôles</b> : Volume, Bass, Mid range, Treble, Grit, Level</li><li><b>Sélecteurs</b> : Clean ou SuperGrit</li><li><b>Prise auxiliaire</b> : 1 entrée jack 3.65 mm</li><li><b>Output</b> : 1 sortie jack 3.65 mm, Sortie DI sur XLR</li><li><b>Alimentation</b> : Secteur</li></ul>
-
-
-				</section>
-			</div>
-			<hr>
-		</div>
-	</div>
-</div>
-</div>
-<special-footer role="contentinfo"></special-footer>
-</div>
+	<custom-footer></custom-footer>
+	<script src="../assets/js/sort-overlay.js"></script>
+	<script src="../assets/js/custom-footer.js?v=2026-05-12"></script>
+	<script src="../assets/js/search.js?v=2026-05-12"></script>
 </body>
 </html>
-<script src="../assets/js/jquery.min.js"></script>
-<script src="../assets/js/browser.min.js"></script>
-<script src="../assets/js/breakpoints.min.js"></script>
-<script src="../assets/js/util.js"></script>
-<script src="../assets/js/main.js"></script>
-<script src="../assets/js/custom-footer.js"></script>
-<script src="../assets/js/search.js"></script>

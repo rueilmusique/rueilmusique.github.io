@@ -1,48 +1,72 @@
-function liveSearch() {
-  let instruDescJS = document.querySelectorAll('.instruDesc');
-  let search_query = document.getElementById("searchbox").value.toLowerCase();
+const produitsContainer = document.getElementById("produits");
+const sortSelect = document.getElementById("sort");
+const gammeSelect = document.getElementById("filter-gamme");
+const searchInput = document.getElementById("searchbox");
 
-  // Filtrage des modèles
-  instruDescJS.forEach(div => {
-    if (div.innerText.toLowerCase().includes(search_query)) {
-      div.classList.remove("is-hidden");
-    } else {
-      div.classList.add("is-hidden");
-    }
-  });
+// On sauvegarde UNE FOIS l'ordre d'origine
+const produits = Array.from(
+	document.querySelectorAll(".produit")
+);
 
-  // Gestion des titres de gamme + paragraphe associé
-  let gammes = document.querySelectorAll("h2.gammeGuitare");
+produits.forEach((produit, index) => {
+	produit.dataset.defaultOrder = index;
+});
 
-  gammes.forEach(h2 => {
-    let next = h2.nextElementSibling;
+// Events
+sortSelect.addEventListener("change", updateProduits);
+gammeSelect.addEventListener("change", updateProduits);
+searchInput.addEventListener("input", updateProduits);
 
-    // Le paragraphe immédiatement après le h2
-    let paragraph = null;
-    if (next && next.tagName.toLowerCase() === "div") {
-      paragraph = next;
-      next = next.nextElementSibling; // Passe au premier .instruDesc
-    }
+// Fonction principale
+function updateProduits() {
 
-    let hasVisibleModel = false;
+	const search = searchInput.value.toLowerCase().trim();
 
-    // Parcourt les modèles jusqu'au prochain h2
-    while (next && !next.matches("h2.gammeGuitare")) {
-      if (next.classList && next.classList.contains("instruDesc") &&
-          !next.classList.contains("is-hidden")) {
-        hasVisibleModel = true;
-        break;
-      }
-      next = next.nextElementSibling;
-    }
+	const gamme = gammeSelect.value;
 
-    // Affichage ou masquage
-    if (hasVisibleModel) {
-      h2.classList.remove("is-hidden");
-      if (paragraph) paragraph.classList.remove("is-hidden");
-    } else {
-      h2.classList.add("is-hidden");
-      if (paragraph) paragraph.classList.add("is-hidden");
-    }
-  });
+	const sort = sortSelect.value;
+
+
+	// FILTRES
+	produits.forEach(produit => {
+		const titre = produit.querySelector(".titreProduit").textContent.toLowerCase();
+
+		const type = produit.querySelector(".titreProduit").nextElementSibling.textContent.toLowerCase();
+
+		const searchableText = `${titre} ${type}`;
+
+		const matchSearch =	searchableText.includes(search);
+
+		const matchGamme = gamme === "all" || produit.dataset.gamme === gamme;
+
+		produit.style.display = (matchSearch && matchGamme) ? "" : "none";
+	});
+
+	// TRI
+	produits.sort((a, b) => {
+
+		const prixA = Number(a.dataset.prix);
+
+		const prixB = Number(b.dataset.prix);
+
+		if (sort === "asc") {
+			return prixA - prixB;
+		}
+
+		if (sort === "desc") {
+			return prixB - prixA;
+		}
+
+		// TRI PAR DÉFAUT
+		return (
+			Number(a.dataset.defaultOrder) - Number(b.dataset.defaultOrder)
+		);
+	});
+
+	// Réorganisation DOM
+	produits.forEach(produit => {
+		produitsContainer.appendChild(produit);
+	});
 }
+
+updateProduits();

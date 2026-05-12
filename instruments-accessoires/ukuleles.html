@@ -4,18 +4,16 @@
 <head>
 	<title>Ukuleles - Rueil Musique</title>
 	<link rel="icon" type="image/x-icon" href="../images/logo.svg">
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Découvrez notre collection de ukuleles : taille soprano, concert et ténor disponibles !" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+	<meta name="description" content="Découvrez notre collection de ukuleles : taille soprano, concert et ténor disponibles !">
 	
-	<!-- Facebook Meta Tags -->
 	<meta property="og:url" content="https://rueil-musique.fr/instruments-accessoires/ukuleles">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Ukuleles - Rueil Musique">
 	<meta property="og:description" content="Découvrez notre collection de ukuleles : taille soprano, concert et ténor disponibles !">
 	<meta property="og:image" content="https://rueil-musique.fr/images/meta-images/og-image_ukuleles.jpg">
 
-	<!-- Twitter Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta property="twitter:domain" content="rueil-musique.fr">
 	<meta property="twitter:url" content="https://rueil-musique.fr/instruments-accessoires/ukuleles">
@@ -23,11 +21,11 @@
 	<meta name="twitter:description" content="Découvrez notre collection de ukuleles : taille soprano, concert et ténor disponibles !">
 	<meta name="twitter:image" content="">
 	
-	<link rel="stylesheet" href="../assets/css/main.css" />
-	<link rel="canonical" href="https://rueil-musique.fr/instruments-accessoires/ukuleles" />
-	<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	<link rel="stylesheet" href="../assets/css/main.css?v=2026-05-12">
+	<script src="../assets/js/analytics.js"></script>
+	
 	<script type="application/ld+json">
-{
+	{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -111,188 +109,269 @@
     }
   ]
 }
-</script>
-	<script src="../assets/js/analytics.js"></script>
+	</script>
+
 </head>
 <body>
-
-<div id="wrapper">
-	<header id="header" role="banner">
-		<div class="inner">
-			<a href="https://rueil-musique.fr" class="logo">
-				<span class="symbol"><img src="../images/logo.svg" alt=""></span><span class="title">Rueil Musique</span>
-			</a>
-			<nav role="navigation">
-				<ul>
-					<li>
-						<a href="#menu">Menu</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<special-menu id="menu"></special-menu>
-<div id="main" role="main">
-<div class="inner" align="justify">
-<h1><a href="https://rueil-musique.fr/instruments-accessoires">Instruments &amp; accessoires</a> - Ukuleles</h1>
-	<p>Découvrez notre collection de ukuleles : taille soprano, concert et ténor disponibles !</p>
-	<label for="searchbox"></label>
-	<input type="text" oninput="liveSearch()" id="searchbox" placeholder="🔍 Filtrer parmi les modèles">
-	<div class="upButton"><a href="#searchbox">🔍</a></div>
-<div id="articles">
-<h2 class="gammeGuitare">Ukuleles soprano 🎵</h2>
-<div class="descGuitare"><b>À partir de 75 €</b></div>
-		<div class="instruDesc">
-			<h3>Flight - NUS 310</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="nus310" src="../images/ukuleles/nus310.jpg" loading="lazy" alt="Ukulele Flight NUS 310" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Ukulele soprano.</p>
-					<ul><li><b>Table</b> : Acajou sapelli</li><li><b>Manche</b> : Acajou sapelli</li><li><b>Touche</b> : Palissandre</li><li><b>Mécaniques</b> : Vintage</li><li><b>Éclisses</b> : Acajou sapelli</li><li><b>Dos</b> : Acajou sapelli</li><li><b>Autres</b> : Avec housse</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
+	<custom-header></custom-header>
+	<div class="main">
+		<h1>Ukuleles</h1>
+		<p>Découvrez notre sélection de ukuleles.
+		<br>
+		<a href="https://rueil-musique.fr/instruments-accessoires/">Retour aux instruments</a>
+		</p>
+		<div>
+				Trier :
+				<select id="sort">
+					<option value="default">Par défaut</option>
+					<option value="asc">Prix croissant</option>
+					<option value="desc">Prix décroissant</option>
+				</select>
+				<select id="filter-gamme">
+					<option value="all">Toutes les gammes</option>
+					<option value="🪴">🪴 Entrée de gamme</option>
+					<option value="✨">✨ Milieu de gamme </option>
+					<option value="💖">💖 Haut de gamme</option>
+					<option value="💎">💎 Légendaire</option>
+				</select>
+				<input id="searchbox" type="search" placeholder="Filtrer (marque/nom/catégorie)">
+				<a class="searchbutton" href="#searchbox">🔍</a>
 			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>APC - Lusitana SLK</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="ukslk" src="../images/ukuleles/ukslk.jpg" loading="lazy" alt="Ukulele APC Lusitana SLK" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Ukulele soprano en open pore, fabriqué en Europe.</p>
-					<ul><li><b>Table</b> : Koa</li><li><b>Manche</b> : Acajou</li><li><b>Touche</b> : Palissandre</li><li><b>Chevalet</b> : Palissandre</li><li><b>Éclisses</b> : Koa</li><li><b>Dos</b> : Koa</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
+			
+			<div id="overlay" class="overlay hidden">
+				<div class="overlay-content">
+					<span id="close">&times;</span>
+					<section>
+						<img id="overlay-img">
+					</section>
+					<section>
+						<p id="overlay-text"></p>
+					</section>
+				</div>
 			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>Hora - M1175</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="m1175" src="../images/ukuleles/m1175.jpg" loading="lazy" alt="Ukulele Hora M1175" class="image fit articleMag"></span>
-
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Ukulele soprano fabriqué en Europe.</p>
-					<ul><li><b>Corps</b> : Acajou massif</li><li><b>Touche</b> : Palissandre</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
+		<div class="produits" id="produits">
+			
+			<div id="nus310" class="produit" data-prix="75" data-gamme="🪴">
+				<div class="instock">
+					<img src="../images/ukuleles/nus310.jpg" class="imageCarte" alt="Flight NUS 310">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Flight - NUS 310
+				</div>
+				<div>Ukulele soprano</div>
+				<div class="prix">
+					🪴
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Flight - NUS 310
+					</h2>
+					<p class="justifier-texte">
+						Ukulele soprano.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Table : </strong>Acajou sapelli</li><li><strong>Manche : </strong>Acajou sapelli</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Mécaniques : </strong>Vintage</li><li><strong>Éclisses : </strong>Acajou sapelli</li><li><strong>Dos : </strong>Acajou sapelli</li>
+					</ul>
+				</div>
 			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>Bruko - S006</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="s006" src="../images/ukuleles/s006.jpg" loading="lazy" alt="Ukulele Bruko S006" class="image fit articleMag"></span>
 
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Ukulele soprano fabriqué en Allemagne.</p>
-					<ul><li><b>Table</b> : Acajou sapelli</li><li><b>Manche</b> : Érable</li><li><b>Touche</b> : Érable</li><li><b>Chevalet</b> : Palissandre</li><li><b>Vernis</b> : Naturel satiné</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
+			<div id="ukslk" class="produit" data-prix="109" data-gamme="🪴">
+				<div class="instock">
+					<img src="../images/ukuleles/ukslk.jpg" class="imageCarte" alt="APC Lusitana SLK">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					APC - Lusitana SLK
+				</div>
+				<div>Ukulele soprano</div>
+				<div class="prix">
+					🪴
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						APC - Lusitana SLK
+					</h2>
+					<p class="justifier-texte">
+						Ukulele soprano en open pore, fabriqué en Europe.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Table : </strong>Koa</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Chevalet : </strong>Palissandre</li><li><strong>Éclisses : </strong>Koa</li><li><strong>Dos : </strong>Koa</li>
+					</ul>
+				</div>
 			</div>
-			<hr>
-		</div>
-<h2 class="gammeGuitare">Ukuleles concert 🎵</h2>
-<div class="descGuitare"><b>À partir de 85 €</b></div>
-		<div class="instruDesc">
-			<h3>Flight - NUC 310</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="nuc310" src="../images/ukuleles/nuc310.jpg" loading="lazy" alt="Ukulele Flight NUC 310" class="image fit articleMag"></span>
 
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Ukulele concert.</p>
-					<ul><li><b>Table</b> : Acajou sapelli</li><li><b>Manche</b> : Acajou sapelli</li><li><b>Touche</b> : Palissandre</li><li><b>Mécaniques</b> : Vintage</li><li><b>Éclisses</b> : Acajou sapelli</li><li><b>Dos</b> : Acajou sapelli</li><li><b>Autres</b> : Avec housse</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
+			<div id="m1175" class="produit" data-prix="145" data-gamme="✨">
+				<div class="instock">
+					<img src="../images/ukuleles/m1175.jpg" class="imageCarte" alt="Hora M1175">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Hora - M1175
+				</div>
+				<div>Ukulele soprano</div>
+				<div class="prix">
+					✨
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Hora - M1175
+					</h2>
+					<p class="justifier-texte">
+						Ukulele soprano fabriqué en Europe.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Corps : </strong>Acajou massif</li><li><strong>Touche : </strong>Palissandre</li>
+					</ul>
+				</div>
 			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>APC - Concerto</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="ukcs" src="../images/ukuleles/ukcs.jpg" loading="lazy" alt="Ukulele APC Concerto" class="image fit articleMag"></span>
 
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Ukulele concert en open pore.</p>
-					<ul><li><b>Table</b> : Koa massif</li><li><b>Manche</b> : Acajou</li><li><b>Touche</b> : Palissandre</li><li><b>Chevalet</b> : Palissandre</li><li><b>Éclisses</b> : Koa massif</li><li><b>Dos</b> : Koa massif</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
+			<div id="s006" class="produit" data-prix="175" data-gamme="✨">
+				<div class="instock">
+					<img src="../images/ukuleles/s006.jpg" class="imageCarte" alt="Bruko S006">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Bruko - S006
+				</div>
+				<div>Ukulele soprano</div>
+				<div class="prix">
+					✨
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Bruko - S006
+					</h2>
+					<p class="justifier-texte">
+						Ukulele soprano fabriqué en Allemagne.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Table : </strong>Acajou sapelli</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Érable</li><li><strong>Chevalet : </strong>Palissandre</li><li><strong>Vernis : </strong>Naturel satiné</li>
+					</ul>
+				</div>
 			</div>
-			<hr>
-		</div>
-		<div class="instruDesc">
-			<h3>Bruko - K021</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="k021" src="../images/ukuleles/k021.jpg" loading="lazy" alt="Ukulele Bruko K021" class="image fit articleMag"></span>
 
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Ukulele concert.</p>
-					<ul><li><b>Table</b> : Acajou sapelli</li><li><b>Manche</b> : Érable</li><li><b>Touche</b> : Érable</li><li><b>Chevalet</b> : Palissandre</li><li><b>Vernis</b> : Naturel satiné</li></ul>
-
-
-				</section>
+			<div id="nuc310" class="produit" data-prix="85" data-gamme="🪴">
+				<div class="instock">
+					<img src="../images/ukuleles/nuc310.jpg" class="imageCarte" alt="Flight NUC 310">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Flight - NUC 310
+				</div>
+				<div>Ukulele concert</div>
+				<div class="prix">
+					🪴
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Flight - NUC 310
+					</h2>
+					<p class="justifier-texte">
+						Ukulele concert.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Table : </strong>Acajou sapelli</li><li><strong>Manche : </strong>Acajou sapelli</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Mécaniques : </strong>Vintage</li><li><strong>Éclisses : </strong>Acajou sapelli</li><li><strong>Dos : </strong>Acajou sapelli</li>
+					</ul>
+				</div>
 			</div>
-			<hr>
-		</div>
-<h2 class="gammeGuitare">Ukuleles ténor 🎵</h2>
-<div class="descGuitare"><b>À partir de 169 €</b></div>
-		<div class="instruDesc">
-			<h3>APC - Tenor</h3>
-			<div class="inner">
-				<section>
-					<span class="image fit"><img id="ukts" src="../images/ukuleles/ukts.jpg" loading="lazy" alt="Ukulele APC Tenor" class="image fit articleMag"></span>
 
-					<a class="callRueil button small fit" aria-label="Réserver et/ou demander conseil"></a>
-				</section>
-				<section>
-					<p>Ukulele ténor en open pore, fabriqué en Europe.</p>
-					<ul><li><b>Table</b> : Koa massif</li><li><b>Manche</b> : Acajou</li><li><b>Touche</b> : Palissandre</li><li><b>Chevalet</b> : Palissandre</li><li><b>Éclisses</b> : Koa massif</li><li><b>Dos</b> : Koa massif</li></ul>
-
-					<a class="icon" href="https://passculture.app/lieu/13343" target="blank"><img class="pass-culture-icon" src="../images/logos/passculture.png" alt="Logo Pass Culture"/></a>
-				</section>
+			<div id="ukcs" class="produit" data-prix="155" data-gamme="✨">
+				<div class="instock">
+					<img src="../images/ukuleles/ukcs.jpg" class="imageCarte" alt="APC Concerto">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					APC - Concerto
+				</div>
+				<div>Ukulele concert</div>
+				<div class="prix">
+					✨
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						APC - Concerto
+					</h2>
+					<p class="justifier-texte">
+						Ukulele concert en open pore.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Table : </strong>Koa massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Chevalet : </strong>Palissandre</li><li><strong>Éclisses : </strong>Koa massif</li><li><strong>Dos : </strong>Koa massif</li>
+					</ul>
+				</div>
 			</div>
-			<hr>
+
+			<div id="k021" class="produit" data-prix="319" data-gamme="💖">
+				<div class="sold">
+					<img src="../images/ukuleles/k021.jpg" class="imageCarte" alt="Bruko K021">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					Bruko - K021
+				</div>
+				<div>Ukulele concert</div>
+				<div class="prix">
+					💖
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						Bruko - K021
+					</h2>
+					<p class="justifier-texte">
+						Ukulele concert.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Table : </strong>Acajou sapelli</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Érable</li><li><strong>Chevalet : </strong>Palissandre</li><li><strong>Vernis : </strong>Naturel satiné</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="ukts" class="produit" data-prix="169" data-gamme="✨">
+				<div class="instock">
+					<img src="../images/ukuleles/ukts.jpg" class="imageCarte" alt="APC Tenor">
+					<div></div>
+				</div>
+				<div class="titreProduit">
+					APC - Tenor
+				</div>
+				<div>Ukulele ténor</div>
+				<div class="prix">
+					✨
+				</div>
+				<div class="produit-detail hidden">
+					<h2>
+						APC - Tenor
+					</h2>
+					<p class="justifier-texte">
+						Ukulele ténor en open pore, fabriqué en Europe.
+					</p>
+					
+					
+					<ul>
+						<li><strong>Table : </strong>Koa massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Chevalet : </strong>Palissandre</li><li><strong>Éclisses : </strong>Koa massif</li><li><strong>Dos : </strong>Koa massif</li>
+					</ul>
+				</div>
+			</div>
+
 		</div>
 	</div>
-</div>
-</div>
-<special-footer role="contentinfo"></special-footer>
-</div>
+	<custom-footer></custom-footer>
+	<script src="../assets/js/sort-overlay.js"></script>
+	<script src="../assets/js/custom-footer.js?v=2026-05-12"></script>
+	<script src="../assets/js/search.js?v=2026-05-12"></script>
 </body>
 </html>
-<script src="../assets/js/jquery.min.js"></script>
-<script src="../assets/js/browser.min.js"></script>
-<script src="../assets/js/breakpoints.min.js"></script>
-<script src="../assets/js/util.js"></script>
-<script src="../assets/js/main.js"></script>
-<script src="../assets/js/custom-footer.js"></script>
-<script src="../assets/js/search.js"></script>
