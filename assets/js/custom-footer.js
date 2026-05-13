@@ -1,7 +1,7 @@
 class CustomFooter extends HTMLElement{
 	connectedCallback(){
 		this.innerHTML = `
-		<footer>
+		<footer role="contentinfo">
 			<div class="footerGauche">
 				<a href="https://rueil-musique.fr/contact">Nous contacter</a>
 			</div>
@@ -59,14 +59,14 @@ class CustomFooter extends HTMLElement{
 class CustomHeader extends HTMLElement{
 	connectedCallback(){
 		this.innerHTML = `
-	<header>
+	<header role="banner">
 		<div class="headerGauche">
 			<a href="https://rueil-musique.fr">
 				<img src="https://rueil-musique.fr/images/logo.svg" alt="Logo Rueil Musique"/>
 				<span>Rueil Musique</span>
 			</a>
 		</div>
-		<nav>
+		<nav role="navigation">
 			<div class="navDefault">
 				<a href="https://rueil-musique.fr">Accueil</a>
 				<a href="https://rueil-musique.fr/instruments-accessoires/">Instruments & accessoires</a>
