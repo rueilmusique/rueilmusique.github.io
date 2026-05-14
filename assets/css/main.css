@@ -330,10 +330,12 @@ nav a:hover{
 	background: #bd964a;
 }
 
-/* NEW */
+.bouton:active, .boutonCTA:active{
+	background: #ddb15c;
+}
+
 .boutonCTA{
 	display: block;
-	/* width: fit-content; */
 	padding: 1em;
 	margin: 0.5em 0;
 	background: #7d5224;
@@ -343,7 +345,6 @@ nav a:hover{
 	color: #fff !important;
 	transition: 0.05s;
 }
-/* END */
 
 .centrer-texte{
 	text-align: center;
@@ -381,7 +382,6 @@ nav a:hover{
 }
 
 .alaune{
-	display: block;
 	padding: 0.5em;
 	color: #000;
 	background: #e2cccc;
@@ -398,6 +398,7 @@ nav a:hover{
 
 .divAlaune a{
 	text-decoration: none;
+	color: #3e3e3e;
 }
 
 .titreProduitAlaune{
