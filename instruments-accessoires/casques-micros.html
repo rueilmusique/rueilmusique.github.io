@@ -102,7 +102,7 @@
 </head>
 <body>
 	<custom-header></custom-header>
-	<div class="main">
+	<div class="main" role="main">
 		<h1>Casques & micros</h1>
 		<p>Découvrez notre collection de casques et micros !
 		<br>
@@ -110,12 +110,12 @@
 		</p>
 		<div>
 				Trier :
-				<select id="sort">
+				<select id="sort" aria-label="Tri des produits">
 					<option value="default">Par défaut</option>
 					<option value="asc">Prix croissant</option>
 					<option value="desc">Prix décroissant</option>
 				</select>
-				<select id="filter-gamme">
+				<select id="filter-gamme" aria-label="Filtrer par gamme de produits">
 					<option value="all">Toutes les gammes</option>
 					<option value="🪴">🪴 Entrée de gamme</option>
 					<option value="✨">✨ Milieu de gamme </option>
@@ -133,7 +133,8 @@
 						<img id="overlay-img">
 					</section>
 					<section>
-						<p id="overlay-text"></p>
+						<div id="overlay-text">
+						</div>
 					</section>
 				</div>
 			</div>
@@ -141,167 +142,109 @@
 			
 			<div id="dt770pro" class="produit" data-prix="169" data-gamme="✨">
 				<div class="instock">
-					<img src="../images/casques-micros/dt770pro.jpg" class="imageCarte" alt="Beyerdynamic DT 770 Pro">
+					<img src="../images/casques-micros/dt770pro.jpg" class="imageCarte" alt="Beyerdynamic DT 770 Pro" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Beyerdynamic - DT 770 Pro
-				</div>
+				<div class="titreProduit">Beyerdynamic - DT 770 Pro</div>
 				<div>Casque fermé</div>
-				<div class="prix">
-					✨
-				</div>
+				<div class="prix">✨</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Beyerdynamic - DT 770 Pro
-					</h2>
-					<p class="justifier-texte">
-						Pour ceux qui souhaitent s'enregistrer avec sérieux en home-studio, le DT 770 Pro est la référence recommandée lorsqu'il s'agit d'un casque qui isole et qui restitue avec précision. Casque fermé, il reste confortable grâce à ses coussinets recouvrant chaque oreille.
-					</p>
+					<h2>Beyerdynamic - DT 770 Pro</h2>
+					<p class="justifier-texte">Pour ceux qui souhaitent s'enregistrer avec sérieux en home-studio, le DT 770 Pro est la référence recommandée lorsqu'il s'agit d'un casque qui isole et qui restitue avec précision. Casque fermé, il reste confortable grâce à ses coussinets recouvrant chaque oreille.</p>
 					
 					
-					<ul>
-						<li><strong>Type de casque : </strong>Fermé</li><li><strong>Réponse fréquentielle (casque) : </strong>5 Hz - 35 000 Hz</li><li><strong>Résistance (casque) : </strong>250 Ohms</li>
-					</ul>
+					<ul><li><strong>Type de casque : </strong>Fermé</li><li><strong>Réponse fréquentielle (casque) : </strong>5 Hz - 35 000 Hz</li><li><strong>Résistance (casque) : </strong>250 Ohms</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="dt990pro" class="produit" data-prix="179" data-gamme="✨">
 				<div class="instock">
-					<img src="../images/casques-micros/dt990pro.jpg" class="imageCarte" alt="Beyerdynamic DT 990 Pro">
+					<img src="../images/casques-micros/dt990pro.jpg" class="imageCarte" alt="Beyerdynamic DT 990 Pro" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Beyerdynamic - DT 990 Pro
-				</div>
+				<div class="titreProduit">Beyerdynamic - DT 990 Pro</div>
 				<div>Casque ouvert</div>
-				<div class="prix">
-					✨
-				</div>
+				<div class="prix">✨</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Beyerdynamic - DT 990 Pro
-					</h2>
-					<p class="justifier-texte">
-						La référence par excellence pour un casque ouvert avec une précision d'écoute. Parfaitement adapté pour de l'écoute prolongée, le DT 990 Pro est confortable grâce à ses coussinets recouvrant chaque oreille.
-					</p>
+					<h2>Beyerdynamic - DT 990 Pro</h2>
+					<p class="justifier-texte">La référence par excellence pour un casque ouvert avec une précision d'écoute. Parfaitement adapté pour de l'écoute prolongée, le DT 990 Pro est confortable grâce à ses coussinets recouvrant chaque oreille.</p>
 					
 					
-					<ul>
-						<li><strong>Type de casque : </strong>Ouvert</li><li><strong>Réponse fréquentielle (casque) : </strong>5 Hz - 35 000 Hz</li><li><strong>Résistance (casque) : </strong>250 Ohms</li>
-					</ul>
+					<ul><li><strong>Type de casque : </strong>Ouvert</li><li><strong>Réponse fréquentielle (casque) : </strong>5 Hz - 35 000 Hz</li><li><strong>Résistance (casque) : </strong>250 Ohms</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="sdm50" class="produit" data-prix="35" data-gamme="🪴">
 				<div class="instock">
-					<img src="../images/casques-micros/sdm50.jpg" class="imageCarte" alt="Stagg SDM50">
+					<img src="../images/casques-micros/sdm50.jpg" class="imageCarte" alt="Stagg SDM50" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Stagg - SDM50
-				</div>
+				<div class="titreProduit">Stagg - SDM50</div>
 				<div>Micro chant</div>
-				<div class="prix">
-					🪴
-				</div>
+				<div class="prix">🪴</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Stagg - SDM50
-					</h2>
-					<p class="justifier-texte">
-						Le SDM50 est un micro chant à petit budget, suffisant pour ceux qui font des soirées karaoké ou qui ont besoin d'amplifier leur voix dans un groupe de musique.
-					</p>
+					<h2>Stagg - SDM50</h2>
+					<p class="justifier-texte">Le SDM50 est un micro chant à petit budget, suffisant pour ceux qui font des soirées karaoké ou qui ont besoin d'amplifier leur voix dans un groupe de musique.</p>
 					
 					
-					<ul>
-						<li><strong>Type de micro : </strong>Dynamique</li><li><strong>Directivité du micro : </strong>Cardioïde</li><li><strong>Sensibilité : </strong>-54 dBV/Pa</li><li><strong>Réponse fréquentielle (micro) : </strong>50 Hz - 15 000 Hz</li>
-					</ul>
+					<ul><li><strong>Type de micro : </strong>Dynamique</li><li><strong>Directivité du micro : </strong>Cardioïde</li><li><strong>Sensibilité : </strong>-54 dBV/Pa</li><li><strong>Réponse fréquentielle (micro) : </strong>50 Hz - 15 000 Hz</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="prom85" class="produit" data-prix="59" data-gamme="🪴">
 				<div class="instock">
-					<img src="../images/casques-micros/prom85.jpg" class="imageCarte" alt="Prodipe Pro M-85 Lanen">
+					<img src="../images/casques-micros/prom85.jpg" class="imageCarte" alt="Prodipe Pro M-85 Lanen" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Prodipe - Pro M-85 Lanen
-				</div>
+				<div class="titreProduit">Prodipe - Pro M-85 Lanen</div>
 				<div>Micro chant</div>
-				<div class="prix">
-					🪴
-				</div>
+				<div class="prix">🪴</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Prodipe - Pro M-85 Lanen
-					</h2>
-					<p class="justifier-texte">
-						Petit clin d'œil à ce fameux micro utilisé partout sur scène, le Pro M-85 Lanen est une solution à petit prix, il conviendra à ceux qui veulent répéter chez eux.
-					</p>
+					<h2>Prodipe - Pro M-85 Lanen</h2>
+					<p class="justifier-texte">Petit clin d'œil à ce fameux micro utilisé partout sur scène, le Pro M-85 Lanen est une solution à petit prix, il conviendra à ceux qui veulent répéter chez eux.</p>
 					
 					
-					<ul>
-						<li><strong>Type de micro : </strong>Dynamique</li><li><strong>Directivité du micro : </strong>Cardioïde</li><li><strong>Sensibilité : </strong>-71 dB ± 3 dB</li><li><strong>Réponse fréquentielle (micro) : </strong>50 Hz - 16 000 Hz</li>
-					</ul>
+					<ul><li><strong>Type de micro : </strong>Dynamique</li><li><strong>Directivité du micro : </strong>Cardioïde</li><li><strong>Sensibilité : </strong>-71 dB ± 3 dB</li><li><strong>Réponse fréquentielle (micro) : </strong>50 Hz - 16 000 Hz</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="sm57" class="produit" data-prix="119" data-gamme="✨">
 				<div class="instock">
-					<img src="../images/casques-micros/sm57.jpg" class="imageCarte" alt="Shure SM57">
+					<img src="../images/casques-micros/sm57.jpg" class="imageCarte" alt="Shure SM57" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Shure - SM57
-				</div>
+				<div class="titreProduit">Shure - SM57</div>
 				<div>Micro dynamique</div>
-				<div class="prix">
-					✨
-				</div>
+				<div class="prix">✨</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Shure - SM57
-					</h2>
-					<p class="justifier-texte">
-						Le SM57 est le choix le plus populaire pour un musicien professionnel ayant besoin d'un microphone pour instruments amplifiés ou acoustiques, comme les amplificateurs de guitare ou de basse, le saxophone, la trompette ou les batteries. C'est aujourd'hui un incontournable dans l'arc des micros que l'on retrouve sur scène et en studio dans le monde entier.
-					</p>
+					<h2>Shure - SM57</h2>
+					<p class="justifier-texte">Le SM57 est le choix le plus populaire pour un musicien professionnel ayant besoin d'un microphone pour instruments amplifiés ou acoustiques, comme les amplificateurs de guitare ou de basse, le saxophone, la trompette ou les batteries. C'est aujourd'hui un incontournable dans l'arc des micros que l'on retrouve sur scène et en studio dans le monde entier.</p>
 					
 					
-					<ul>
-						<li><strong>Type de micro : </strong>Dynamique</li><li><strong>Directivité du micro : </strong>Cardioïde</li><li><strong>Sensibilité : </strong>-56 dBV/Pa</li><li><strong>Réponse fréquentielle (micro) : </strong>40 Hz - 15 000 Hz</li>
-					</ul>
+					<ul><li><strong>Type de micro : </strong>Dynamique</li><li><strong>Directivité du micro : </strong>Cardioïde</li><li><strong>Sensibilité : </strong>-56 dBV/Pa</li><li><strong>Réponse fréquentielle (micro) : </strong>40 Hz - 15 000 Hz</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="sm58" class="produit" data-prix="119" data-gamme="✨">
 				<div class="instock">
-					<img src="../images/casques-micros/sm58.jpg" class="imageCarte" alt="Shure SM58">
+					<img src="../images/casques-micros/sm58.jpg" class="imageCarte" alt="Shure SM58" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Shure - SM58
-				</div>
+				<div class="titreProduit">Shure - SM58</div>
 				<div>Micro chant</div>
-				<div class="prix">
-					✨
-				</div>
+				<div class="prix">✨</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Shure - SM58
-					</h2>
-					<p class="justifier-texte">
-						Le SM58 est un choix idéal pour les chanteurs & chanteuses professionnels pour chaque prestation en direct. Même dans des circonstances extrêmes, le SM58 reste en mesure de capturer uniquement la source principale sans prendre les sons d'arrière-plan. Sa directivité plus que précise explique son appréciation particulière parmi les DJs et présentateurs de clubs et de petites et grandes salles. C'est le 3310 des micros, il est increvable !
-					</p>
+					<h2>Shure - SM58</h2>
+					<p class="justifier-texte">Le SM58 est un choix idéal pour les chanteurs & chanteuses professionnels pour chaque prestation en direct. Même dans des circonstances extrêmes, le SM58 reste en mesure de capturer uniquement la source principale sans prendre les sons d'arrière-plan. Sa directivité plus que précise explique son appréciation particulière parmi les DJs et présentateurs de clubs et de petites et grandes salles. C'est le 3310 des micros, il est increvable !</p>
 					
-					
-		<blockquote class="rami">
-			Le SM58 est un incontournable pour tout professionnel, "for Shure!"
-		</blockquote>
-		
-					<ul>
-						<li><strong>Type de micro : </strong>Dynamique</li><li><strong>Directivité du micro : </strong>Cardioïde</li><li><strong>Sensibilité : </strong>-54.5 dBV/Pa</li><li><strong>Réponse fréquentielle (micro) : </strong>50 Hz - 15 000 Hz</li>
-					</ul>
+					<blockquote class="rami">Le SM58 est un incontournable pour tout professionnel, "for Shure!"</blockquote>
+					<ul><li><strong>Type de micro : </strong>Dynamique</li><li><strong>Directivité du micro : </strong>Cardioïde</li><li><strong>Sensibilité : </strong>-54.5 dBV/Pa</li><li><strong>Réponse fréquentielle (micro) : </strong>50 Hz - 15 000 Hz</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 

@@ -114,7 +114,7 @@
 </head>
 <body>
 	<custom-header></custom-header>
-	<div class="main">
+	<div class="main" role="main">
 		<h1>Basses électriques</h1>
 		<p>Découvrez notre collection de basses électriques ! N'oubliez pas que le mieux est de venir en magasin pour essayer directement 😉
 		<br>
@@ -122,12 +122,12 @@
 		</p>
 		<div>
 				Trier :
-				<select id="sort">
+				<select id="sort" aria-label="Tri des produits">
 					<option value="default">Par défaut</option>
 					<option value="asc">Prix croissant</option>
 					<option value="desc">Prix décroissant</option>
 				</select>
-				<select id="filter-gamme">
+				<select id="filter-gamme" aria-label="Filtrer par gamme de produits">
 					<option value="all">Toutes les gammes</option>
 					<option value="🪴">🪴 Entrée de gamme</option>
 					<option value="✨">✨ Milieu de gamme </option>
@@ -145,7 +145,8 @@
 						<img id="overlay-img">
 					</section>
 					<section>
-						<p id="overlay-text"></p>
+						<div id="overlay-text">
+						</div>
 					</section>
 				</div>
 			</div>
@@ -153,222 +154,150 @@
 			
 			<div id="v5r4st_tobacco-sunburst" class="produit" data-prix="539" data-gamme="✨">
 				<div class="instock">
-					<img src="../images/basses-electriques/v5r4st_tobacco-sunburst.jpg" class="imageCarte" alt="Sire Marcus Miller V5R Tobacco Sunburst">
+					<img src="../images/basses-electriques/v5r4st_tobacco-sunburst.jpg" class="imageCarte" alt="Sire Marcus Miller V5R Tobacco Sunburst" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Sire - Marcus Miller V5R Tobacco Sunburst
-				</div>
+				<div class="titreProduit">Sire - Marcus Miller V5R Tobacco Sunburst</div>
 				<div>Jazz basse</div>
-				<div class="prix">
-					✨
-				</div>
+				<div class="prix">✨</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Sire - Marcus Miller V5R Tobacco Sunburst
-					</h2>
-					<p class="justifier-texte">
-						La Marcus Miller V5R est le step-up grâce à son corps aulne et ses deux micros. Avec son manche Edgeless, elle procure un confort optimal, rendant chaque styles de jeu naturels.
-					</p>
+					<h2>Sire - Marcus Miller V5R Tobacco Sunburst</h2>
+					<p class="justifier-texte">La Marcus Miller V5R est le step-up grâce à son corps aulne et ses deux micros. Avec son manche Edgeless, elle procure un confort optimal, rendant chaque styles de jeu naturels.</p>
 					
 					
-					<ul>
-						<li><strong>Corps : </strong>Aulne</li><li><strong>Manche : </strong>Palissandre</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Micros : </strong>2 micros Custom Revolution</li><li><strong>Électronique : </strong>2 volumes, 1 tonalité</li><li><strong>Plaque : </strong>Noire</li>
-					</ul>
+					<ul><li><strong>Corps : </strong>Aulne</li><li><strong>Manche : </strong>Palissandre</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Micros : </strong>2 micros Custom Revolution</li><li><strong>Électronique : </strong>2 volumes, 1 tonalité</li><li><strong>Plaque : </strong>Noire</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="v7ar4st_natural-satin" class="produit" data-prix="769" data-gamme="💖">
 				<div class="sold">
-					<img src="../images/basses-electriques/v7ar4st_natural-satin.jpg" class="imageCarte" alt="Sire Marcus Miller V7 Ash Reissue 4-String (2nd Generation) Natural Satin">
+					<img src="../images/basses-electriques/v7ar4st_natural-satin.jpg" class="imageCarte" alt="Sire Marcus Miller V7 Ash Reissue 4-String (2nd Generation) Natural Satin" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Sire - Marcus Miller V7 Ash Reissue 4-String (2nd Generation) Natural Satin
-				</div>
+				<div class="titreProduit">Sire - Marcus Miller V7 Ash Reissue 4-String (2nd Generation) Natural Satin</div>
 				<div>Jazz basse</div>
-				<div class="prix">
-					💖
-				</div>
+				<div class="prix">💖</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Sire - Marcus Miller V7 Ash Reissue 4-String (2nd Generation) Natural Satin
-					</h2>
-					<p class="justifier-texte">
-						Pour ceux qui cherchent la polyvalence, la V7 Reissue se démarque par son commutateur actif/passif, ses potentiomètres assurant un maximum de flexibilité, et son manche en érable.
-					</p>
+					<h2>Sire - Marcus Miller V7 Ash Reissue 4-String (2nd Generation) Natural Satin</h2>
+					<p class="justifier-texte">Pour ceux qui cherchent la polyvalence, la V7 Reissue se démarque par son commutateur actif/passif, ses potentiomètres assurant un maximum de flexibilité, et son manche en érable.</p>
 					
 					
-					<ul>
-						<li><strong>Corps : </strong>Frêne des marais</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Érable</li><li><strong>Micros : </strong>2 micros Custom Revolution actifs</li><li><strong>Électronique : </strong>Volume/Tone, Blender, Treble, Middle/Freq, Bass</li><li><strong>Plaque : </strong>Nacre</li>
-					</ul>
+					<ul><li><strong>Corps : </strong>Frêne des marais</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Érable</li><li><strong>Micros : </strong>2 micros Custom Revolution actifs</li><li><strong>Électronique : </strong>Volume/Tone, Blender, Treble, Middle/Freq, Bass</li><li><strong>Plaque : </strong>Nacre</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="v7sa4st_tobacco-sunburst" class="produit" data-prix="769" data-gamme="💖">
 				<div class="instock">
-					<img src="../images/basses-electriques/v7sa4st_tobacco-sunburst.jpg" class="imageCarte" alt="Sire Marcus Miller V7 Swamp Ash 4-String (2nd Generation) Tobacco Sunburst">
+					<img src="../images/basses-electriques/v7sa4st_tobacco-sunburst.jpg" class="imageCarte" alt="Sire Marcus Miller V7 Swamp Ash 4-String (2nd Generation) Tobacco Sunburst" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Sire - Marcus Miller V7 Swamp Ash 4-String (2nd Generation) Tobacco Sunburst
-				</div>
+				<div class="titreProduit">Sire - Marcus Miller V7 Swamp Ash 4-String (2nd Generation) Tobacco Sunburst</div>
 				<div>Jazz basse</div>
-				<div class="prix">
-					💖
-				</div>
+				<div class="prix">💖</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Sire - Marcus Miller V7 Swamp Ash 4-String (2nd Generation) Tobacco Sunburst
-					</h2>
-					<p class="justifier-texte">
-						Pour ceux qui cherchent la polyvalence, la V7 Swamp Ash se démarque par son commutateur actif/passif, ses potentiomètres assurant un maximum de flexibilité, et son manche en érable.
-					</p>
+					<h2>Sire - Marcus Miller V7 Swamp Ash 4-String (2nd Generation) Tobacco Sunburst</h2>
+					<p class="justifier-texte">Pour ceux qui cherchent la polyvalence, la V7 Swamp Ash se démarque par son commutateur actif/passif, ses potentiomètres assurant un maximum de flexibilité, et son manche en érable.</p>
 					
 					
-					<ul>
-						<li><strong>Corps : </strong>Frêne des marais</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Érable</li><li><strong>Micros : </strong>2 micros Custom Revolution actifs</li><li><strong>Électronique : </strong>Volume/Tone, Blender, Treble, Middle/Freq, Bass</li><li><strong>Plaque : </strong>Nacre</li>
-					</ul>
+					<ul><li><strong>Corps : </strong>Frêne des marais</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Érable</li><li><strong>Micros : </strong>2 micros Custom Revolution actifs</li><li><strong>Électronique : </strong>Volume/Tone, Blender, Treble, Middle/Freq, Bass</li><li><strong>Plaque : </strong>Nacre</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="usspbmfb" class="produit" data-prix="1690" data-gamme="💎">
 				<div class="instock">
 					<img src="../images/basses-electriques/usspbmfb.jpg" class="imageCarte" alt="Fender American Standard Precision Bass Maple Fingerboard Black
-">
+" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Fender - American Standard Precision Bass Maple Fingerboard Black
-
-				</div>
+				<div class="titreProduit">Fender - American Standard Precision Bass Maple Fingerboard Black
+</div>
 				<div>Precision basse</div>
-				<div class="prix">
-					💎
-				</div>
+				<div class="prix">💎</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Fender - American Standard Precision Bass Maple Fingerboard Black
-
-					</h2>
-					<p class="justifier-texte">
-						L'incarnation de l’élégance et la puissance du son Fender authentique. Avec son toucher précis, son sustain exceptionnel et son look intemporel, l'American Standard Precision Bass offre une présence scénique irrésistible et une fiabilité à toute épreuve. L’instrument idéal pour les bassistes exigeants qui veulent un groove massif et professionnel.
-					</p>
+					<h2>Fender - American Standard Precision Bass Maple Fingerboard Black
+</h2>
+					<p class="justifier-texte">L'incarnation de l’élégance et la puissance du son Fender authentique. Avec son toucher précis, son sustain exceptionnel et son look intemporel, l'American Standard Precision Bass offre une présence scénique irrésistible et une fiabilité à toute épreuve. L’instrument idéal pour les bassistes exigeants qui veulent un groove massif et professionnel.</p>
 					
 					
-					<ul>
-						<li><strong>Corps : </strong>Aulne</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Érable</li><li><strong>Micros : </strong>2 micros</li><li><strong>Électronique : </strong>1 volume, 1 tonalité</li><li><strong>Plaque : </strong>Blanche</li>
-					</ul>
+					<ul><li><strong>Corps : </strong>Aulne</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Érable</li><li><strong>Micros : </strong>2 micros</li><li><strong>Électronique : </strong>1 volume, 1 tonalité</li><li><strong>Plaque : </strong>Blanche</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="precision1979" class="produit" data-prix="3419" data-gamme="💎">
 				<div class="occasion">
-					<img src="../images/basses-electriques/precision1979.jpg" class="imageCarte" alt="Fender Precision Bass 1979">
+					<img src="../images/basses-electriques/precision1979.jpg" class="imageCarte" alt="Fender Precision Bass 1979" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Fender - Precision Bass 1979
-				</div>
+				<div class="titreProduit">Fender - Precision Bass 1979</div>
 				<div>Precision basse</div>
-				<div class="prix">
-					💎
-				</div>
+				<div class="prix">💎</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Fender - Precision Bass 1979
-					</h2>
-					<p class="justifier-texte">
-						La légendaire Precision Bass 1979, ou plutôt le plaisir ultime de jouer de la basse électrique. Manche et touche en érable et corps en aulne, un électronique aux contrôles simples mais efficaces, et surtout d'une précision hors-norme.
-					</p>
+					<h2>Fender - Precision Bass 1979</h2>
+					<p class="justifier-texte">La légendaire Precision Bass 1979, ou plutôt le plaisir ultime de jouer de la basse électrique. Manche et touche en érable et corps en aulne, un électronique aux contrôles simples mais efficaces, et surtout d'une précision hors-norme.</p>
 					<p>Intervention(s) sur l'occasion : Reprise complète électro, réglage complet et entretien</p>
 					
-					<ul>
-						<li><strong>Corps : </strong>Aulne</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Érable</li><li><strong>Micros : </strong>2 micros passifs</li><li><strong>Électronique : </strong>1 volume, 1 tonalité</li>
-					</ul>
+					<ul><li><strong>Corps : </strong>Aulne</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Érable</li><li><strong>Micros : </strong>2 micros passifs</li><li><strong>Électronique : </strong>1 volume, 1 tonalité</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="v3p4st_black" class="produit" data-prix="359" data-gamme="🪴">
 				<div class="instock">
-					<img src="../images/basses-electriques/v3p4st_black.jpg" class="imageCarte" alt="Sire Marcus Miller V3P Black">
+					<img src="../images/basses-electriques/v3p4st_black.jpg" class="imageCarte" alt="Sire Marcus Miller V3P Black" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Sire - Marcus Miller V3P Black
-				</div>
+				<div class="titreProduit">Sire - Marcus Miller V3P Black</div>
 				<div>Jazz basse</div>
-				<div class="prix">
-					🪴
-				</div>
+				<div class="prix">🪴</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Sire - Marcus Miller V3P Black
-					</h2>
-					<p class="justifier-texte">
-						La basse d'entrée de gamme de la série V en version passive. Pour ceux qui veulent commencer à la basse électrique à petit prix ! Le matériel, la construction du corps et le manche de la Sire V3P, approuvés par Marcus Miller, ainsi que l'électronique passive, complètent le rapport qualité-prix de cette basse.
-
-					</p>
+					<h2>Sire - Marcus Miller V3P Black</h2>
+					<p class="justifier-texte">La basse d'entrée de gamme de la série V en version passive. Pour ceux qui veulent commencer à la basse électrique à petit prix ! Le matériel, la construction du corps et le manche de la Sire V3P, approuvés par Marcus Miller, ainsi que l'électronique passive, complètent le rapport qualité-prix de cette basse.
+</p>
 					
 					
-					<ul>
-						<li><strong>Corps : </strong>Acajou</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Micros : </strong>2 micros Super Jazz</li><li><strong>Électronique : </strong>2 volumes, 1 tonalité</li><li><strong>Plaque : </strong>Noire</li>
-					</ul>
+					<ul><li><strong>Corps : </strong>Acajou</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Micros : </strong>2 micros Super Jazz</li><li><strong>Électronique : </strong>2 volumes, 1 tonalité</li><li><strong>Plaque : </strong>Noire</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="v3p4st_sonic-blue" class="produit" data-prix="359" data-gamme="🪴">
 				<div class="instock">
-					<img src="../images/basses-electriques/v3p4st_sonic-blue.jpg" class="imageCarte" alt="Sire Marcus Miller V3P Sonic Blue">
+					<img src="../images/basses-electriques/v3p4st_sonic-blue.jpg" class="imageCarte" alt="Sire Marcus Miller V3P Sonic Blue" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Sire - Marcus Miller V3P Sonic Blue
-				</div>
+				<div class="titreProduit">Sire - Marcus Miller V3P Sonic Blue</div>
 				<div>Jazz basse</div>
-				<div class="prix">
-					🪴
-				</div>
+				<div class="prix">🪴</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Sire - Marcus Miller V3P Sonic Blue
-					</h2>
-					<p class="justifier-texte">
-						La basse d'entrée de gamme de la série V en version passive. Pour ceux qui veulent commencer à la basse électrique à petit prix ! Le matériel, la construction du corps et le manche de la Sire V3P, approuvés par Marcus Miller, ainsi que l'électronique passive, complètent le rapport qualité-prix de cette basse.
-					</p>
+					<h2>Sire - Marcus Miller V3P Sonic Blue</h2>
+					<p class="justifier-texte">La basse d'entrée de gamme de la série V en version passive. Pour ceux qui veulent commencer à la basse électrique à petit prix ! Le matériel, la construction du corps et le manche de la Sire V3P, approuvés par Marcus Miller, ainsi que l'électronique passive, complètent le rapport qualité-prix de cette basse.</p>
 					
 					
-					<ul>
-						<li><strong>Corps : </strong>Acajou</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Micros : </strong>2 micros Super Jazz</li><li><strong>Électronique : </strong>2 volumes, 1 tonalité</li><li><strong>Plaque : </strong>Noire</li>
-					</ul>
+					<ul><li><strong>Corps : </strong>Acajou</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Micros : </strong>2 micros Super Jazz</li><li><strong>Électronique : </strong>2 volumes, 1 tonalité</li><li><strong>Plaque : </strong>Noire</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="v3p4st_tobacco-sunburst" class="produit" data-prix="359" data-gamme="🪴">
 				<div class="instock">
-					<img src="../images/basses-electriques/v3p4st_tobacco-sunburst.jpg" class="imageCarte" alt="Sire Marcus Miller V3P Tobacco Sunburst">
+					<img src="../images/basses-electriques/v3p4st_tobacco-sunburst.jpg" class="imageCarte" alt="Sire Marcus Miller V3P Tobacco Sunburst" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Sire - Marcus Miller V3P Tobacco Sunburst
-				</div>
+				<div class="titreProduit">Sire - Marcus Miller V3P Tobacco Sunburst</div>
 				<div>Jazz basse</div>
-				<div class="prix">
-					🪴
-				</div>
+				<div class="prix">🪴</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Sire - Marcus Miller V3P Tobacco Sunburst
-					</h2>
-					<p class="justifier-texte">
-						La basse d'entrée de gamme de la série V en version passive. Pour ceux qui veulent commencer à la basse électrique à petit prix ! Le matériel, la construction du corps et le manche de la Sire V3P, approuvés par Marcus Miller, ainsi que l'électronique passive, complètent le rapport qualité-prix de cette basse.
-
-					</p>
+					<h2>Sire - Marcus Miller V3P Tobacco Sunburst</h2>
+					<p class="justifier-texte">La basse d'entrée de gamme de la série V en version passive. Pour ceux qui veulent commencer à la basse électrique à petit prix ! Le matériel, la construction du corps et le manche de la Sire V3P, approuvés par Marcus Miller, ainsi que l'électronique passive, complètent le rapport qualité-prix de cette basse.
+</p>
 					
 					
-					<ul>
-						<li><strong>Corps : </strong>Acajou</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Micros : </strong>2 micros Super Jazz</li><li><strong>Électronique : </strong>2 volumes, 1 tonalité</li><li><strong>Plaque : </strong>Noire</li>
-					</ul>
+					<ul><li><strong>Corps : </strong>Acajou</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Micros : </strong>2 micros Super Jazz</li><li><strong>Électronique : </strong>2 volumes, 1 tonalité</li><li><strong>Plaque : </strong>Noire</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 

@@ -326,9 +326,24 @@ nav a:hover{
 	cursor: pointer;
 }
 
-.bouton:hover{
+.bouton:hover, .boutonCTA:hover{
 	background: #bd964a;
 }
+
+/* NEW */
+.boutonCTA{
+	display: block;
+	/* width: fit-content; */
+	padding: 1em;
+	margin: 0.5em 0;
+	background: #7d5224;
+	text-decoration: none;
+	border-radius: 7px;
+	text-align: center;
+	color: #fff !important;
+	transition: 0.05s;
+}
+/* END */
 
 .centrer-texte{
 	text-align: center;
@@ -869,7 +884,7 @@ tr{
 	position: fixed;
 	left: 1em;
 	right: 1em;
-	bottom: 4em;
+	bottom: 3em;
 	background: rgba(0,0,0,1);
 	padding: 0.5em 1em;
 	border-radius: 5px;
@@ -913,7 +928,7 @@ tr{
 }
 
 /* CSS MOBILE */
-@media screen and (max-width: 736px){
+@media screen and (max-width: 900px), screen and (max-height: 500px){
 	.produits{
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 0.2em;

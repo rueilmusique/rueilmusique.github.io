@@ -194,12 +194,12 @@
 		</p>
 		<div>
 				Trier :
-				<select id="sort">
+				<select id="sort" aria-label="Tri des produits">
 					<option value="default">Par défaut</option>
 					<option value="asc">Prix croissant</option>
 					<option value="desc">Prix décroissant</option>
 				</select>
-				<select id="filter-gamme">
+				<select id="filter-gamme" aria-label="Filtrer par gamme de produits">
 					<option value="all">Toutes les gammes</option>
 					<option value="🪴">🪴 Entrée de gamme</option>
 					<option value="✨">✨ Milieu de gamme </option>
@@ -217,7 +217,8 @@
 						<img id="overlay-img">
 					</section>
 					<section>
-						<p id="overlay-text"></p>
+						<div id="overlay-text">
+						</div>
 					</section>
 				</div>
 			</div>
@@ -225,549 +226,361 @@
 			
 			<div id="ziricote" class="produit" data-prix="599" data-gamme="✨">
 				<div class="instock">
-					<img src="../images/guitares-classiques/ziricote.jpg" class="imageCarte" alt="Alhambra Ziricote">
+					<img src="../images/guitares-classiques/ziricote.jpg" class="imageCarte" alt="Alhambra Ziricote" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Alhambra - Ziricote
-				</div>
+				<div class="titreProduit">Alhambra - Ziricote</div>
 				<div>Classique</div>
-				<div class="prix">
-					✨
-				</div>
+				<div class="prix">✨</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Alhambra - Ziricote
-					</h2>
-					<p class="justifier-texte">
-						La Ziricote d’Alhambra séduit par son caractère sonore exceptionnel : son bois offre une projection riche, et surtout des basses chaleureuses et des aigus soyeux, le tout dans une guitare élégante et équilibrée.
-					</p>
+					<h2>Alhambra - Ziricote</h2>
+					<p class="justifier-texte">La Ziricote d’Alhambra séduit par son caractère sonore exceptionnel : son bois offre une projection riche, et surtout des basses chaleureuses et des aigus soyeux, le tout dans une guitare élégante et équilibrée.</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Cèdre massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Chevalet : </strong>Palissandre</li><li><strong>Mécaniques : </strong>Plaqué or</li><li><strong>Éclisses : </strong>Ziricote</li><li><strong>Dos : </strong>Ziricote</li><li><strong>Vernis : </strong>Naturel satiné</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Cèdre massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Chevalet : </strong>Palissandre</li><li><strong>Mécaniques : </strong>Plaqué or</li><li><strong>Éclisses : </strong>Ziricote</li><li><strong>Dos : </strong>Ziricote</li><li><strong>Vernis : </strong>Naturel satiné</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="a4" class="produit" data-prix="439" data-gamme="✨">
 				<div class="instock">
-					<img src="../images/guitares-classiques/a4.jpg" class="imageCarte" alt="Admira a4">
+					<img src="../images/guitares-classiques/a4.jpg" class="imageCarte" alt="Admira a4" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Admira - a4
-				</div>
+				<div class="titreProduit">Admira - a4</div>
 				<div>Classique</div>
-				<div class="prix">
-					✨
-				</div>
+				<div class="prix">✨</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Admira - a4
-					</h2>
-					<p class="justifier-texte">
-						Assemblée en Espagne, la a4 se démarque par son bois ébène : avec son brun très clair, elle ne passe clairement pas inaperçue ! Sa table d'harmonie en cèdre massif lui assure une sonoriré claire tout en conservant des graves définis.
-					</p>
+					<h2>Admira - a4</h2>
+					<p class="justifier-texte">Assemblée en Espagne, la a4 se démarque par son bois ébène : avec son brun très clair, elle ne passe clairement pas inaperçue ! Sa table d'harmonie en cèdre massif lui assure une sonoriré claire tout en conservant des graves définis.</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Cèdre massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Kabukalli</li><li><strong>Chevalet : </strong>Kabukalli</li><li><strong>Éclisses : </strong>Ébène</li><li><strong>Dos : </strong>Ébène</li><li><strong>Vernis : </strong>Naturel brillant</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Cèdre massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Kabukalli</li><li><strong>Chevalet : </strong>Kabukalli</li><li><strong>Éclisses : </strong>Ébène</li><li><strong>Dos : </strong>Ébène</li><li><strong>Vernis : </strong>Naturel brillant</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="malaga34" class="produit" data-prix="249" data-gamme="🧒">
 				<div class="instock">
-					<img src="../images/guitares-classiques/malaga34.jpg" class="imageCarte" alt="Admira Málaga 3/4">
+					<img src="../images/guitares-classiques/malaga34.jpg" class="imageCarte" alt="Admira Málaga 3/4" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Admira - Málaga 3/4
-				</div>
+				<div class="titreProduit">Admira - Málaga 3/4</div>
 				<div>Classique</div>
-				<div class="prix">
-					🧒
-				</div>
+				<div class="prix">🧒</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Admira - Málaga 3/4
-					</h2>
-					<p class="justifier-texte">
-						Fabriquée pour les jeunes musiciens, la Málaga 3/4 est véritable petite guitare d'étude sérieuse et artisanale, car elle offre un son plus riche grâce à sa table d'harmonie massive ! Et surtout, elle est adaptée aux enfants grâce à son format 3/4.
-					</p>
+					<h2>Admira - Málaga 3/4</h2>
+					<p class="justifier-texte">Fabriquée pour les jeunes musiciens, la Málaga 3/4 est véritable petite guitare d'étude sérieuse et artisanale, car elle offre un son plus riche grâce à sa table d'harmonie massive ! Et surtout, elle est adaptée aux enfants grâce à son format 3/4.</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Cèdre massif</li><li><strong>Corps : </strong>Acajou</li><li><strong>Touche : </strong>Kabukalli</li><li><strong>Chevalet : </strong>Kabukalli</li><li><strong>Vernis : </strong>Naturel brillant</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Cèdre massif</li><li><strong>Corps : </strong>Acajou</li><li><strong>Touche : </strong>Kabukalli</li><li><strong>Chevalet : </strong>Kabukalli</li><li><strong>Vernis : </strong>Naturel brillant</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="presentation" class="produit" data-prix="959" data-gamme="💖">
 				<div class="instock">
-					<img src="../images/guitares-classiques/presentation.jpg" class="imageCarte" alt="La Patrie Presentation">
+					<img src="../images/guitares-classiques/presentation.jpg" class="imageCarte" alt="La Patrie Presentation" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					La Patrie - Presentation
-				</div>
+				<div class="titreProduit">La Patrie - Presentation</div>
 				<div>Classique</div>
-				<div class="prix">
-					💖
-				</div>
+				<div class="prix">💖</div>
 				<div class="produit-detail hidden">
-					<h2>
-						La Patrie - Presentation
-					</h2>
-					<p class="justifier-texte">
-						A travers la Presentation, les ateliers Godin rendent hommage à la musique en offrant un instrument où rien n'est compromis : confort, sonorité, finitions, tout a été méticulesement pensé et conçu à la main pour offrir le top du top à tout musicien professionnel. La Presentation est un modèle qui ne vous laissera clairement pas indifférent !
-					</p>
+					<h2>La Patrie - Presentation</h2>
+					<p class="justifier-texte">A travers la Presentation, les ateliers Godin rendent hommage à la musique en offrant un instrument où rien n'est compromis : confort, sonorité, finitions, tout a été méticulesement pensé et conçu à la main pour offrir le top du top à tout musicien professionnel. La Presentation est un modèle qui ne vous laissera clairement pas indifférent !</p>
 					
-					
-		<blockquote class="rami">
-			Godin a toujours su m'impressioner avec leurs guitares de manière générale, c'est un sans faute sur la Presentation : entre tradition et modernité, c'est son confort et sa sonorité impeccables qui me marquent à chaque fois toujours autant !
-		</blockquote>
-		
-					<ul>
-						<li><strong>Table : </strong>Cèdre massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Palissandre indien</li><li><strong>Chevalet : </strong>Palissandre indien</li><li><strong>Éclisses : </strong>Palissandre indien</li><li><strong>Dos : </strong>Palissandre indien</li><li><strong>Vernis : </strong>Naturel satiné</li>
-					</ul>
+					<blockquote class="rami">Godin a toujours su m'impressioner avec leurs guitares de manière générale, c'est un sans faute sur la Presentation : entre tradition et modernité, c'est son confort et sa sonorité impeccables qui me marquent à chaque fois toujours autant !</blockquote>
+					<ul><li><strong>Table : </strong>Cèdre massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Palissandre indien</li><li><strong>Chevalet : </strong>Palissandre indien</li><li><strong>Éclisses : </strong>Palissandre indien</li><li><strong>Dos : </strong>Palissandre indien</li><li><strong>Vernis : </strong>Naturel satiné</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="3c" class="produit" data-prix="499" data-gamme="✨">
 				<div class="instock">
-					<img src="../images/guitares-classiques/3c.jpg" class="imageCarte" alt="Alhambra 3c">
+					<img src="../images/guitares-classiques/3c.jpg" class="imageCarte" alt="Alhambra 3c" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Alhambra - 3c
-				</div>
+				<div class="titreProduit">Alhambra - 3c</div>
 				<div>Classique</div>
-				<div class="prix">
-					✨
-				</div>
+				<div class="prix">✨</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Alhambra - 3c
-					</h2>
-					<p class="justifier-texte">
-						Cette guitare est le choix idéal pour perfectionner votre technique et faire vos premiers pas dans le monde de la guitare. Construite avec des bois sélectionnés pour une sonorité chaleureuse exceptionnelle, l'Alhambra 3C a été pensée pour un son rond et défini.
-					</p>
+					<h2>Alhambra - 3c</h2>
+					<p class="justifier-texte">Cette guitare est le choix idéal pour perfectionner votre technique et faire vos premiers pas dans le monde de la guitare. Construite avec des bois sélectionnés pour une sonorité chaleureuse exceptionnelle, l'Alhambra 3C a été pensée pour un son rond et défini.</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Épicea allemand ou cèdre rouge massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Palissandre indien</li><li><strong>Chevalet : </strong>Palissandre indien</li><li><strong>Éclisses : </strong>Acajou</li><li><strong>Dos : </strong>Acajou</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Épicea allemand ou cèdre rouge massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Palissandre indien</li><li><strong>Chevalet : </strong>Palissandre indien</li><li><strong>Éclisses : </strong>Acajou</li><li><strong>Dos : </strong>Acajou</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="jh60" class="produit" data-prix="5990" data-gamme="💎">
 				<div class="instock">
-					<img src="../images/guitares-classiques/jh60.jpg" class="imageCarte" alt="Juan Hernandez JH60CD Luthier">
+					<img src="../images/guitares-classiques/jh60.jpg" class="imageCarte" alt="Juan Hernandez JH60CD Luthier" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Juan Hernandez - JH60CD Luthier
-				</div>
+				<div class="titreProduit">Juan Hernandez - JH60CD Luthier</div>
 				<div>Classique</div>
-				<div class="prix">
-					💎
-				</div>
+				<div class="prix">💎</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Juan Hernandez - JH60CD Luthier
-					</h2>
-					<p class="justifier-texte">
-						Le modèle anniversaire du maître luthier espagnol Juan Hernandez, la JH60CD Luthier est un modèle plus qu'emblématique, c'est notre plus belle pièce unique en magasin, un véritable bijou de fabrication !
-					</p>
+					<h2>Juan Hernandez - JH60CD Luthier</h2>
+					<p class="justifier-texte">Le modèle anniversaire du maître luthier espagnol Juan Hernandez, la JH60CD Luthier est un modèle plus qu'emblématique, c'est notre plus belle pièce unique en magasin, un véritable bijou de fabrication !</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Cèdre massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Ébène</li><li><strong>Mécaniques : </strong>Précision or</li><li><strong>Éclisses : </strong>Palissandre rio massif</li><li><strong>Dos : </strong>Palissandre rio massif</li><li><strong>Finition : </strong>Vernis spécial nitrocellulosique haute qualité</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Cèdre massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Ébène</li><li><strong>Mécaniques : </strong>Précision or</li><li><strong>Éclisses : </strong>Palissandre rio massif</li><li><strong>Dos : </strong>Palissandre rio massif</li><li><strong>Finition : </strong>Vernis spécial nitrocellulosique haute qualité</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="eucs" class="produit" data-prix="199" data-gamme="🪴">
 				<div class="instock">
-					<img src="../images/guitares-classiques/eucs.jpg" class="imageCarte" alt="APC eucs">
+					<img src="../images/guitares-classiques/eucs.jpg" class="imageCarte" alt="APC eucs" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					APC - eucs
-				</div>
+				<div class="titreProduit">APC - eucs</div>
 				<div>Classique</div>
-				<div class="prix">
-					🪴
-				</div>
+				<div class="prix">🪴</div>
 				<div class="produit-detail hidden">
-					<h2>
-						APC - eucs
-					</h2>
-					<p class="justifier-texte">
-						La EUCS est une petite guitare d'étude artisanale très abordable avec une table d'harmonie en bois massif ! Un produit d'atelier à prix imbattable.
-					</p>
+					<h2>APC - eucs</h2>
+					<p class="justifier-texte">La EUCS est une petite guitare d'étude artisanale très abordable avec une table d'harmonie en bois massif ! Un produit d'atelier à prix imbattable.</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Épicéa massif</li><li><strong>Éclisses : </strong>Eucalyptus</li><li><strong>Dos : </strong>Eucalyptus</li><li><strong>Vernis : </strong>Naturel satiné</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Épicéa massif</li><li><strong>Éclisses : </strong>Eucalyptus</li><li><strong>Dos : </strong>Eucalyptus</li><li><strong>Vernis : </strong>Naturel satiné</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="4p" class="produit" data-prix="599" data-gamme="✨">
 				<div class="instock">
-					<img src="../images/guitares-classiques/4p.jpg" class="imageCarte" alt="Alhambra 4p">
+					<img src="../images/guitares-classiques/4p.jpg" class="imageCarte" alt="Alhambra 4p" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Alhambra - 4p
-				</div>
+				<div class="titreProduit">Alhambra - 4p</div>
 				<div>Classique</div>
-				<div class="prix">
-					✨
-				</div>
+				<div class="prix">✨</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Alhambra - 4p
-					</h2>
-					<p class="justifier-texte">
-						Fabriquée soigneusement en Espagne, la 4p est une guitare classique qui offre un son équilibré, ni plus ni moins de graves et d'aigus, tout juste ce qu'il faut. C'est un très bel instrument pour les musiciens sérieux !
-					</p>
+					<h2>Alhambra - 4p</h2>
+					<p class="justifier-texte">Fabriquée soigneusement en Espagne, la 4p est une guitare classique qui offre un son équilibré, ni plus ni moins de graves et d'aigus, tout juste ce qu'il faut. C'est un très bel instrument pour les musiciens sérieux !</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Épicea allemand ou cèdre rouge massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Ébène</li><li><strong>Chevalet : </strong>Palissandre indien</li><li><strong>Mécaniques : </strong>Précision plaqué or</li><li><strong>Éclisses : </strong>Palissandre indien</li><li><strong>Dos : </strong>Palissandre indien</li><li><strong>Vernis : </strong>Naturel</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Épicea allemand ou cèdre rouge massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Ébène</li><li><strong>Chevalet : </strong>Palissandre indien</li><li><strong>Mécaniques : </strong>Précision plaqué or</li><li><strong>Éclisses : </strong>Palissandre indien</li><li><strong>Dos : </strong>Palissandre indien</li><li><strong>Vernis : </strong>Naturel</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="sm40" class="produit" data-prix="389" data-gamme="🪴">
 				<div class="instock">
-					<img src="../images/guitares-classiques/sm40.jpg" class="imageCarte" alt="Hora SM40">
+					<img src="../images/guitares-classiques/sm40.jpg" class="imageCarte" alt="Hora SM40" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Hora - SM40
-				</div>
+				<div class="titreProduit">Hora - SM40</div>
 				<div>Classique</div>
-				<div class="prix">
-					🪴
-				</div>
+				<div class="prix">🪴</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Hora - SM40
-					</h2>
-					<p class="justifier-texte">
-						La SM40 est un instrument aux sonorités chaleureuses grâce à sa table massive en cèdre, c'est le choix pertinent pour ceux qui veulent un son légèrement généreux en graves tout en ayant un budget restreint.
-					</p>
+					<h2>Hora - SM40</h2>
+					<p class="justifier-texte">La SM40 est un instrument aux sonorités chaleureuses grâce à sa table massive en cèdre, c'est le choix pertinent pour ceux qui veulent un son légèrement généreux en graves tout en ayant un budget restreint.</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Épicea massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Chevalet : </strong>Palissandre</li><li><strong>Mécaniques : </strong>Or</li><li><strong>Éclisses : </strong>Palissandre</li><li><strong>Dos : </strong>Palissandre</li><li><strong>Vernis : </strong>Naturel</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Épicea massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Palissandre</li><li><strong>Chevalet : </strong>Palissandre</li><li><strong>Mécaniques : </strong>Or</li><li><strong>Éclisses : </strong>Palissandre</li><li><strong>Dos : </strong>Palissandre</li><li><strong>Vernis : </strong>Naturel</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="jr125" class="produit" data-prix="2150" data-gamme="💎">
 				<div class="instock">
-					<img src="../images/guitares-classiques/jr125.jpg" class="imageCarte" alt="Jose Ramirez JR-125">
+					<img src="../images/guitares-classiques/jr125.jpg" class="imageCarte" alt="Jose Ramirez JR-125" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Jose Ramirez - JR-125
-				</div>
+				<div class="titreProduit">Jose Ramirez - JR-125</div>
 				<div>Classique</div>
-				<div class="prix">
-					💎
-				</div>
+				<div class="prix">💎</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Jose Ramirez - JR-125
-					</h2>
-					<p class="justifier-texte">
-						L'art de la lutherie espagnole incarnée dans une guitare d'une vie entière : la JR-125 n'est plus seulement un instrument de musique, c'est une œuvre d'art à ce stade ! Cèdre rouge massif pour la table d'harmonie, cet instrument rend hommage au répertoire classique espagnol et à la lutherie.
-					</p>
+					<h2>Jose Ramirez - JR-125</h2>
+					<p class="justifier-texte">L'art de la lutherie espagnole incarnée dans une guitare d'une vie entière : la JR-125 n'est plus seulement un instrument de musique, c'est une œuvre d'art à ce stade ! Cèdre rouge massif pour la table d'harmonie, cet instrument rend hommage au répertoire classique espagnol et à la lutherie.</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Cèdre rouge massif</li><li><strong>Corps : </strong>Palissandre indien massif</li><li><strong>Touche : </strong>Ébène</li><li><strong>Mécaniques : </strong>Plaqué or</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Cèdre rouge massif</li><li><strong>Corps : </strong>Palissandre indien massif</li><li><strong>Touche : </strong>Ébène</li><li><strong>Mécaniques : </strong>Plaqué or</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="ss300" class="produit" data-prix="259" data-gamme="🪴">
 				<div class="instock">
-					<img src="../images/guitares-classiques/ss300.jpg" class="imageCarte" alt="Hora ss300">
+					<img src="../images/guitares-classiques/ss300.jpg" class="imageCarte" alt="Hora ss300" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Hora - ss300
-				</div>
+				<div class="titreProduit">Hora - ss300</div>
 				<div>Classique</div>
-				<div class="prix">
-					🪴
-				</div>
+				<div class="prix">🪴</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Hora - ss300
-					</h2>
-					<p class="justifier-texte">
-						Fabriquée en Roumanie, la SS300 est une guitare abordable au timbre clair vous permettra de découvrir le répertoire classique. Un petit prix, mais un instrument qui reste sérieux pour tout débutant !
-					</p>
+					<h2>Hora - ss300</h2>
+					<p class="justifier-texte">Fabriquée en Roumanie, la SS300 est une guitare abordable au timbre clair vous permettra de découvrir le répertoire classique. Un petit prix, mais un instrument qui reste sérieux pour tout débutant !</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Épicéa massif</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Érable</li><li><strong>Chevalet : </strong>Érable</li><li><strong>Éclisses : </strong>Noyer</li><li><strong>Dos : </strong>Noyer</li><li><strong>Vernis : </strong>Naturel satiné</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Épicéa massif</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Érable</li><li><strong>Chevalet : </strong>Érable</li><li><strong>Éclisses : </strong>Noyer</li><li><strong>Dos : </strong>Noyer</li><li><strong>Vernis : </strong>Naturel satiné</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="malaga78" class="produit" data-prix="269" data-gamme="🧒">
 				<div class="instock">
-					<img src="../images/guitares-classiques/malaga78.jpg" class="imageCarte" alt="Admira Málaga 7/8">
+					<img src="../images/guitares-classiques/malaga78.jpg" class="imageCarte" alt="Admira Málaga 7/8" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Admira - Málaga 7/8
-				</div>
+				<div class="titreProduit">Admira - Málaga 7/8</div>
 				<div>Classique 7/8</div>
-				<div class="prix">
-					🧒
-				</div>
+				<div class="prix">🧒</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Admira - Málaga 7/8
-					</h2>
-					<p class="justifier-texte">
-						Similaire à la Málaga 3/4, la Málaga 7/8 a été spécialement conçue pour les personnes de 12 à 16 ans. Sonorités brillantes au rendez-vous tout en préservant les graves, la Málaga est un excellent choix pour ceux qui ont besoin d'un instrument adapté à leur taille (format 7/8) !
-					</p>
+					<h2>Admira - Málaga 7/8</h2>
+					<p class="justifier-texte">Similaire à la Málaga 3/4, la Málaga 7/8 a été spécialement conçue pour les personnes de 12 à 16 ans. Sonorités brillantes au rendez-vous tout en préservant les graves, la Málaga est un excellent choix pour ceux qui ont besoin d'un instrument adapté à leur taille (format 7/8) !</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Cèdre massif</li><li><strong>Corps : </strong>Acajou</li><li><strong>Touche : </strong>Kabukalli</li><li><strong>Chevalet : </strong>Kabukalli</li><li><strong>Vernis : </strong>Naturel brillant</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Cèdre massif</li><li><strong>Corps : </strong>Acajou</li><li><strong>Touche : </strong>Kabukalli</li><li><strong>Chevalet : </strong>Kabukalli</li><li><strong>Vernis : </strong>Naturel brillant</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="r65sgg" class="produit" data-prix="299" data-gamme="🪴">
 				<div class="sold">
-					<img src="../images/guitares-classiques/r65sgg.jpg" class="imageCarte" alt="Kremona R65S GG">
+					<img src="../images/guitares-classiques/r65sgg.jpg" class="imageCarte" alt="Kremona R65S GG" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Kremona - R65S GG
-				</div>
+				<div class="titreProduit">Kremona - R65S GG</div>
 				<div>Classique</div>
-				<div class="prix">
-					🪴
-				</div>
+				<div class="prix">🪴</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Kremona - R65S GG
-					</h2>
-					<p class="justifier-texte">
-						La R65S GG de Kremona est une des options privilégiées pour les musiciens débutants. Bien équilibrée en palette sonore, elle offre ce qu'il faut pour tout musicien se voulant sérieux et qui ont un budget limité.
-					</p>
+					<h2>Kremona - R65S GG</h2>
+					<p class="justifier-texte">La R65S GG de Kremona est une des options privilégiées pour les musiciens débutants. Bien équilibrée en palette sonore, elle offre ce qu'il faut pour tout musicien se voulant sérieux et qui ont un budget limité.</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Épicea massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Amarante</li><li><strong>Chevalet : </strong>Amarante</li><li><strong>Éclisses : </strong>Acajou sapelli</li><li><strong>Dos : </strong>Acajou sapelli</li><li><strong>Vernis : </strong>Naturel brillant</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Épicea massif</li><li><strong>Manche : </strong>Acajou</li><li><strong>Touche : </strong>Amarante</li><li><strong>Chevalet : </strong>Amarante</li><li><strong>Éclisses : </strong>Acajou sapelli</li><li><strong>Dos : </strong>Acajou sapelli</li><li><strong>Vernis : </strong>Naturel brillant</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="r65s" class="produit" data-prix="429" data-gamme="✨">
 				<div class="instock">
-					<img src="../images/guitares-classiques/r65s.jpg" class="imageCarte" alt="Kremona R65S">
+					<img src="../images/guitares-classiques/r65s.jpg" class="imageCarte" alt="Kremona R65S" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Kremona - R65S
-				</div>
+				<div class="titreProduit">Kremona - R65S</div>
 				<div>Classique</div>
-				<div class="prix">
-					✨
-				</div>
+				<div class="prix">✨</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Kremona - R65S
-					</h2>
-					<p class="justifier-texte">
-						La R65S est une belle guitare classique aux fond et éclisses en noyer, avec une table d'harmonie en épicéa massif, lui assurant une sonorité brillante.
-					</p>
+					<h2>Kremona - R65S</h2>
+					<p class="justifier-texte">La R65S est une belle guitare classique aux fond et éclisses en noyer, avec une table d'harmonie en épicéa massif, lui assurant une sonorité brillante.</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Épicea massif</li><li><strong>Manche : </strong>Acajou africain</li><li><strong>Touche : </strong>Palissandre indien</li><li><strong>Chevalet : </strong>Palissandre indien</li><li><strong>Éclisses : </strong>Noyer</li><li><strong>Dos : </strong>Noyer</li><li><strong>Vernis : </strong>Naturel brillant</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Épicea massif</li><li><strong>Manche : </strong>Acajou africain</li><li><strong>Touche : </strong>Palissandre indien</li><li><strong>Chevalet : </strong>Palissandre indien</li><li><strong>Éclisses : </strong>Noyer</li><li><strong>Dos : </strong>Noyer</li><li><strong>Vernis : </strong>Naturel brillant</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="s65cwgg" class="produit" data-prix="599" data-gamme="✨">
 				<div class="instock">
-					<img src="../images/guitares-classiques/s65cwgg.jpg" class="imageCarte" alt="Kremona S65CW GG">
+					<img src="../images/guitares-classiques/s65cwgg.jpg" class="imageCarte" alt="Kremona S65CW GG" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Kremona - S65CW GG
-				</div>
+				<div class="titreProduit">Kremona - S65CW GG</div>
 				<div>Classique pan coupé</div>
-				<div class="prix">
-					✨
-				</div>
+				<div class="prix">✨</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Kremona - S65CW GG
-					</h2>
-					<p class="justifier-texte">
-						La S65CW GG de Kremona allie tradition et modernité : son pan coupé assure un accès facile aux aigus, parfait pour les joueurs exigeants en technique, et sa table d'harmonie en cèdre massif garantit un son chaleureux digne des répertoires de la musique classique espagnole.
-					</p>
+					<h2>Kremona - S65CW GG</h2>
+					<p class="justifier-texte">La S65CW GG de Kremona allie tradition et modernité : son pan coupé assure un accès facile aux aigus, parfait pour les joueurs exigeants en technique, et sa table d'harmonie en cèdre massif garantit un son chaleureux digne des répertoires de la musique classique espagnole.</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Cèdre massif</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Amarante</li><li><strong>Chevalet : </strong>Amarante</li><li><strong>Éclisses : </strong>Sapelli</li><li><strong>Finition : </strong>Satinée open pore</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Cèdre massif</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Amarante</li><li><strong>Chevalet : </strong>Amarante</li><li><strong>Éclisses : </strong>Sapelli</li><li><strong>Finition : </strong>Satinée open pore</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="s65cwggtln" class="produit" data-prix="789" data-gamme="✨">
 				<div class="instock">
-					<img src="../images/guitares-classiques/s65cwggtln.jpg" class="imageCarte" alt="Kremona S65CW GG TL N">
+					<img src="../images/guitares-classiques/s65cwggtln.jpg" class="imageCarte" alt="Kremona S65CW GG TL N" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Kremona - S65CW GG TL N
-				</div>
+				<div class="titreProduit">Kremona - S65CW GG TL N</div>
 				<div>Classique</div>
-				<div class="prix">
-					✨
-				</div>
+				<div class="prix">✨</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Kremona - S65CW GG TL N
-					</h2>
-					<p class="justifier-texte">
-						Venant tout droit de Bulgarie, Kremona propose un joli modèle qui se veut discret en finitions, en conservant un son équilibré sans exagération. Sa demi-caisse lui assure un transport maximal. La S65CW GG TL N est une bonne option pour ceux qui cherchent quelque chose de sobre et de facile à transporter, et surtout qui s'amplifie en toute simplicité !
-					</p>
+					<h2>Kremona - S65CW GG TL N</h2>
+					<p class="justifier-texte">Venant tout droit de Bulgarie, Kremona propose un joli modèle qui se veut discret en finitions, en conservant un son équilibré sans exagération. Sa demi-caisse lui assure un transport maximal. La S65CW GG TL N est une bonne option pour ceux qui cherchent quelque chose de sobre et de facile à transporter, et surtout qui s'amplifie en toute simplicité !</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Épicea massif</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Amarante</li><li><strong>Chevalet : </strong>Amarante</li><li><strong>Éclisses : </strong>Acajou sapelli</li><li><strong>Vernis : </strong>Naturel satiné</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Épicea massif</li><li><strong>Manche : </strong>Érable</li><li><strong>Touche : </strong>Amarante</li><li><strong>Chevalet : </strong>Amarante</li><li><strong>Éclisses : </strong>Acajou sapelli</li><li><strong>Vernis : </strong>Naturel satiné</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="20134" class="produit" data-prix="319" data-gamme="🧒">
 				<div class="instock">
-					<img src="../images/guitares-classiques/20134.jpg" class="imageCarte" alt="Paco Castillo 201 3/4">
+					<img src="../images/guitares-classiques/20134.jpg" class="imageCarte" alt="Paco Castillo 201 3/4" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Paco Castillo - 201 3/4
-				</div>
+				<div class="titreProduit">Paco Castillo - 201 3/4</div>
 				<div>Classique 3/4</div>
-				<div class="prix">
-					🧒
-				</div>
+				<div class="prix">🧒</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Paco Castillo - 201 3/4
-					</h2>
-					<p class="justifier-texte">
-						Issue des ateliers Paco Castillo en Espagne, la 201 3/4 est le modèle d'excellence pour les jeunes musiciens. Elle offre un son rond et riche en profondeur dans un format adapté aux enfants, ce qui est impressionnant pour une guitare au format 3/4 !
-					</p>
+					<h2>Paco Castillo - 201 3/4</h2>
+					<p class="justifier-texte">Issue des ateliers Paco Castillo en Espagne, la 201 3/4 est le modèle d'excellence pour les jeunes musiciens. Elle offre un son rond et riche en profondeur dans un format adapté aux enfants, ce qui est impressionnant pour une guitare au format 3/4 !</p>
 					
-					
-		<blockquote class="jeremy">
-			Paco Castillo a vraiment su réaliser un modèle avec une profondeur de son plus que chaleureuse. Une merveille qui saura plaire aux jeunes guitaristes.
-		</blockquote>
-		
-					<ul>
-						<li><strong>Table : </strong>Cèdre rouge massif</li><li><strong>Manche : </strong>Acajou africain</li><li><strong>Touche : </strong>Palisandre indien</li><li><strong>Mécaniques : </strong>Nickelées</li><li><strong>Éclisses : </strong>Sapelli laminé</li><li><strong>Dos : </strong>Sapelli laminé</li><li><strong>Finition : </strong>Brilliante</li>
-					</ul>
+					<blockquote class="jeremy">Paco Castillo a vraiment su réaliser un modèle avec une profondeur de son plus que chaleureuse. Une merveille qui saura plaire aux jeunes guitaristes.</blockquote>
+					<ul><li><strong>Table : </strong>Cèdre rouge massif</li><li><strong>Manche : </strong>Acajou africain</li><li><strong>Touche : </strong>Palisandre indien</li><li><strong>Mécaniques : </strong>Nickelées</li><li><strong>Éclisses : </strong>Sapelli laminé</li><li><strong>Dos : </strong>Sapelli laminé</li><li><strong>Finition : </strong>Brilliante</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="juanita34" class="produit" data-prix="189" data-gamme="🧒">
 				<div class="instock">
-					<img src="../images/guitares-classiques/juanita34.jpg" class="imageCarte" alt="Admira Juanita 3/4">
+					<img src="../images/guitares-classiques/juanita34.jpg" class="imageCarte" alt="Admira Juanita 3/4" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Admira - Juanita 3/4
-				</div>
+				<div class="titreProduit">Admira - Juanita 3/4</div>
 				<div>Classique 3/4</div>
-				<div class="prix">
-					🧒
-				</div>
+				<div class="prix">🧒</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Admira - Juanita 3/4
-					</h2>
-					<p class="justifier-texte">
-						La Juanita 3/4 est une guitare parfaite pour les enfants voulant découvrir la guitare classique à petit prix, tout en ayant un véritable instrument entre les mains, et ce spécialement conçue pour les enfants de 9 à 13 ans (format 3/4).
-					</p>
+					<h2>Admira - Juanita 3/4</h2>
+					<p class="justifier-texte">La Juanita 3/4 est une guitare parfaite pour les enfants voulant découvrir la guitare classique à petit prix, tout en ayant un véritable instrument entre les mains, et ce spécialement conçue pour les enfants de 9 à 13 ans (format 3/4).</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Cèdre</li><li><strong>Corps : </strong>Acajou</li><li><strong>Touche : </strong>Kabukalli</li><li><strong>Chevalet : </strong>Kabukalli</li><li><strong>Vernis : </strong>Naturel brillant</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Cèdre</li><li><strong>Corps : </strong>Acajou</li><li><strong>Touche : </strong>Kabukalli</li><li><strong>Chevalet : </strong>Kabukalli</li><li><strong>Vernis : </strong>Naturel brillant</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="juanita12" class="produit" data-prix="179" data-gamme="🧒">
 				<div class="instock">
-					<img src="../images/guitares-classiques/juanita12.jpg" class="imageCarte" alt="Admira Juanita 1/2">
+					<img src="../images/guitares-classiques/juanita12.jpg" class="imageCarte" alt="Admira Juanita 1/2" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Admira - Juanita 1/2
-				</div>
+				<div class="titreProduit">Admira - Juanita 1/2</div>
 				<div>Classique 1/2</div>
-				<div class="prix">
-					🧒
-				</div>
+				<div class="prix">🧒</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Admira - Juanita 1/2
-					</h2>
-					<p class="justifier-texte">
-						Une véritable petite guitare d'étude artisanale au format 1/2, parfaitement adaptée pour les enfants de 6 à 9 ans !
-					</p>
+					<h2>Admira - Juanita 1/2</h2>
+					<p class="justifier-texte">Une véritable petite guitare d'étude artisanale au format 1/2, parfaitement adaptée pour les enfants de 6 à 9 ans !</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Cèdre</li><li><strong>Corps : </strong>Acajou</li><li><strong>Touche : </strong>Kabukalli</li><li><strong>Chevalet : </strong>Kabukalli</li><li><strong>Vernis : </strong>Naturel brillant</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Cèdre</li><li><strong>Corps : </strong>Acajou</li><li><strong>Touche : </strong>Kabukalli</li><li><strong>Chevalet : </strong>Kabukalli</li><li><strong>Vernis : </strong>Naturel brillant</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
 			<div id="alba14" class="produit" data-prix="149" data-gamme="🧒">
 				<div class="instock">
-					<img src="../images/guitares-classiques/alba14.jpg" class="imageCarte" alt="Admira Alba 1/4">
+					<img src="../images/guitares-classiques/alba14.jpg" class="imageCarte" alt="Admira Alba 1/4" />
 					<div></div>
 				</div>
-				<div class="titreProduit">
-					Admira - Alba 1/4
-				</div>
+				<div class="titreProduit">Admira - Alba 1/4</div>
 				<div>Classique 1/4</div>
-				<div class="prix">
-					🧒
-				</div>
+				<div class="prix">🧒</div>
 				<div class="produit-detail hidden">
-					<h2>
-						Admira - Alba 1/4
-					</h2>
-					<p class="justifier-texte">
-						Une véritable guitare d'étude pour les p'tits bouts d'chou ! La Alba 1/4 est un instrument pensé spécialement pour les très jeunes musiciens.
-					</p>
+					<h2>Admira - Alba 1/4</h2>
+					<p class="justifier-texte">Une véritable guitare d'étude pour les p'tits bouts d'chou ! La Alba 1/4 est un instrument pensé spécialement pour les très jeunes musiciens.</p>
 					
 					
-					<ul>
-						<li><strong>Table : </strong>Cèdre</li><li><strong>Corps : </strong>Acajou</li><li><strong>Touche : </strong>Kabukalli</li><li><strong>Chevalet : </strong>Kabukalli</li>
-					</ul>
+					<ul><li><strong>Table : </strong>Cèdre</li><li><strong>Corps : </strong>Acajou</li><li><strong>Touche : </strong>Kabukalli</li><li><strong>Chevalet : </strong>Kabukalli</li></ul>
+					<a class="boutonCTA" href="https://rueil-musique.fr/contact">Se rendre en magasin / demander conseil</a>
 				</div>
 			</div>
 
