@@ -305,18 +305,21 @@ nav a:hover{
 	align-items: center;
 	text-decoration: none;
 	margin-right: 0.5em;
-	a{
-		display: flex;
-		margin: 0.2em;
-		align-items: center;
-		svg{
-			width: 2rem;
-		}
-	}
-	a::before{
-		content:"01 47 49 48 49";
-		margin-right: 0.5em;
-	}
+}
+
+.headerDroite a{
+	display: flex;
+	margin: 0.2em;
+	align-items: center;
+}
+
+.headerDroite a::before{
+	content:"01 47 49 48 49";
+	margin-right: 0.5em;
+}
+
+.headerDroite svg{
+	width: 2rem;
 }
 
 .bouton{
@@ -386,6 +389,10 @@ nav a:hover{
 	color: #000;
 	background: #e2cccc;
 	transition: 0.1s;
+}
+
+.alaune img{
+	aspect-ratio: 3/4;
 }
 
 .alaune div{
@@ -517,6 +524,7 @@ nav a:hover{
 	object-fit: cover;
 	transition: 0.1s;
 	filter: brightness(50%);
+	aspect-ratio: 3/4;
 }
 
 .divService .overlayService{
@@ -561,6 +569,7 @@ nav a:hover{
 .divTrombinoscope img{
 	margin: 0 0 0.5em 0;
 	border-radius: 5px;
+	aspect-ratio: 1/1;
 }
 
 .divTrombinoscope div{
@@ -736,13 +745,13 @@ nav a:hover{
 #close {
 	position: absolute;
 	top: 0.2em;
-	right: 0.5em;
+	right: 0.2em;
 	cursor: pointer;
-	font-size: 25px;
+	font-size: 28px;
 	
-	background: white;
+	background: #fff;
 	border-radius: 6px;
-	width: 30px;
+	width: 32px;
 	text-align: center;
 	height: 32px;
 }
@@ -837,11 +846,11 @@ tr{
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	gap: 1em;
-	section{
-		img{
-			object-fit: cover;
-		}
-	}
+}
+
+.trombinoscopeDesc img{
+	object-fit: cover;
+	aspect-ratio: 1/1;
 }
 
 .video-youtube{
@@ -1127,5 +1136,9 @@ tr{
 		left: 0.5em;
 		right: 0.5em;
 		padding: 0.5em;
+	}
+	
+	#close{
+		
 	}
 }
