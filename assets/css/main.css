@@ -37,7 +37,7 @@ p{
 	margin: 0 0 1.5em 0;
 }
 
-a:hover{
+a:hover, .boutonAlaune:hover{
 	color: #bd964a;
 }
 
@@ -144,7 +144,6 @@ footer a, header a{
 	a{
 		display: flex;
 		width: 2rem;
-		
 	}
 	div{
 		display: grid;
@@ -367,21 +366,104 @@ nav a:hover{
 	color: #565656;
 }
 
-.divAlaune{
-	background: #373535;
-	padding: 1em 1em 1em 1em;
-	margin: 0 0 1em 0;
-}
-
-.divAlaune h2{
+.listeAlaune-wrapper :is(h2,p){
 	color: #fff;
-	text-transform: uppercase;
+	text-align: center;
 }
 
-.grilleAlaune{
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-gap: 1em 0.5em;
+.listeAlaune-wrapper {
+	background: #373535;
+	padding: 1em;
+	border-radius: 10px;
+	box-shadow: 0px 10px 15px #00000080;
+}
+
+.listeAlaune-wrapper :is(h2,p){
+	margin: 0 0 0.4em 0;
+}
+
+.listeAlaune {
+	display: flex;
+	gap: 1em 0.5em;
+	padding: 0;
+
+	list-style: none;
+	
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
+}
+
+.listeAlaune::-webkit-scrollbar {
+	display: none;
+}
+
+.item {
+	flex-shrink: 0;
+	width: 10em;
+
+	background-color: #e2cccc;
+
+	scroll-snap-align: center;
+	padding: 0;
+	transform: scale(0.99);
+	transition: 0.1s ease;
+}
+
+.item:hover{
+	transform: scale(1);
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	transition: 0.1s ease;
+	height: 100%;
+}
+
+.content a{
+	text-decoration: none;
+	padding: 0.5em;
+}
+
+.content div{
+	text-align: center;
+	margin: 0.5em 0;
+}
+
+.content:hover{
+	background: #e9d8d8;
+}
+
+.content img{
+	aspect-ratio: 3/4;
+}
+
+.boutonAlaune {
+	border: 0;
+	width: fit-content;
+	background: none;
+	color: #fff;
+	
+	padding: 0em 1em;
+	
+	cursor: pointer;
+	font-size: 1.5em;
+}
+
+.boutonsAlaune{
+	display: flex;
+	gap: 0em 0.5em;
+	justify-content: center;
+	align-items: center;
+}
+
+.boutonsAlaune a{
+	padding: 0.5em 1em;
+}
+
+.boutonsAlaune :is(button,a){
+	margin: 0;
 }
 
 .alaune{
@@ -401,11 +483,6 @@ nav a:hover{
 
 .alaune:hover{
 	transform: scale(1.02);
-}
-
-.divAlaune a{
-	text-decoration: none;
-	color: #3e3e3e;
 }
 
 .titreProduitAlaune{
@@ -989,15 +1066,6 @@ tr{
 	
 	.footerDroite a{
 		padding: 0.2em;
-	}
-	
-	.divAlaune{
-		padding: 0.4em;
-	}
-	
-	.grilleAlaune{
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 0.5em 0.2em;
 	}
 	
 	.alaune{
