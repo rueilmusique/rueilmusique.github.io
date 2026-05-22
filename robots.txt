@@ -3,5 +3,6 @@ Disallow: /images/librairie-musicale/*
 Disallow: /images/logos/*
 Disallow: /cgi-bin/
 Disallow: /images/pass-culture.png
+Disallow: /images/pass-culture.avif
 
 Sitemap: http://rueil-musique.fr/sitemap.xml
