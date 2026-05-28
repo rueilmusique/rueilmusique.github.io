@@ -51,7 +51,10 @@ gtag('consent', 'default', {
 window.enableAnalytics = function(){
 
 	gtag('consent', 'update', {
-		'analytics_storage': 'granted'
+		'analytics_storage': 'granted',
+		'ad_storage': 'granted',
+		'ad_user_data': 'granted',
+		'ad_personalization': 'granted'
 	});
 
 	dataLayer.push({
