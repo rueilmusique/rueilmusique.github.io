@@ -63,14 +63,10 @@
 }
 
 .mobileSlide{
-	background-image: url("../../images/hero-section/hero-section-mobile_guitares-acoustiques.avif");
-	background-size: cover;
-	background-position: center;
 	height: 100%;
 	width: 100%;
-	background-position-y: 36%;
-	background-repeat: no-repeat;
-	
+	object-position: 0% 36%;
+	object-fit: cover;
 	display: none;
 }
 
