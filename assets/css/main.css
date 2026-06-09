@@ -162,6 +162,10 @@ blockquote::after{
 	content: " - Pascal, le maestro";
 }
 
+:root{
+	accent-color: #7d5224;
+}
+
 body{
 	display: block;
 	font-family: "Source Sans 3", sans-serif;
@@ -216,17 +220,17 @@ footer a, header a{
 	
 .footerDroite{
 	display: flex;
-	a{
-		display: flex;
-		width: 2rem;
-	}
-	div{
-		display: grid;
-		grid-template-columns: repeat(4,1fr);
-	}
 }
 
+.footerDroite a{
+	display: flex;
+	width: 2rem;
+}
 
+.footerDroite div{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+}
 
 h1,h2,h3{
 	margin: 0 0 0.5em 0;
@@ -256,33 +260,35 @@ header a{
 
 .headerGauche{
 	display: flex;
-	a{
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-		font-weight: bold;
-		margin-right: 0.2em;
-		span{
-			margin: 0 0.2em;
-		}
-		img{
-			width: 2.5rem;
-			margin: 0 0.5em;
-		}
+}
+
+.headerGauche a{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	font-weight: bold;
+	margin-right: 0.2em;
+	span{
+		margin: 0 0.2em;
 	}
+}
+
+.headerGauche img{
+	width: 2.5rem;
+	margin: 0 0.5em;
 }
 
 .navMobile{
 	margin: 0;
 	display: none;
 	flex-direction: row;
-	flex: 1; /* Use the rest of the available space of the <header> */
+	flex: 1;
 	justify-content: left;
 	align-items: center;
-	
-	svg{
-		width: 2em;
-	}
+}
+
+.navMobile svg{
+	width: 2em;
 }
 
 .navMobile :is(ul,li){
@@ -309,7 +315,7 @@ header a{
 
 /* Menu caché par défaut */
 #menuToggle ul {
-	display: none;
+	/* display: none; */
 
 	position: absolute;
 	top: 2.3em;
@@ -321,11 +327,21 @@ header a{
 
 	list-style: none;
 	background: #585858;
+	
+	transform: scaleY(0);
+	/* transform: translateY(calc(-100% - 2.3em)); */
+	transform-origin: top;
+	transition: 0.2s cubic-bezier(.86,0,.07,1);
+	
+	pointer-events: none;
 }
 
 /* Affichage quand checked */
 #menuToggle input:checked ~ ul {
-	display: block;
+	/* display: block; */
+	transform: scaleY(1);
+	/* transform: translateY(0%); */
+	pointer-events: auto;
 }
 
 #menuToggle li {
@@ -356,7 +372,7 @@ nav{
 	margin: 0;
 	display: flex;
 	flex-direction: row;
-	flex: 1; /* Use the rest of the available space of the <header> */
+	flex: 1;
 	justify-content: left;
 	align-items: center;
 	.navDefault{
@@ -378,7 +394,6 @@ nav a:hover{
 	width: fit-content;
 	align-items: center;
 	text-decoration: none;
-	margin-right: 0.5em;
 }
 
 .headerDroite a{
@@ -394,6 +409,7 @@ nav a:hover{
 
 .headerDroite svg{
 	width: 2rem;
+	margin-right: 0.5em;
 }
 
 .bouton{
@@ -414,7 +430,7 @@ nav a:hover{
 .boutonCTA{
 	display: block;
 	padding: 1em;
-	margin: 0.5em 0;
+	margin: 0.5em 0 0 0;
 	background: #7d5224;
 	text-decoration: none;
 	border-radius: 7px;
@@ -542,24 +558,24 @@ nav a:hover{
 	margin: 0;
 }
 
-.alaune{
-	padding: 0.5em;
-	color: #000;
-	background: #e2cccc;
-	transition: 0.1s;
-}
+/* .alaune{ */
+	/* padding: 0.5em; */
+	/* color: #000; */
+	/* background: #e2cccc; */
+	/* transition: 0.1s; */
+/* } */
 
-.alaune img{
-	aspect-ratio: 3/4;
-}
+/* .alaune img{ */
+	/* aspect-ratio: 3/4; */
+/* } */
 
-.alaune div{
-	margin: 0.5em 0;
-}
+/* .alaune div{ */
+	/* margin: 0.5em 0; */
+/* } */
 
-.alaune:hover{
-	transform: scale(1.02);
-}
+/* .alaune:hover{ */
+	/* transform: scale(1.02); */
+/* } */
 
 .titreProduitAlaune{
 	font-weight: bold;
@@ -797,41 +813,24 @@ nav a:hover{
 	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 1em 0.5em;
 	margin: 0.5em 0 0 0;
-	
-	.instock{
-		margin: 0;
-	}
-	
-	.sold{
-		margin: 0;
-		img{
-			filter: opacity(50%);
-		}
-		div::after{
-			content:"VENDUE";
-			position: absolute;
-			top: 0.7em;
-			left: 0.7em;
-			background: #c17f7f;
-			border-radius: 10px;
-			padding: 0em 0.5em;
-		}
-	}
-	
-	.occasion{
-		margin: 0;
-		div::after{
-			
-		}
-	}
-	
-	.rare{
-		margin: 0;
-	}
 }
 
-.occasion{
-	/* margin: 0; */
+.produits :is(.instock, .sold, .occasion, .rare){
+	margin: 0;
+}
+
+.sold img{
+	filter: opacity(50%);
+}
+
+.sold div::after{
+	content:"VENDU";
+	position: absolute;
+	top: 0.7em;
+	left: 0.7em;
+	background: #c17f7f;
+	border-radius: 10px;
+	padding: 0em 0.5em;
 }
 
 .occasion div::after{
@@ -925,7 +924,6 @@ nav a:hover{
 }
 
 #searchbox{
-	/* scroll-margin-top: 5em; */
 	width: min(320px, 90%);
 }
 
@@ -988,12 +986,12 @@ tr{
 }
 
 .titreSousTitre{
-	/* margin: 0 0 1em 0; */
 	background: #f7ebe2;
 	border-radius: 5px;
 	width: fit-content;
 	margin: 0 auto;
 	padding: 0.3em 1em;
+	box-shadow: 0px 0px 20px 0px #000000bf;
 }
 
 .titreSousTitre :is(p,a){
@@ -1308,9 +1306,5 @@ tr{
 		left: 0.5em;
 		right: 0.5em;
 		padding: 0.5em;
-	}
-	
-	#close{
-		
 	}
 }
