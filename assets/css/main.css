@@ -867,6 +867,7 @@ nav a:hover{
 	align-items: center;
 	
 	overflow-y: auto;
+	/* overscroll-behavior: contain; */
 }
 
 .hidden {
@@ -880,6 +881,8 @@ nav a:hover{
 	position: relative;
 	display: grid;
 	grid-template-columns: 2fr 3fr;
+	
+	/* overscroll-behavior: none; */
 	
 	section{
 		margin-right: 1em;
