@@ -375,14 +375,16 @@ nav{
 	flex: 1;
 	justify-content: left;
 	align-items: center;
-	.navDefault{
-		display: flex;
-		a{
-			padding: 0.5em 0.5em;
-			text-decoration: none;
-			transition: 0.01s;
-		}
-	}
+}
+
+.navDefault{
+	display: flex;
+}
+
+.navDefault a{
+	padding: 0.5em 0.5em;
+	text-decoration: none;
+	transition: 0.01s;
 }
 
 nav a:hover{
@@ -391,9 +393,10 @@ nav a:hover{
 
 .headerDroite{
 	display: flex;
-	width: fit-content;
+	/* width: fit-content; */
 	align-items: center;
 	text-decoration: none;
+	justify-content: end;
 }
 
 .headerDroite a{
@@ -428,15 +431,37 @@ nav a:hover{
 }
 
 .boutonCTA{
-	display: block;
+	/* display: block; */
+	display: flex;
 	padding: 1em;
-	margin: 0.5em 0 0 0;
+	/* margin: 0.5em 0 0 0; */
 	background: #7d5224;
 	text-decoration: none;
 	border-radius: 7px;
+	border: 2px solid #3e3e3e00;
 	text-align: center;
 	color: #fff !important;
 	transition: 0.05s;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+.boutonCTAsecondary{
+	display: block;
+	padding: 1em;
+	background: none;
+	text-decoration: none;
+	border-radius: 7px;
+	border: 2px solid #3e3e3e;
+	text-align: center;
+	color: #3e3e3e !important;
+	transition: 0.05s;
+}
+
+.boutonCTAsecondary:hover{
+	border: 2px solid #bd964a;
+	color: #bd964a !important;
 }
 
 .centrer-texte{
@@ -787,12 +812,17 @@ nav a:hover{
 }
 
 .produit{
-	background: #e2cccc;
-	display: block;
+	background: #e8d8d3;
+	/* display: block; */
 	padding: 0.5em;
 	cursor: pointer;
-	transition: all 0.1s ease-out;
+	transition: all 0.07s ease-out;
 	position: relative;
+	
+	display: grid;
+	grid-template-rows: subgrid;
+	grid-row: span 4;
+	gap: 0;
 }
 
 .produit img{
@@ -801,11 +831,12 @@ nav a:hover{
 }
 
 .produit div{
-	margin: 0.5em 0;
+	margin: 0.25em 0;
 }
 
 .produit:hover{
 	box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	background: #e2cccc;
 }
 
 .produits{
@@ -815,43 +846,73 @@ nav a:hover{
 	margin: 0.5em 0 0 0;
 }
 
-.produits :is(.instock, .sold, .occasion, .rare){
-	margin: 0;
+:is(.instock, .sold, .occasion, .rare){
+	margin: 0 !important;
+	pointer-events: none;
 }
 
 .sold img{
 	filter: opacity(50%);
 }
 
-.sold div::after{
-	content:"VENDU";
+.badge::after{
 	position: absolute;
 	top: 0.7em;
 	left: 0.7em;
-	background: #c17f7f;
-	border-radius: 10px;
+	border-radius: 7px;
 	padding: 0em 0.5em;
+	color: black;
+	border: 1px solid black;
 }
 
-.occasion div::after{
-	content:"OCCASION";
-	position: absolute;
-	top: 0.7em;
-	left: 0.7em;
-	background: #c9daf8;
-	border-radius: 10px;
-	padding: 0em 0.5em;
+.instock .badge::after{
+	
 }
 
-.rare div::after{
+.rare .badge::after{
 	content:"RARE";
-	position: absolute;
-	top: 0.7em;
-	left: 0.7em;
 	background: #fce5cd;
-	border-radius: 10px;
-	padding: 0em 0.5em;
 }
+
+.sold .badge::after{
+	content:"VENDU";
+	background: #c17f7f;
+}
+
+.occasion .badge::after{
+	content:"OCCASION";
+	background: #c9daf8;
+}
+
+/* .sold div::after{ */
+	/* content:"VENDU"; */
+	/* position: absolute; */
+	/* top: 0.7em; */
+	/* left: 0.7em; */
+	/* background: #c17f7f; */
+	/* border-radius: 10px; */
+	/* padding: 0em 0.5em; */
+/* } */
+
+/* .occasion div::after{ */
+	/* content:"OCCASION"; */
+	/* position: absolute; */
+	/* top: 0.7em; */
+	/* left: 0.7em; */
+	/* background: #c9daf8; */
+	/* border-radius: 10px; */
+	/* padding: 0em 0.5em; */
+/* } */
+
+/* .rare div::after{ */
+	/* content:"RARE"; */
+	/* position: absolute; */
+	/* top: 0.7em; */
+	/* left: 0.7em; */
+	/* background: #fce5cd; */
+	/* border-radius: 10px; */
+	/* padding: 0em 0.5em; */
+/* } */
 
 .overlay {
 	position: fixed;
@@ -867,7 +928,7 @@ nav a:hover{
 	align-items: center;
 	
 	overflow-y: auto;
-	/* overscroll-behavior: contain; */
+	overscroll-behavior: contain;
 }
 
 .hidden {
@@ -875,14 +936,17 @@ nav a:hover{
 }
 
 .overlay-content {
-	background: white;
+	background: #f7ebe2;
 	max-width: 68em;
 	border-radius: 8px;
 	position: relative;
 	display: grid;
 	grid-template-columns: 2fr 3fr;
 	
-	/* overscroll-behavior: none; */
+	overscroll-behavior: none;
+	
+	max-height: 95vh;
+	overflow: scroll;
 	
 	section{
 		margin-right: 1em;
@@ -897,18 +961,47 @@ nav a:hover{
 	}
 }
 
+#overlay-text{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+#overlay-text div:first-of-type{
+	flex: 1;
+}
+
+#overlay-text div:nth-of-type(2){
+	margin: 0 0 1em 0;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 0em 0.5em;
+}
+
+#overlay-text ul{
+	font-size: 1.1rem;
+}
+
+#overlay-text strong{
+	font-weight: normal;
+}
+
 #close {
 	position: absolute;
-	top: 0.2em;
-	right: 0.2em;
+	top: 0.5em;
+	left: 0.5em;
 	cursor: pointer;
-	font-size: 28px;
+	font-size: 1.5em;
 	
-	background: #fff;
+	background: #df9d9d;
 	border-radius: 6px;
-	width: 32px;
+	width: 1.5em;
 	text-align: center;
-	height: 32px;
+	height: 1.5em;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .searchbutton{
@@ -1126,6 +1219,10 @@ tr{
 		grid-gap: 0.2em;
 	}
 	
+	.boutonCTAsecondary{
+		padding: 0.5em 1em;
+	}
+	
 	body{
 		margin: 3em 0 10em 0;
 	}
@@ -1140,6 +1237,8 @@ tr{
 	
 	header{
 		min-height: 2.3em;
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
 	}
 	
 	.headerGauche a{
@@ -1148,6 +1247,7 @@ tr{
 		}
 		span{
 			margin: 0 0.5em 0 0.2em;
+			font-size: 1rem;
 		}
 	}
 	
@@ -1155,10 +1255,8 @@ tr{
 		display: none;
 	}
 	
-	nav{
-		.navDefault{
-			display:none;
-		}
+	.navDefault{
+		display:none;
 	}
 	
 	.navMobile{
@@ -1189,6 +1287,12 @@ tr{
 		width: 100%;
 	}
 	
+	#close {
+		position: fixed;
+		top: 5.3vh;
+		left: 0.4em;
+	}
+	
 	.overlay-content{
 		grid-template-columns: 1fr;
 		max-height: 90vh;
@@ -1203,6 +1307,12 @@ tr{
 		section:last-child{
 			margin: 1em;
 		}
+	}
+	
+	#overlay-text div:nth-of-type(2){
+		margin: 0 0 1em 0;
+		grid-template-columns: 1fr;
+		gap: 0.5em 0em;
 	}
 	
 	.texteImage{
