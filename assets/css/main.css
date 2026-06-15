@@ -848,7 +848,7 @@ nav a:hover{
 	margin: 0.5em 0 0 0;
 }
 
-:is(.instock, .sold, .occasion, .rare){
+:is(.instock, .sold, .occasion, .rare, .commande){
 	margin: 0 !important;
 	pointer-events: none;
 }
