@@ -214,7 +214,7 @@ footer a, header a{
 	margin: 0;
 	display: flex;
 	flex-direction: row;
-	flex: 1; /* Use the rest of the available space of the <header> */
+	flex: 1;
 	justify-content: left;
 }
 	
@@ -329,7 +329,6 @@ header a{
 	background: #585858;
 	
 	transform: scaleY(0);
-	/* transform: translateY(calc(-100% - 2.3em)); */
 	transform-origin: top;
 	transition: 0.2s cubic-bezier(.86,0,.07,1);
 	
@@ -338,9 +337,7 @@ header a{
 
 /* Affichage quand checked */
 #menuToggle input:checked ~ ul {
-	/* display: block; */
 	transform: scaleY(1);
-	/* transform: translateY(0%); */
 	pointer-events: auto;
 }
 
@@ -393,7 +390,6 @@ nav a:hover{
 
 .headerDroite{
 	display: flex;
-	/* width: fit-content; */
 	align-items: center;
 	text-decoration: none;
 	justify-content: end;
@@ -462,6 +458,11 @@ nav a:hover{
 .boutonCTAsecondary:hover{
 	border: 2px solid #bd964a;
 	color: #bd964a !important;
+}
+
+.boutonIndisponible{
+	pointer-events: none;
+	opacity: 0.7;
 }
 
 .centrer-texte{
@@ -809,6 +810,7 @@ nav a:hover{
 
 .titreProduit{
 	font-weight: bold;
+	overflow: hidden;
 }
 
 .produit{
@@ -883,36 +885,6 @@ nav a:hover{
 	content:"OCCASION";
 	background: #c9daf8;
 }
-
-/* .sold div::after{ */
-	/* content:"VENDU"; */
-	/* position: absolute; */
-	/* top: 0.7em; */
-	/* left: 0.7em; */
-	/* background: #c17f7f; */
-	/* border-radius: 10px; */
-	/* padding: 0em 0.5em; */
-/* } */
-
-/* .occasion div::after{ */
-	/* content:"OCCASION"; */
-	/* position: absolute; */
-	/* top: 0.7em; */
-	/* left: 0.7em; */
-	/* background: #c9daf8; */
-	/* border-radius: 10px; */
-	/* padding: 0em 0.5em; */
-/* } */
-
-/* .rare div::after{ */
-	/* content:"RARE"; */
-	/* position: absolute; */
-	/* top: 0.7em; */
-	/* left: 0.7em; */
-	/* background: #fce5cd; */
-	/* border-radius: 10px; */
-	/* padding: 0em 0.5em; */
-/* } */
 
 .overlay {
 	position: fixed;
@@ -993,7 +965,8 @@ nav a:hover{
 	cursor: pointer;
 	font-size: 1.5em;
 	
-	background: #df9d9d;
+	/* background: #df9d9d;	*/
+	background: #f90000;
 	border-radius: 6px;
 	width: 1.5em;
 	text-align: center;
@@ -1002,6 +975,16 @@ nav a:hover{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: 2px solid #d26767;
+	box-shadow: 0px 0px 9px 4px #0000006b;
+}
+
+#close:hover{
+	background: #ff4d4d;
+}
+
+#close:active{
+	background: #ff8282;
 }
 
 .searchbutton{
@@ -1289,8 +1272,10 @@ tr{
 	
 	#close {
 		position: fixed;
+		left: initial;
 		top: 5.3vh;
-		left: 0.4em;
+		right: 0.4em;
+		font-size: 1.8em;
 	}
 	
 	.overlay-content{
