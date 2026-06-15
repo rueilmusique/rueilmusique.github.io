@@ -867,10 +867,6 @@ nav a:hover{
 	border: 1px solid black;
 }
 
-.instock .badge::after{
-	
-}
-
 .rare .badge::after{
 	content:"RARE";
 	background: #fce5cd;
@@ -918,7 +914,8 @@ nav a:hover{
 	overscroll-behavior: none;
 	
 	max-height: 95vh;
-	overflow: scroll;
+	/* overflow: scroll; */
+	overflow: auto;
 	
 	section{
 		margin-right: 1em;
@@ -954,9 +951,16 @@ nav a:hover{
 	font-size: 1.1rem;
 }
 
-#overlay-text strong{
-	font-weight: normal;
+#overlay-text p:last-of-type{
+	background: #e5dbd4;
+	border-radius: 4px;
+	width: fit-content;
+	padding: 0.1em 0.5em 0.1em 0.2em;
 }
+
+/* #overlay-text strong{ */
+	/* font-weight: normal; */
+/* } */
 
 #close {
 	position: absolute;
