@@ -426,6 +426,19 @@ nav a:hover{
 	background: #ddb15c;
 }
 
+.venirMagasin::before{
+	content: url("../../images/logos/icones/navigation.svg");
+	display: flex;
+	align-items: center;
+}
+
+/* .demanderConseil::before{ */
+	/* content: url("../../images/logos/icones/help.svg");	 */
+	/* display: flex; */
+	/* align-items: center; */
+	/* filter: invert(80%); */
+/* } */
+
 .boutonCTA{
 	/* display: block; */
 	display: flex;
@@ -441,10 +454,16 @@ nav a:hover{
 	
 	justify-content: center;
 	align-items: center;
+	gap: 0.3em;
+}
+
+.boutonCTA img{
+	width: 2rem;
+	aspect-ratio: 1/1;
 }
 
 .boutonCTAsecondary{
-	display: block;
+	display: flex;
 	padding: 1em;
 	background: none;
 	text-decoration: none;
@@ -453,6 +472,10 @@ nav a:hover{
 	text-align: center;
 	color: #3e3e3e !important;
 	transition: 0.05s;
+	
+	justify-content: center;
+	align-items: center;
+	gap: 0.3em;
 }
 
 .boutonCTAsecondary:hover{
@@ -865,6 +888,7 @@ nav a:hover{
 	padding: 0em 0.5em;
 	color: black;
 	border: 1px solid black;
+	box-shadow: 0px 0px 8px 2px #00000042;
 }
 
 .rare .badge::after{
@@ -970,7 +994,9 @@ nav a:hover{
 	font-size: 1.5em;
 	
 	/* background: #df9d9d;	*/
-	background: #f90000;
+	/* background: #f90000; */
+	background: #00000099;
+	color: white;
 	border-radius: 6px;
 	width: 1.5em;
 	text-align: center;
