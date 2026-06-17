@@ -427,17 +427,36 @@ nav a:hover{
 }
 
 .venirMagasin::before{
-	content: url("../../images/logos/icones/navigation.svg");
-	display: flex;
-	align-items: center;
-}
-
-/* .demanderConseil::before{ */
-	/* content: url("../../images/logos/icones/help.svg");	 */
+	/* content: url("../../images/logos/icones/navigation.svg"); */
 	/* display: flex; */
 	/* align-items: center; */
-	/* filter: invert(80%); */
-/* } */
+	
+	content: '';
+	display: inline-block;
+	background-image: url("../../images/logos/icones/navigation.svg");
+	width: 1.5rem;
+	height: 1.5rem;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.demanderConseil::before{
+	/* content: url("../../images/logos/icones/info.svg");	 */
+	/* display: flex; */
+	/* align-items: center; */
+	
+	content: '';
+	display: inline-block;
+	background-image: url("../../images/logos/icones/info.svg");
+	width: 1.5rem;
+	height: 1.5rem;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.demanderConseil:hover{
+	filter: brightness(0) saturate(100%) invert(56%) sepia(55%) saturate(389%) hue-rotate(1deg) brightness(97%) contrast(96%);
+}
 
 .boutonCTA{
 	/* display: block; */
@@ -876,6 +895,10 @@ nav a:hover{
 	pointer-events: none;
 }
 
+.sold::before p{
+	content:'test';
+}
+
 .sold img{
 	filter: opacity(50%);
 }
@@ -1025,7 +1048,12 @@ nav a:hover{
 	opacity: 50%;
 	
 	z-index: 20;
-	background: red;
+	background: black;
+}
+
+.searchbutton img{
+	width: 1.5rem;
+	aspect-ratio: 1/1;
 }
 
 .searchbutton:hover{
@@ -1316,7 +1344,7 @@ tr{
 		section{
 			margin-right: 0;
 			h2{
-				margin: 0 0 0 0;
+				margin: 0 0 0.5em 0;
 			}
 		}
 		section:last-child{
