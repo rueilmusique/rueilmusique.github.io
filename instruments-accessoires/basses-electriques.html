@@ -21,7 +21,7 @@
 	<meta name="twitter:description" content="La basse électrique, ou le pilier fondateur de tout groupe qui se respecte ! Cet instrument est responsable du groove, donne du sens aux accords, et percute grâce à ses basses profondes. Découvrez notre collection de basses électriques !">
 	<meta name="twitter:image" content="">
 	
-	<link rel="stylesheet" href="../assets/css/main.css?v=2026-06-17">
+	<link rel="stylesheet" href="../assets/css/main.css?v=2026-06-18">
 	
 	<script type="application/ld+json">
 	{
@@ -131,36 +131,35 @@
 		<br>
 		<a href="https://rueil-musique.fr/instruments-accessoires/">Retour aux instruments</a>
 		</p>
-		<div>
-				Trier :
-				<select id="sort" aria-label="Tri des produits">
-					<option value="default">Par défaut</option>
-					<option value="asc">Prix croissant</option>
-					<option value="desc">Prix décroissant</option>
-				</select>
-				<select id="filter-gamme" aria-label="Filtrer par gamme de produits">
-					<option value="all">Toutes les gammes</option>
-					<option value="🪴">🪴 Entrée de gamme</option>
-					<option value="✨">✨ Milieu de gamme </option>
-					<option value="💖">💖 Haut de gamme</option>
-					<option value="💎">💎 Légendaire</option>
-				</select>
-				<input id="searchbox" type="search" placeholder="Filtrer (marque/nom/catégorie)">
-				<a class="searchbutton" href="#searchbox"><img src="../images/logos/icones/search.svg" /></a>
-			</div>
+		<div class="trier">
+			<select id="sort" aria-label="Tri des produits">
+				<option value="default">Trier par défaut</option>
+				<option value="asc">Prix croissant</option>
+				<option value="desc">Prix décroissant</option>
+			</select>
+			<select id="filter-gamme" aria-label="Filtrer par gamme de produits">
+				<option value="all">Afficher toutes les gammes</option>
+				<option value="🪴">🪴 Entrée de gamme</option>
+				<option value="✨">✨ Milieu de gamme </option>
+				<option value="💖">💖 Haut de gamme</option>
+				<option value="💎">💎 Légendaire</option>
+			</select>
+			<input id="searchbox" type="search" placeholder="Filtrer (marque/nom/catégorie)">
+			<a class="searchbutton" href="#searchbox"><img src="../images/logos/icones/search.svg" /></a>
+		</div>
 			
-			<div id="overlay" class="overlay hidden">
-				<div class="overlay-content">
-					<span id="close">&times;</span>
-					<section>
-						<img id="overlay-img">
-					</section>
-					<section>
-						<div id="overlay-text">
-						</div>
-					</section>
-				</div>
+		<div id="overlay" class="overlay hidden">
+			<div class="overlay-content">
+				<span id="close">&times;</span>
+				<section>
+					<img id="overlay-img">
+				</section>
+				<section>
+					<div id="overlay-text">
+					</div>
+				</section>
 			</div>
+		</div>
 		<div class="produits" id="produits">
 			
 			<div id="v5r4st_tobacco-sunburst" class="produit" data-prix="539" data-gamme="✨">

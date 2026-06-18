@@ -21,7 +21,7 @@
 	<meta name="twitter:description" content="Fabriquées principalement en Espagne et au Portugal, découvrez nos guitares classiques ! Sonorités rondes et chaleureuses sont au rendez-vous, aux finitions différentes et palettes sonores riches et variées !">
 	<meta name="twitter:image" content="">
 	
-	<link rel="stylesheet" href="../assets/css/main.css?v=2026-06-17">
+	<link rel="stylesheet" href="../assets/css/main.css?v=2026-06-18">
 	
 	<script type="application/ld+json">
 	{
@@ -191,36 +191,35 @@
 		<br>
 		<a href="https://rueil-musique.fr/instruments-accessoires/">Retour aux instruments</a>
 		</p>
-		<div>
-				Trier :
-				<select id="sort" aria-label="Tri des produits">
-					<option value="default">Par défaut</option>
-					<option value="asc">Prix croissant</option>
-					<option value="desc">Prix décroissant</option>
-				</select>
-				<select id="filter-gamme" aria-label="Filtrer par gamme de produits">
-					<option value="all">Toutes les gammes</option>
-					<option value="🪴">🪴 Entrée de gamme</option>
-					<option value="✨">✨ Milieu de gamme </option>
-					<option value="💖">💖 Haut de gamme</option>
-					<option value="💎">💎 Légendaire</option>
-				</select>
-				<input id="searchbox" type="search" placeholder="Filtrer (marque/nom/catégorie)">
-				<a class="searchbutton" href="#searchbox"><img src="../images/logos/icones/search.svg" /></a>
-			</div>
+		<div class="trier">
+			<select id="sort" aria-label="Tri des produits">
+				<option value="default">Trier par défaut</option>
+				<option value="asc">Prix croissant</option>
+				<option value="desc">Prix décroissant</option>
+			</select>
+			<select id="filter-gamme" aria-label="Filtrer par gamme de produits">
+				<option value="all">Afficher toutes les gammes</option>
+				<option value="🪴">🪴 Entrée de gamme</option>
+				<option value="✨">✨ Milieu de gamme </option>
+				<option value="💖">💖 Haut de gamme</option>
+				<option value="💎">💎 Légendaire</option>
+			</select>
+			<input id="searchbox" type="search" placeholder="Filtrer (marque/nom/catégorie)">
+			<a class="searchbutton" href="#searchbox"><img src="../images/logos/icones/search.svg" /></a>
+		</div>
 			
-			<div id="overlay" class="overlay hidden">
-				<div class="overlay-content">
-					<span id="close">&times;</span>
-					<section>
-						<img id="overlay-img">
-					</section>
-					<section>
-						<div id="overlay-text">
-						</div>
-					</section>
-				</div>
+		<div id="overlay" class="overlay hidden">
+			<div class="overlay-content">
+				<span id="close">&times;</span>
+				<section>
+					<img id="overlay-img">
+				</section>
+				<section>
+					<div id="overlay-text">
+					</div>
+				</section>
 			</div>
+		</div>
 		<div class="produits" id="produits">
 			
 			<div id="ziricote" class="produit" data-prix="599" data-gamme="✨">
@@ -334,7 +333,7 @@
 			</div>
 
 			<div id="jh60" class="produit" data-prix="5990" data-gamme="💎">
-				<div class="instock">
+				<div class="rare">
 					<img src="../images/guitares-classiques/jh60.avif" alt="Juan Hernandez JH60CD Luthier" />
 					<div class="badge"></div>
 				</div>
@@ -346,7 +345,7 @@
 					<div>
 						<p class="justifier-texte">Le modèle anniversaire du maître luthier espagnol Juan Hernandez, la JH60CD Luthier est un modèle plus qu'emblématique, c'est notre plus belle pièce unique en magasin, un véritable bijou de fabrication !</p>
 						<ul><li>Table : Cèdre massif</li><li>Manche : Acajou</li><li>Touche : Ébène</li><li>Mécaniques : Précision or</li><li>Éclisses : Palissandre rio massif</li><li>Dos : Palissandre rio massif</li><li>Finition : Vernis spécial nitrocellulosique haute qualité</li></ul>
-						<p>🟢 Disponible au magasin</p>
+						<p>🟠 Dernier(s) stock(s) ! Disponible au magasin</p>
 					</div>
 					<div>
 						<a class="boutonCTA venirMagasin" href="https://rueil-musique.fr/contact#noustrouver">Venir au magasin</a>
@@ -422,7 +421,7 @@
 			</div>
 
 			<div id="jr125" class="produit" data-prix="2150" data-gamme="💎">
-				<div class="instock">
+				<div class="rare">
 					<img src="../images/guitares-classiques/jr125.avif" alt="Jose Ramirez JR-125" />
 					<div class="badge"></div>
 				</div>
@@ -434,7 +433,7 @@
 					<div>
 						<p class="justifier-texte">L'art de la lutherie espagnole incarnée dans une guitare d'une vie entière : la JR-125 n'est plus seulement un instrument de musique, c'est une œuvre d'art à ce stade ! Cèdre rouge massif pour la table d'harmonie, cet instrument rend hommage au répertoire classique espagnol et à la lutherie.</p>
 						<ul><li>Table : Cèdre rouge massif</li><li>Corps : Palissandre indien massif</li><li>Touche : Ébène</li><li>Mécaniques : Plaqué or</li></ul>
-						<p>🟢 Disponible au magasin</p>
+						<p>🟠 Dernier(s) stock(s) ! Disponible au magasin</p>
 					</div>
 					<div>
 						<a class="boutonCTA venirMagasin" href="https://rueil-musique.fr/contact#noustrouver">Venir au magasin</a>
