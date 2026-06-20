@@ -148,6 +148,14 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/origindesignst_vert-atlantique.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/origindesignst_rouge-bourgogne.avif</image:loc>
+    </image:image>
+    
+    <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/avenger.avif</image:loc>
     </image:image>
     
