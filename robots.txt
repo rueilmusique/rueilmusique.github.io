@@ -7,3 +7,4 @@ Disallow: /images/pass-culture.png
 Disallow: /images/pass-culture.avif
 
 Sitemap: http://rueil-musique.fr/sitemap.xml
+Sitemap: http://rueil-musique.fr/sitemap-images.xml

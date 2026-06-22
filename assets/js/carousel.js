@@ -1,11 +1,21 @@
 const list = document.querySelector(".listeAlaune");
 const item = document.querySelector(".item");
-const itemWidth = item.offsetWidth;
+
+function getScrollWidth() {
+	const itemWidth = item.offsetWidth;
+
+	if (window.matchMedia("(max-width: 900px)" || "(max-height: 500px)").matches) {
+		return itemWidth; // scroll lent sur mobile (doit correspondre au max-width/max-height du @media screen
+	}
+
+	return itemWidth * 2; // scroll rapide sur desktop/tablette
+}
 
 function handleClick(direction) {
-	if(direction === "previous") {
-		list.scrollBy({ left: -itemWidth, behavior: "smooth" });
-	} else {
-		list.scrollBy({ left: itemWidth, behavior: "smooth" });
-	}
+	const scrollWidth = getScrollWidth();
+
+	list.scrollBy({
+		left: direction === "previous" ? -scrollWidth : scrollWidth,
+		behavior: "smooth"
+	});
 }
