@@ -359,8 +359,8 @@ header a{
 
 .burger {
 	display: flex;
-	/* align-items: center; */
-	/* justify-content: center; */
+	align-items: center;
+	justify-content: center;
 	width: 2.5rem;
 	height: 2.5rem;
 	cursor: pointer;
@@ -439,39 +439,44 @@ nav a:hover{
 	transform: scale(0.99);
 }
 
-.venirMagasin::before{
-	content: '';
+.boutonCTA::before, .boutonCTAsecondary::before{
 	display: inline-block;
-	background-image: url("../../images/logos/icones/navigation.svg");
 	width: 1.5rem;
 	height: 1.5rem;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
 
+.explore::before{
+	content: '';
+	background-image: url("../../images/logos/icones/explore.svg");
+}
+
+.venirMagasin::before{
+	content: '';
+	background-image: url("../../images/logos/icones/storefront.svg");
+}
+
+.shoppingBag::before{
+	content: '';
+	background-image: url("../../images/logos/icones/shopping_bag_speed.svg");
+}
+
 .demanderConseil::before{	
 	content: '';
-	display: inline-block;
 	background-image: url("../../images/logos/icones/info.svg");
-	width: 1.5rem;
-	height: 1.5rem;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
 }
 
 .demanderConseil:hover{
 	filter: brightness(0) saturate(100%) invert(56%) sepia(55%) saturate(389%) hue-rotate(1deg) brightness(97%) contrast(96%);
 }
 
-.boutonCTA{
+.boutonCTA, .boutonCTAsecondary{
 	display: flex;
 	padding: 1em;
-	background: var(--couleur-principale);
 	text-decoration: none;
 	border-radius: 7px;
-	border: 2px solid #3e3e3e00;
 	text-align: center;
-	color: #fff !important;
 	transition: 0.05s;
 	
 	justify-content: center;
@@ -479,25 +484,16 @@ nav a:hover{
 	gap: 0.3em;
 }
 
-.boutonCTA img{
-	width: 2rem;
-	aspect-ratio: 1/1;
+.boutonCTA{
+	background: var(--couleur-principale);
+	border: 2px solid #3e3e3e00;
+	color: #fff !important;
 }
 
 .boutonCTAsecondary{
-	display: flex;
-	padding: 1em;
 	background: none;
-	text-decoration: none;
-	border-radius: 7px;
 	border: 2px solid var(--couleur-secondaire);
-	text-align: center;
 	color: var(--couleur-secondaire) !important;
-	transition: 0.05s;
-	
-	justify-content: center;
-	align-items: center;
-	gap: 0.3em;
 }
 
 .boutonCTAsecondary:hover{
@@ -845,6 +841,13 @@ nav a:hover{
 	overflow: hidden;
 }
 
+.produits{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1em 0.5em;
+	margin: 0.5em 0 0 0;
+}
+
 .produit{
 	background: #e8d8d3;
 	padding: 0.5em;
@@ -870,13 +873,6 @@ nav a:hover{
 .produit:hover{
 	box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.25);
 	background: #e2cccc;
-}
-
-.produits{
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 1em 0.5em;
-	margin: 0.5em 0 0 0;
 }
 
 :is(.instock, .sold, .occasion, .rare, .commande, .indelivery){
@@ -945,8 +941,6 @@ nav a:hover{
 	grid-template-columns: 2fr 3fr;
 	
 	overscroll-behavior: none;
-	
-	/* overflow: scroll; */
 	overflow: auto;
 	
 	section{
@@ -1295,18 +1289,6 @@ tr{
 	.footerDroite a{
 		padding: 0.2em;
 	}
-	
-	/* .alaune{ */
-		/* padding: 0.3em; */
-	/* } */
-	
-	/* .alaune a{ */
-		/* font-size: 1rem; */
-	/* } */
-	
-	/* .alaune div{ */
-		/* margin: 0.2em; */
-	/* } */
 	
 	.divFormulaire33{
 		width: 100%;
