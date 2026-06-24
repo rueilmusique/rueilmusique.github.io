@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 		<meta name="description" content="Contactez-nous si vous avez besoin d'un conseil sur le choix d'un instrument, de renseignements sur l'atelier de lutherie ou de précisions sur une méthode. Retrouvez sur cette page notre formulaire de contact, notre téléphone ainsi que notre adresse." />
 		<link rel="canonical" href="https://rueil-musique.fr/contact" />
-		<link rel="stylesheet" href="assets/css/main.css?v=2026-06-22_v2" />
+		<link rel="stylesheet" href="assets/css/main.css?v=2026-06-24" />
 		
 		<meta property="og:url" content="https://rueil-musique.fr/contact">
 		<meta property="og:type" content="website">
@@ -28,50 +28,56 @@
 		
 		<div class="main" role="main">
 			<h1>Contactez-nous</h1>
-			<p class="justifier-texte">Besoin d'un conseil sur le choix d'un instrument, de renseignements sur l'atelier de lutherie ou de précisions sur une méthode ?
-			Vous pouvez nous laisser un message via notre formulaire, <b>notre équipe vous invite fortement à nous contacter directement par téléphone au <a href="tel:+33147494849">01&nbsp;47&nbsp;49&nbsp;48&nbsp;49</a>&nbsp;!</b></p>
-			<p>N'oubliez pas de consulter <a href="#faq">notre FAQ ci-dessous !</a> Notre adresse : <a href="https://maps.app.goo.gl/mXEdYxWUZvsPta75A" target="blank">16 rue Marollet, 92500 Rueil-Malmaison</a></p>
-			
-			<form action="https://api.web3forms.com/submit" method="POST" id="formRueilMusique">
-			<input type="hidden" name="access_key" value="945289da-f816-4d2f-a77c-9c65a39efd8a">
-			<input type="hidden" name="subject" value="Nouveau message depuis rueil-musique.fr">
-				<div class="grilleFormulaire">
-					<div class="divFormulaire divFormulaire33">
-						<label for="name"></label>
-						<input type="text" name="name" id="name" placeholder="Votre nom*" required="">
+			<div>
+				<section>
+				<p class="justifier-texte">Besoin d'un conseil sur le choix d'un instrument, de renseignements sur l'atelier de lutherie ou de précisions sur une méthode ?
+				Vous pouvez nous laisser un message via notre formulaire, <b>notre équipe vous invite fortement à nous contacter directement par téléphone au <a href="tel:+33147494849">01&nbsp;47&nbsp;49&nbsp;48&nbsp;49</a>&nbsp;!</b></p>
+				<p>N'oubliez pas de consulter <a href="#faq">notre FAQ ci-dessous !</a> Notre adresse : <a href="https://maps.app.goo.gl/mXEdYxWUZvsPta75A" target="blank">16 rue Marollet, 92500 Rueil-Malmaison</a></p>
+				
+				<form action="https://api.web3forms.com/submit" method="POST" id="formRueilMusique">
+				<input type="hidden" name="access_key" value="945289da-f816-4d2f-a77c-9c65a39efd8a">
+				<input type="hidden" name="subject" value="Nouveau message depuis rueil-musique.fr">
+					<div class="grilleFormulaire">
+						<div class="divFormulaire divFormulaire33">
+							<label for="name"></label>
+							<input type="text" name="name" id="name" placeholder="Votre nom*" required="">
+						</div>
+						<div class="divFormulaire divFormulaire33">
+							<label for="email"></label>
+							<input type="email" name="email" id="email" placeholder="Votre e-mail*" required="">
+						</div>
+						<div class="divFormulaire divFormulaire33">
+							<label for="phone"></label>
+							<input type="tel" name="phone" id="phone" placeholder="Votre téléphone (0102030405)" pattern="[0-9]{10}">
+						</div>
+						<div class="divFormulaire divFormulaire100">
+							<select name="Catégorie" id="email-category" aria-label="Catégorie" required="">
+								<option value="">- Sélectionnez un objet* -</option>
+								<option value="Achat d'instrument">Achat d'instrument</option>
+								<option value="Partition">Commande &amp; réservation de partition</option>
+								<option value="Atelier de lutherie">Réparation / atelier de lutherie</option>
+								<option value="Reprise d'instrument">Reprise d'instrument à cordes</option>
+								<option value="Autre">Autre</option>
+							</select>
+						</div>
+						<div class="divFormulaire divFormulaire100">
+							<textarea name="message" placeholder="Une question ? Laissez-nous un message !" required=""></textarea>
+						</div>
+						<input type="hidden" name="redirect" value="https://rueil-musique.fr/mailenvoye">
+						
+						<div class="divFormulaire divFormulaire100">
+							<div class="h-captcha" data-captcha="true" data-theme="light" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div>
+						</div>
+						<div class="divFormulaire divFormulaire100">
+							<input class="boutonCTA explore" type="submit" value="Envoyer">
+						</div>
 					</div>
-					<div class="divFormulaire divFormulaire33">
-						<label for="email"></label>
-						<input type="email" name="email" id="email" placeholder="Votre e-mail*" required="">
-					</div>
-					<div class="divFormulaire divFormulaire33">
-						<label for="phone"></label>
-						<input type="tel" name="phone" id="phone" placeholder="Votre téléphone (0102030405)" pattern="[0-9]{10}">
-					</div>
-					<div class="divFormulaire divFormulaire100">
-						<select name="Catégorie" id="email-category" aria-label="Catégorie" required="">
-							<option value="">- Sélectionnez un objet* -</option>
-							<option value="Achat d'instrument">Achat d'instrument</option>
-							<option value="Partition">Commande &amp; réservation de partition</option>
-							<option value="Atelier de lutherie">Réparation / atelier de lutherie</option>
-							<option value="Reprise d'instrument">Reprise d'instrument à cordes</option>
-							<option value="Autre">Autre</option>
-						</select>
-					</div>
-					<div class="divFormulaire divFormulaire100">
-						<textarea name="message" placeholder="Une question ? Laissez-nous un message !" required=""></textarea>
-					</div>
-					<input type="hidden" name="redirect" value="https://rueil-musique.fr/mailenvoye">
-					
-					<div class="divFormulaire divFormulaire100">
-						<div class="h-captcha" data-captcha="true" data-theme="light" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div>
-					</div>
-					<div class="divFormulaire divFormulaire100">
-						<input class="bouton" type="submit" value="Envoyer">
-					</div>
-				</div>
-			</form>
-			
+				</form>
+				</section>
+				<!-- <section> -->
+					<!-- <img class="hidemobile" src="images/equipe-rueilmusique.avif" alt="L'équipe Rueil Musique" loading="lazy" decoding="async" /> -->
+				<!-- </section> -->
+			</div>
 			<hr>
 			
 			<h2 id="noustrouver">Où nous trouver</h2>
@@ -183,7 +189,7 @@
 		
 		<custom-footer></custom-footer>
 		
-		<script src="assets/js/custom-footer.js?v=2026-05-21"></script>
+		<script src="assets/js/custom-footer.js?v=2026-06-24"></script>
 		<script src="assets/js/analytics.js?v=2026-05-28_v2" defer></script>
 		<script src="https://web3forms.com/client/script.js" async="" defer=""></script>
 		<script>

@@ -25,6 +25,12 @@
 	--couleur-background: #f7ebe2;
 	
 	accent-color: var(--couleur-principale);
+	
+	--transition-tres-rapide: 0.05s;
+	--transition-rapide: 0.1s;
+	--transition-moyenne: 0.2s;
+	
+	--main-font: "Source Sans 3", sans-serif;
 }
 
 .herosection{
@@ -72,11 +78,11 @@
 }
 
 .mobileSlide{
-	height: 100%;
+	display: none;
 	width: 100%;
+	height: 100%;
 	object-position: 0% 36%;
 	object-fit: cover;
-	display: none;
 }
 
 @keyframes fade {
@@ -121,16 +127,13 @@ p{
 	margin: 0 0 1.5em 0;
 }
 
-a:hover, .boutonAlaune:hover{
+a:hover, .boutonAlaune:hover, svg:hover, a:hover svg{
 	color: var(--couleur-troisieme);
+	fill: var(--couleur-troisieme);
 }
 
 svg{
 	fill: var(--couleur-quatrieme);
-}
-
-svg:hover{
-	fill: var(--couleur-troisieme);
 }
 
 img{
@@ -176,7 +179,7 @@ blockquote::after{
 body{
 	display: block;
 	
-	font-family: "Source Sans 3", sans-serif;
+	font-family: var(--main-font);
 	font-size: 1.167rem;
 	
 	background: var(--couleur-background);
@@ -196,17 +199,21 @@ body::after{
 	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.2'/%3E%3C/svg%3E");
 }
 
+:is(input, select, textarea){
+	font-family: var(--main-font);
+}
+
 footer{
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	/* min-height: 3em; */
 	color: var(--couleur-quatrieme);
 	background: var(--couleur-secondaire);
 	justify-content: space-between;
+	align-items: center;
 }
 
 footer a{
@@ -214,33 +221,23 @@ footer a{
 }
 
 footer a, header a{
-	margin: auto 0;
+	/* margin: auto 0; */
 	color: var(--couleur-quatrieme);
 	text-decoration: none;
 }
 
-.footerGauche{
+footer div:nth-of-type(2){
 	display: flex;
-}
-	
-.footerMilieu{
-	margin: 0;
-	display: flex;
-	flex-direction: row;
 	flex: 1;
 	justify-content: left;
 }
-	
-.footerDroite{
-	display: flex;
-}
 
-.footerDroite a{
+footer div:nth-of-type(3) a{
 	display: flex;
 	width: 2rem;
 }
 
-.footerDroite div{
+footer div:nth-of-type(3){
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
 }
@@ -265,7 +262,7 @@ header{
 	justify-content: space-between;
 	background: var(--couleur-secondaire);
 	z-index: 100;
-	gap: 0 0.2em;
+	gap: 0 0.4em;
 }
 
 header a{
@@ -281,9 +278,7 @@ header a{
 	align-items: center;
 	text-decoration: none;
 	font-weight: bold;
-	span{
-		margin: 0 0.2em;
-	}
+	gap: 0.2em;
 }
 
 .headerGauche img{
@@ -364,7 +359,7 @@ header a{
 	width: 2.5rem;
 	height: 2.5rem;
 	cursor: pointer;
-	transition: 0.2s;
+	transition: var(--transition-moyenne);
 }
 
 .burger svg {
@@ -419,18 +414,11 @@ nav a:hover{
 	margin-right: 0.5em;
 }
 
-.bouton{
-	background: var(--couleur-principale);
-	color: #fff;
-	transition: 0.05s;
-	cursor: pointer;
-}
-
-.bouton:hover, .boutonCTA:hover{
+.boutonCTA:hover{
 	background: var(--couleur-troisieme);
 }
 
-.bouton:active, .boutonCTA:active{
+.boutonCTA:active{
 	background: #ddb15c;
 	transform: scale(0.99);
 }
@@ -445,6 +433,11 @@ nav a:hover{
 	height: 1.5rem;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+}
+
+.checkIcon::before{
+	content: '';
+	background-image: url("../../images/logos/icones/check.svg");
 }
 
 .explore::before{
@@ -626,7 +619,7 @@ nav a:hover{
 .grilleFormulaire{
 	display: flex;
 	flex-wrap: wrap;
-	column-gap: 0.2em;
+	column-gap: 0.5em;
 	row-gap: 0.5em;
 }
 
@@ -634,11 +627,10 @@ nav a:hover{
 	border: 0;
 	margin: 0;
 	height: 3em;
-	font-family: "Source Sans 3", sans-serif;
 }
 
 .divFormulaire :is(input, select, textarea){
-	width: calc(100% - 0.2em);
+	width: 100%;
 	box-sizing: border-box;
 	padding: 0 1em 0 1em;
 	border-radius: 3px;
@@ -652,11 +644,11 @@ nav a:hover{
 }
 
 .divFormulaire33{
-	width: calc(100% / 3 - 0.2em);
+	flex: auto;
 }
 
 .divFormulaire100{
-	width: calc(100% - 0.2em);
+	width: 100%;
 }
 
 .grilleInstrumentsAccessoires{
@@ -668,6 +660,7 @@ nav a:hover{
 .divInstrumentsAccessoires{
 	position: relative;
 	container-type: inline-size;
+	overflow: hidden;
 }
 
 .divInstrumentsAccessoires a{
@@ -678,7 +671,7 @@ nav a:hover{
 .divInstrumentsAccessoires img{
 	aspect-ratio: 1/1;
 	object-fit: cover;
-	transition: 0.1s;
+	transition: var(--transition-rapide);
 }
 
 .divInstrumentsAccessoires:hover .overlayInstrumentsAccessoires{
@@ -687,6 +680,7 @@ nav a:hover{
 
 .divInstrumentsAccessoires:hover img{
 	filter: brightness(30%);
+	transform: scale(1.02);
 }
 
 .overlayInstrumentsAccessoires{
@@ -698,7 +692,7 @@ nav a:hover{
 	padding: 2em;
 	
 	opacity: 0;
-	transition: 0.1s;		
+	transition: var(--transition-rapide);		
 }
 
 .overlayInstrumentsAccessoires :is(h2,p){
@@ -723,23 +717,21 @@ nav a:hover{
 
 .divService{
 	position: relative;
-	transition: 0.1s;
-}
-
-.divService:hover{
-	/* transform: scale(1.01); */
+	transition: var(--transition-rapide);
+	overflow: hidden;
 }
 
 .divService img{
 	height: 100%;
 	object-fit: cover;
-	transition: 0.1s;
-	/* filter: brightness(50%); */
+	transition: var(--transition-rapide);
 	aspect-ratio: 3/4;
+	will-change: transform;
 }
 
 .divService:hover img{
 	filter: brightness(30%);
+	transform: scale(1.02);
 }
 
 .divService:hover .overlayService{
@@ -755,7 +747,7 @@ nav a:hover{
 	inset: 0;
 	padding: 1em;
 	
-	transition: 0.1s;
+	transition: var(--transition-rapide);
 	
 	display: grid;
 	grid-template-rows: 1fr 1fr;
@@ -875,7 +867,7 @@ nav a:hover{
 	background: #e2cccc;
 }
 
-:is(.instock, .sold, .occasion, .rare, .commande, .indelivery){
+div :is(.instock, .sold, .occasion, .rare, .commande, .indelivery){
 	margin: 0 !important;
 	pointer-events: none;
 }
@@ -1220,7 +1212,8 @@ tr{
 	}
 
 	.herosection{
-		height: 8em;
+		/* height: 8em; */
+		height: 16vh;
 	}
 
 	.slide{
@@ -1265,7 +1258,7 @@ tr{
 			margin: 0 0.2em 0 0.5em;
 		}
 		span{
-			margin: 0 0.5em 0 0.2em;
+			/* margin: 0 0.5em 0 0.2em; */
 			font-size: 1rem;
 		}
 	}
@@ -1282,16 +1275,17 @@ tr{
 		display: flex;
 	}
 	
-	.footerMilieu{
+	footer div:nth-of-type(2){
 		display: none;
 	}
 	
-	.footerDroite a{
+	footer div:nth-of-type(3) a{
 		padding: 0.2em;
 	}
 	
 	.divFormulaire33{
 		width: 100%;
+		flex: auto;
 	}
 	
 	#close {
