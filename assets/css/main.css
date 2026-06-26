@@ -23,6 +23,8 @@
 	--couleur-troisieme: #bd964a;
 	--couleur-quatrieme: #dbd7d4;
 	--couleur-background: #f7ebe2;
+	--couleur-carte: #e8d8d3;
+	--couleur-carte-hover: #e2cccc;
 	
 	accent-color: var(--couleur-principale);
 	
@@ -214,6 +216,7 @@ footer{
 	background: var(--couleur-secondaire);
 	justify-content: space-between;
 	align-items: center;
+	gap: 0.5em;
 }
 
 footer a{
@@ -379,6 +382,7 @@ nav{
 
 .navDefault{
 	display: flex;
+	align-items: center;
 }
 
 .navDefault a{
@@ -553,7 +557,7 @@ nav a:hover{
 	flex-shrink: 0;
 	width: 10em;
 	padding: 0;
-	background-color: #e2cccc;
+	background-color: var(--couleur-carte);
 	scroll-snap-align: center;
 	transform: scale(0.99);
 	transition: 0.1s ease;
@@ -585,7 +589,7 @@ nav a:hover{
 }
 
 .content:hover{
-	background: #e9d8d8;
+	background: var(--couleur-carte-hover);
 }
 
 .boutonAlaune {
@@ -841,7 +845,7 @@ nav a:hover{
 }
 
 .produit{
-	background: #e8d8d3;
+	background: var(--couleur-carte);
 	padding: 0.5em;
 	cursor: pointer;
 	transition: all 0.07s ease-out;
