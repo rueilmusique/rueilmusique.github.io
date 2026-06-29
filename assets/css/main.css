@@ -860,6 +860,7 @@ nav a:hover{
 .produit img{
 	aspect-ratio: 3/4;
 	object-fit: cover;
+	height: 100%;
 }
 
 .produit div{
