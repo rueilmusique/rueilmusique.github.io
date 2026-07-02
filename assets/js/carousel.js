@@ -1,21 +1,30 @@
-const list = document.querySelector(".listeAlaune");
-const item = document.querySelector(".item");
+document.querySelectorAll(".listeAlaune-wrapper").forEach(wrapper => {
 
-function getScrollWidth() {
-	const itemWidth = item.offsetWidth;
+    const list = wrapper.querySelector(".listeAlaune");
+    const item = wrapper.querySelector(".item");
 
-	if (window.matchMedia("(max-width: 900px)" || "(max-height: 500px)").matches) {
-		return itemWidth; // scroll lent sur mobile (doit correspondre au max-width/max-height du @media screen
-	}
+    function getScrollWidth() {
+        const itemWidth = item.offsetWidth;
 
-	return itemWidth * 2; // scroll rapide sur desktop/tablette
-}
+        if (window.matchMedia("(max-width:900px), (max-height:500px)").matches) {
+            return itemWidth;
+        }
 
-function handleClick(direction) {
-	const scrollWidth = getScrollWidth();
+        return itemWidth * 2;
+    }
 
-	list.scrollBy({
-		left: direction === "previous" ? -scrollWidth : scrollWidth,
-		behavior: "smooth"
-	});
-}
+    wrapper.querySelector(".previous").addEventListener("click", () => {
+        list.scrollBy({
+            left: -getScrollWidth(),
+            behavior: "smooth"
+        });
+    });
+
+    wrapper.querySelector(".next").addEventListener("click", () => {
+        list.scrollBy({
+            left: getScrollWidth(),
+            behavior: "smooth"
+        });
+    });
+
+});
