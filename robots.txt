@@ -6,5 +6,5 @@ Disallow: /cgi-bin/
 Disallow: /images/pass-culture.png
 Disallow: /images/pass-culture.avif
 
-Sitemap: http://rueil-musique.fr/sitemap.xml
-Sitemap: http://rueil-musique.fr/sitemap-images.xml
+Sitemap: https://rueil-musique.fr/sitemap.xml
+Sitemap: https://rueil-musique.fr/sitemap-images.xml
