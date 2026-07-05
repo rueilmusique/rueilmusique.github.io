@@ -96,6 +96,10 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
     
     <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/js400_vintage-yellow.avif</image:loc>
+    </image:image>
+    
+    <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/vintera60mx_ice-blue-metallic.avif</image:loc>
     </image:image>
     
@@ -104,19 +108,15 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/c1standard_charcoal-satin.avif</image:loc>
+    </image:image>
+    
+    <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/gs300_brown.avif</image:loc>
     </image:image>
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/lp300_honey-burst.avif</image:loc>
-    </image:image>
-    
-    <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-electriques/e1000_cyber-yellow.avif</image:loc>
-    </image:image>
-    
-    <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-electriques/e1000_daphne-bleu.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -177,6 +177,14 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/jl500vs.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/e1000_cyber-yellow.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/e1000_daphne-bleu.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -268,7 +276,15 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/summitclassicsgdh_mat-black.avif</image:loc>
+    </image:image>
+    
+    <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/summitclassicsgp90.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/summitclassicsgdh_vintage-burst.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -293,14 +309,6 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/g61sge.avif</image:loc>
-    </image:image>
-    
-    <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-electriques/summitclassicsgdh_vintage-burst.avif</image:loc>
-    </image:image>
-    
-    <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-electriques/summitclassicsgdh_mat-black.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -567,7 +575,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/ea100blk.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/legacychcw_faded-black.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -651,10 +659,6 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/legacychcw_faded-black.avif</image:loc>
-    </image:image>
-    
-    <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/mswscwgt.avif</image:loc>
     </image:image>
     
@@ -680,6 +684,10 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/ce300.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/ea100blk.avif</image:loc>
     </image:image>
     
 
