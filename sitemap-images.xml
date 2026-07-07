@@ -180,6 +180,14 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/e1000_pearl-black.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/e1000_vintage-white.avif</image:loc>
+    </image:image>
+    
+    <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/e1000_cyber-yellow.avif</image:loc>
     </image:image>
     
