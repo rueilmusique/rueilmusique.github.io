@@ -8,10 +8,11 @@ document.querySelectorAll(".produit").forEach(produit => {
 	produit.addEventListener("click", () => {
 
 		const detail = produit.querySelector(".produit-detail");
-		const image = produit.querySelector("img");
+		const picture = produit.querySelector("picture");
 
 		overlayText.innerHTML = detail.innerHTML;
-		overlayImg.src = image.src;
+		// overlayImg.src = image.src;
+		overlayImg.replaceChildren(picture.cloneNode(true));
 
 		overlay.classList.remove("hidden");
 	});
