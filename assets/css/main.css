@@ -211,7 +211,6 @@ footer{
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	/* min-height: 3em; */
 	color: var(--couleur-quatrieme);
 	background: var(--couleur-secondaire);
 	justify-content: space-between;
@@ -224,7 +223,6 @@ footer a{
 }
 
 footer a, header a{
-	/* margin: auto 0; */
 	color: var(--couleur-quatrieme);
 	text-decoration: none;
 }
@@ -557,7 +555,6 @@ nav a:hover{
 	flex-shrink: 0;
 	width: 10em;
 	padding: 0;
-	/* background-color: var(--couleur-carte); */
 	scroll-snap-align: center;
 	transform: scale(0.99);
 	transition: 0.1s ease;
@@ -596,11 +593,6 @@ nav a:hover{
 .content div:nth-child(3) {
 	font-size: 1rem;
 }
-
-/* .content section{ */
-	/* display: flex; */
-	/* flex-direction: column; */
-/* } */
 
 .content img{
 	aspect-ratio: 3/4;
@@ -816,7 +808,6 @@ nav a:hover{
 	padding: 1em 0;
 }
 
-
 .justifier-texte{
 	text-align: justify;
 }
@@ -979,6 +970,10 @@ div :is(.instock, .sold, .occasion, .rare, .commande, .indelivery){
 	}
 }
 
+#overlay-img{
+	height: 100%;
+}
+
 #overlay-text{
 	display: flex;
 	flex-direction: column;
@@ -993,12 +988,10 @@ div :is(.instock, .sold, .occasion, .rare, .commande, .indelivery){
 	color: var(--couleur-secondaire);
 }
 
-/* (old : nth-of-type -1) */
 #overlay-text div:nth-of-type(2){
 	flex: 1;
 }
 
-/* (old : nth-of-type -1) */
 #overlay-text div:nth-of-type(3){
 	margin: 0 0 1em 0;
 	display: grid;
@@ -1299,7 +1292,6 @@ tr{
 			margin: 0 0.2em 0 0.5em;
 		}
 		span{
-			/* margin: 0 0.5em 0 0.2em; */
 			font-size: 1rem;
 		}
 	}
@@ -1361,12 +1353,10 @@ tr{
 		}
 	}
 	
-	/* NEW */
 	#overlay-text div:nth-of-type(1){
 		margin: 0 0 0.5em 0;
 	}
 	
-	/* (old = div:2) */
 	#overlay-text div:nth-of-type(3){
 		margin: 0 0 1em 0;
 		grid-template-columns: 1fr;
@@ -1424,7 +1414,7 @@ tr{
 	}
 	
 	.divService img{
-		filter: brightness(30%);
+		filter: brightness(60%);
 	}
 	
 	.divService .overlayService h3{
@@ -1442,7 +1432,7 @@ tr{
 		.divInstrumentsAccessoires{		
 			a{	
 				img{
-					filter: brightness(50%);
+					filter: brightness(60%);
 					aspect-ratio: 4/1;
 				}
 				.overlayInstrumentsAccessoires{
