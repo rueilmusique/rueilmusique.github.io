@@ -11,8 +11,23 @@ document.querySelectorAll(".produit").forEach(produit => {
 		const picture = produit.querySelector("picture");
 
 		overlayText.innerHTML = detail.innerHTML;
-		// overlayImg.src = image.src;
 		overlayImg.replaceChildren(picture.cloneNode(true));
+		
+		const boutonPartager = overlayText.querySelector(".boutonPartager");
+		if (boutonPartager) {
+			boutonPartager.addEventListener("click", async (e) => {
+				e.stopPropagation(); // évite tout effet de bord
+				const url = new URL(location.href);
+				url.hash = produit.id;
+				navigator.clipboard.writeText(url.href);
+				// const url = `${location.origin}${location.pathname}#${produit.id}`;
+				// await navigator.clipboard.writeText(url);
+				boutonPartager.textContent = "✅ Lien copié !";
+				setTimeout(() => {
+					boutonPartager.textContent = "🔗 Copier le lien";
+				}, 1500);
+			});
+		}
 
 		overlay.classList.remove("hidden");
 	});
