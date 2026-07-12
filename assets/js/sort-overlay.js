@@ -23,7 +23,7 @@ function ouvrirOverlay(produit) {
 			if (navigator.share) {
 				navigator.share({
 					title: titre,
-					text: `🎶 Retrouve ce produit chez Rueil Musique !`,
+					text: `🎶 ${titre} chez Rueil Musique !`,
 					url: location.href
 				});
 			}
