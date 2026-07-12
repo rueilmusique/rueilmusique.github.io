@@ -7,6 +7,7 @@ function ouvrirOverlay(produit) {
 
     const detail = produit.querySelector(".produit-detail");
     const picture = produit.querySelector("picture");
+	const titre = produit.querySelector(".titreProduit").textContent;
 
     overlayText.innerHTML = detail.innerHTML;
     overlayImg.replaceChildren(picture.cloneNode(true));
@@ -18,13 +19,21 @@ function ouvrirOverlay(produit) {
 	const boutonPartager = overlayText.querySelector(".boutonPartager");
 	
     if (boutonPartager) {
-        boutonPartager.addEventListener("click", async () => {
-            await navigator.clipboard.writeText(location.href);
-            boutonPartager.textContent = "✅ Lien copié !";
-            setTimeout(() => {
+		boutonPartager.addEventListener("click", async () => {
+			if (navigator.share) {
+				navigator.share({
+					title: titre,
+					text: `🎶 Retrouve ce produit chez Rueil Musique !`,
+					url: location.href
+				});
+			}
+			else {
+				await navigator.clipboard.writeText(location.href);
+			}
+			boutonPartager.textContent = "✅ Lien copié !";
+			setTimeout(() => {
 				boutonPartager.textContent = "🔗 Copier le lien";
 			}, 1500);
-			
 		});
 	}
 	overlay.classList.remove("hidden");
