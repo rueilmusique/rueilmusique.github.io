@@ -104,7 +104,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-electriques/vintera60custom_black.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/lct3newgen3ts_sunburst.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -188,11 +188,15 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/e1000_daphne-bleu.avif</image:loc>
+    </image:image>
+    
+    <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/e1000_cyber-yellow.avif</image:loc>
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-electriques/e1000_daphne-bleu.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/vintera60custom_black.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -228,11 +232,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-electriques/js400_plum.avif</image:loc>
-    </image:image>
-    
-    <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-electriques/js400_olympic-white.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/js400_black.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -240,7 +240,15 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/js400_olympic-white.avif</image:loc>
+    </image:image>
+    
+    <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/js400_coral-red.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/js400_plum.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -265,6 +273,10 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/montrealpremiereltddesertblue.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/lcs5dcmn_natural.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -351,6 +363,10 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
+        <image:loc>https://rueil-musique.fr/images/basses-electriques/p5r4st_tobacco-sunburst.avif</image:loc>
+    </image:image>
+    
+    <image:image>
         <image:loc>https://rueil-musique.fr/images/basses-electriques/v7ar4st_natural-satin.avif</image:loc>
     </image:image>
     
@@ -363,7 +379,15 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/basses-electriques/precision1979.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/basses-electriques/v3p4st_black.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/basses-electriques/v3p4st_sonic-blue.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/basses-electriques/v3p4st_tobacco-sunburst.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -375,15 +399,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/basses-electriques/v3p4st_black.avif</image:loc>
-    </image:image>
-    
-    <image:image>
-        <image:loc>https://rueil-musique.fr/images/basses-electriques/v3p4st_sonic-blue.avif</image:loc>
-    </image:image>
-    
-    <image:image>
-        <image:loc>https://rueil-musique.fr/images/basses-electriques/v3p4st_tobacco-sunburst.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/basses-electriques/precision1979.avif</image:loc>
     </image:image>
     
 
@@ -834,6 +850,141 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/ukuleles/ukts.avif</image:loc>
+    </image:image>
+    
+
+</url>
+
+<url>
+    <loc>https://rueil-musique.fr/instruments-accessoires/autres</loc>
+
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/v91g.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/v92g.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/minifuse2.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/500aj.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/510aj.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/520r.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/540cr.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/540j.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/ej45.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/ej46.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/11002.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/11052.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/ej15.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/ej16.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/ma170.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/ma130.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/ma140.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/eb2223.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/eb2222.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/eb2221.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/eb2215.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/eb2220.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/12002.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/12052.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/exl130.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/exl120.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/exl125.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/exl110.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/exl140.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/exp115.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/exl117.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/autres/exl145.avif</image:loc>
     </image:image>
     
 

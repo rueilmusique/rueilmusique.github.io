@@ -32,7 +32,7 @@ function ouvrirOverlay(produit) {
 			}
 			boutonPartager.textContent = "✅ Lien copié !";
 			setTimeout(() => {
-				boutonPartager.textContent = "🔗 Copier le lien";
+				boutonPartager.textContent = "🔗 Partager/copier le lien";
 			}, 1500);
 		});
 	}
