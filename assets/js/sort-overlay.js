@@ -29,11 +29,11 @@ function ouvrirOverlay(produit) {
 			}
 			else {
 				await navigator.clipboard.writeText(location.href);
+				boutonPartager.textContent = "✅ Lien copié !";
+				setTimeout(() => {
+					boutonPartager.textContent = "🔗 Partager/copier le lien";
+				}, 1500);
 			}
-			boutonPartager.textContent = "✅ Lien copié !";
-			setTimeout(() => {
-				boutonPartager.textContent = "🔗 Partager/copier le lien";
-			}, 1500);
 		});
 	}
 	overlay.classList.remove("hidden");
