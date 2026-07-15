@@ -58,7 +58,7 @@ overlay.addEventListener("click", (e) => {
 });
 
 if (location.hash) {
-	const produit = document.querySelector(location.hash);
+	const produit = document.getElementById(location.hash.slice(1));
 	if (produit) {
 		ouvrirOverlay(produit);
 	}
