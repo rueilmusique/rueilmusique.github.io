@@ -652,6 +652,11 @@ nav a:hover{
 	text-wrap: balance;
 }
 
+.listeAlaune :is(.prix) {
+	font-weight: 300;
+	font-size: 0.9rem;
+}
+
 .grilleFormulaire{
 	display: flex;
 	flex-wrap: wrap;
@@ -913,6 +918,11 @@ nav a:hover{
 .produit:hover{
 	box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.25);
 	background: #e2cccc;
+}
+
+.prix {
+	font-weight: 300;
+	font-size: 1rem;
 }
 
 div :is(.instock, .sold, .occasion, .rare, .commande, .indelivery){

@@ -21,7 +21,7 @@
 	<meta name="twitter:description" content="Parmi les casques et micros, il existe différentes familles : casques ouverts ou fermés ? Micros cardioïdes ou supercardioïdes ? Votre choix dépendra surtout de votre situation, n'hésitez pas à demander conseil à notre équipe !">
 	<meta name="twitter:image" content="">
 	
-	<link rel="stylesheet" href="../assets/css/main.css?v=2026-07-14">
+	<link rel="stylesheet" href="../assets/css/main.css?v=2026-07-16">
 	
 	<script type="application/ld+json">
 	{
@@ -82,23 +82,23 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Beyerdynamic DT 770 Pro",
-          "url": "https://rueil-musique.fr/instruments-accessoires/casques-micros#dt770pro",
-          "image": "https://rueil-musique.fr/images/casques-micros/dt770pro.avif"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
           "name": "Beyerdynamic DT 990 Pro",
           "url": "https://rueil-musique.fr/instruments-accessoires/casques-micros#dt990pro",
           "image": "https://rueil-musique.fr/images/casques-micros/dt990pro.avif"
         },
         {
           "@type": "ListItem",
+          "position": 2,
+          "name": "Shure SM58",
+          "url": "https://rueil-musique.fr/instruments-accessoires/casques-micros#sm58",
+          "image": "https://rueil-musique.fr/images/casques-micros/sm58.avif"
+        },
+        {
+          "@type": "ListItem",
           "position": 3,
-          "name": "Stagg SDM50",
-          "url": "https://rueil-musique.fr/instruments-accessoires/casques-micros#sdm50",
-          "image": "https://rueil-musique.fr/images/casques-micros/sdm50.avif"
+          "name": "Beyerdynamic DT 770 Pro",
+          "url": "https://rueil-musique.fr/instruments-accessoires/casques-micros#dt770pro",
+          "image": "https://rueil-musique.fr/images/casques-micros/dt770pro.avif"
         },
         {
           "@type": "ListItem",
@@ -117,9 +117,9 @@
         {
           "@type": "ListItem",
           "position": 6,
-          "name": "Shure SM58",
-          "url": "https://rueil-musique.fr/instruments-accessoires/casques-micros#sm58",
-          "image": "https://rueil-musique.fr/images/casques-micros/sm58.avif"
+          "name": "Stagg SDM50",
+          "url": "https://rueil-musique.fr/instruments-accessoires/casques-micros#sdm50",
+          "image": "https://rueil-musique.fr/images/casques-micros/sdm50.avif"
         }
       ]
     }
@@ -146,10 +146,11 @@
 			</select>
 			<select id="filter-gamme" aria-label="Filtrer par gamme de produits">
 				<option value="all">Afficher toutes les gammes</option>
-				<option value="🪴">🪴 Entrée de gamme</option>
-				<option value="✨">✨ Milieu de gamme </option>
-				<option value="💖">💖 Haut de gamme</option>
-				<option value="💎">💎 Légendaire</option>
+				<option value="🪴 Essentiel">🪴 Essentiel</option>
+				<option value="✨ Plus">✨ Plus</option>
+				<option value="💖 Passion">💖 Passion</option>
+				<option value="💎 Prestige">💎 Prestige</option>
+				<option value="🧒 Enfant">🧒 Enfant</option>
 			</select>
 			<input id="searchbox" type="search" placeholder="Filtrer (marque/nom/catégorie)">
 			<a class="searchbutton" href="#searchbox" aria-label="Filtrer les résultats"><img src="../images/logos/icones/search.svg" alt="" /></a>
@@ -169,43 +170,17 @@
 		</div>
 		<div class="produits" id="produits">
 			
-			<article id="dt770pro" class="produit" data-prix="169" data-gamme="✨">
-				<figure class="instock">
-					<picture>
-						<source srcset="../images/casques-micros/dt770pro.avif" type="image/avif">
-						<img src="../images/casques-micros/dt770pro.jpg" alt="Beyerdynamic DT 770 Pro" width="534" height="712" loading="eager" fetchpriority="high" decoding="async"/>
-					</picture>
-					<div class="badge"></div>
-				</figure>
-				<h2 class="titreProduit">Beyerdynamic - DT 770 Pro</h2>
-				<div>Casque fermé</div>
-				<div class="prix">✨</div>
-				<div class="produit-detail hidden">
-					<div>Beyerdynamic - DT 770 Pro</div>
-					<div>
-						<p class="justifier-texte">Pour ceux qui souhaitent s'enregistrer avec sérieux en home-studio, le DT 770 Pro est la référence recommandée lorsqu'il s'agit d'un casque qui isole et qui restitue avec précision. Casque fermé, il reste confortable grâce à ses coussinets recouvrant chaque oreille.</p>
-						<ul><li>Type de casque : Fermé</li><li>Réponse fréquentielle (casque) : 5 Hz - 35 000 Hz</li><li>Résistance (casque) : 250 Ohms</li></ul>
-						<p>🟢 Disponible au magasin</p>
-						<button class="boutonPartager">🔗 Partager/copier le lien</button>
-					</div>
-					<div>
-						<a class="boutonCTA venirMagasin" href="https://rueil-musique.fr/contact#noustrouver">Venir au magasin</a>
-						<a class="boutonCTAsecondary demanderConseil" href="https://rueil-musique.fr/contact">Demander conseil</a>
-					</div>
-				</div>
-			</article>
-
-			<article id="dt990pro" class="produit" data-prix="179" data-gamme="✨">
+			<article id="dt990pro" class="produit" data-prix="179" data-gamme="✨ Plus">
 				<figure class="instock">
 					<picture>
 						<source srcset="../images/casques-micros/dt990pro.avif" type="image/avif">
-						<img src="../images/casques-micros/dt990pro.jpg" alt="Beyerdynamic DT 990 Pro" width="534" height="712" loading="eager" decoding="async"/>
+						<img src="../images/casques-micros/dt990pro.jpg" alt="Beyerdynamic DT 990 Pro" width="534" height="712" loading="eager" fetchpriority="high" decoding="async"/>
 					</picture>
 					<div class="badge"></div>
 				</figure>
 				<h2 class="titreProduit">Beyerdynamic - DT 990 Pro</h2>
 				<div>Casque ouvert</div>
-				<div class="prix">✨</div>
+				<div class="prix">✨ Plus</div>
 				<div class="produit-detail hidden">
 					<div>Beyerdynamic - DT 990 Pro</div>
 					<div>
@@ -221,22 +196,22 @@
 				</div>
 			</article>
 
-			<article id="sdm50" class="produit" data-prix="35" data-gamme="🪴">
+			<article id="sm58" class="produit" data-prix="129" data-gamme="✨ Plus">
 				<figure class="instock">
 					<picture>
-						<source srcset="../images/casques-micros/sdm50.avif" type="image/avif">
-						<img src="../images/casques-micros/sdm50.jpg" alt="Stagg SDM50" width="534" height="712" loading="eager" decoding="async"/>
+						<source srcset="../images/casques-micros/sm58.avif" type="image/avif">
+						<img src="../images/casques-micros/sm58.jpg" alt="Shure SM58" width="534" height="712" loading="eager" decoding="async"/>
 					</picture>
 					<div class="badge"></div>
 				</figure>
-				<h2 class="titreProduit">Stagg - SDM50</h2>
+				<h2 class="titreProduit">Shure - SM58</h2>
 				<div>Micro chant</div>
-				<div class="prix">🪴</div>
+				<div class="prix">✨ Plus</div>
 				<div class="produit-detail hidden">
-					<div>Stagg - SDM50</div>
+					<div>Shure - SM58</div>
 					<div>
-						<p class="justifier-texte">Le SDM50 est un micro chant à petit budget, suffisant pour ceux qui font des soirées karaoké ou qui ont besoin d'amplifier leur voix dans un groupe de musique.</p>
-						<ul><li>Type de micro : Dynamique</li><li>Directivité du micro : Cardioïde</li><li>Sensibilité : -54 dBV/Pa</li><li>Réponse fréquentielle (micro) : 50 Hz - 15 000 Hz</li><li>Étui incluant un câble fourni</li></ul>
+						<p class="justifier-texte">Le SM58 est un choix idéal pour les chanteurs & chanteuses professionnels pour chaque prestation en direct. Même dans des circonstances extrêmes, le SM58 reste en mesure de capturer uniquement la source principale sans prendre les sons d'arrière-plan. Sa directivité plus que précise explique son appréciation particulière parmi les DJs et présentateurs de clubs et de petites et grandes salles. C'est le 3310 des micros, il est increvable !</p><blockquote class="rami">Le SM58 est un incontournable pour tout professionnel, "for Shure!"</blockquote>
+						<ul><li>Type de micro : Dynamique</li><li>Directivité du micro : Cardioïde</li><li>Sensibilité : -54.5 dBV/Pa</li><li>Réponse fréquentielle (micro) : 50 Hz - 15 000 Hz</li><li>Filtre anti-pop intégré pour réduire les bruits de respiration et le souffle du vent.</li></ul>
 						<p>🟢 Disponible au magasin</p>
 						<button class="boutonPartager">🔗 Partager/copier le lien</button>
 					</div>
@@ -247,7 +222,33 @@
 				</div>
 			</article>
 
-			<article id="prom85" class="produit" data-prix="59" data-gamme="🪴">
+			<article id="dt770pro" class="produit" data-prix="169" data-gamme="✨ Plus">
+				<figure class="instock">
+					<picture>
+						<source srcset="../images/casques-micros/dt770pro.avif" type="image/avif">
+						<img src="../images/casques-micros/dt770pro.jpg" alt="Beyerdynamic DT 770 Pro" width="534" height="712" loading="eager" decoding="async"/>
+					</picture>
+					<div class="badge"></div>
+				</figure>
+				<h2 class="titreProduit">Beyerdynamic - DT 770 Pro</h2>
+				<div>Casque fermé</div>
+				<div class="prix">✨ Plus</div>
+				<div class="produit-detail hidden">
+					<div>Beyerdynamic - DT 770 Pro</div>
+					<div>
+						<p class="justifier-texte">Pour ceux qui souhaitent s'enregistrer avec sérieux en home-studio, le DT 770 Pro est la référence recommandée lorsqu'il s'agit d'un casque qui isole et qui restitue avec précision. Casque fermé, il reste confortable grâce à ses coussinets recouvrant chaque oreille.</p>
+						<ul><li>Type de casque : Fermé</li><li>Réponse fréquentielle (casque) : 5 Hz - 35 000 Hz</li><li>Résistance (casque) : 250 Ohms</li></ul>
+						<p>🟢 Disponible au magasin</p>
+						<button class="boutonPartager">🔗 Partager/copier le lien</button>
+					</div>
+					<div>
+						<a class="boutonCTA venirMagasin" href="https://rueil-musique.fr/contact#noustrouver">Venir au magasin</a>
+						<a class="boutonCTAsecondary demanderConseil" href="https://rueil-musique.fr/contact">Demander conseil</a>
+					</div>
+				</div>
+			</article>
+
+			<article id="prom85" class="produit" data-prix="59" data-gamme="🪴 Essentiel">
 				<figure class="instock">
 					<picture>
 						<source srcset="../images/casques-micros/prom85.avif" type="image/avif">
@@ -257,7 +258,7 @@
 				</figure>
 				<h2 class="titreProduit">Prodipe - Pro M-85 Lanen</h2>
 				<div>Micro chant</div>
-				<div class="prix">🪴</div>
+				<div class="prix">🪴 Essentiel</div>
 				<div class="produit-detail hidden">
 					<div>Prodipe - Pro M-85 Lanen</div>
 					<div>
@@ -273,7 +274,7 @@
 				</div>
 			</article>
 
-			<article id="sm57" class="produit" data-prix="119" data-gamme="✨">
+			<article id="sm57" class="produit" data-prix="119" data-gamme="✨ Plus">
 				<figure class="instock">
 					<picture>
 						<source srcset="../images/casques-micros/sm57.avif" type="image/avif">
@@ -283,7 +284,7 @@
 				</figure>
 				<h2 class="titreProduit">Shure - SM57</h2>
 				<div>Micro dynamique</div>
-				<div class="prix">✨</div>
+				<div class="prix">✨ Plus</div>
 				<div class="produit-detail hidden">
 					<div>Shure - SM57</div>
 					<div>
@@ -299,22 +300,22 @@
 				</div>
 			</article>
 
-			<article id="sm58" class="produit" data-prix="129" data-gamme="✨">
+			<article id="sdm50" class="produit" data-prix="35" data-gamme="🪴 Essentiel">
 				<figure class="instock">
 					<picture>
-						<source srcset="../images/casques-micros/sm58.avif" type="image/avif">
-						<img src="../images/casques-micros/sm58.jpg" alt="Shure SM58" width="534" height="712" loading="eager" decoding="async"/>
+						<source srcset="../images/casques-micros/sdm50.avif" type="image/avif">
+						<img src="../images/casques-micros/sdm50.jpg" alt="Stagg SDM50" width="534" height="712" loading="eager" decoding="async"/>
 					</picture>
 					<div class="badge"></div>
 				</figure>
-				<h2 class="titreProduit">Shure - SM58</h2>
+				<h2 class="titreProduit">Stagg - SDM50</h2>
 				<div>Micro chant</div>
-				<div class="prix">✨</div>
+				<div class="prix">🪴 Essentiel</div>
 				<div class="produit-detail hidden">
-					<div>Shure - SM58</div>
+					<div>Stagg - SDM50</div>
 					<div>
-						<p class="justifier-texte">Le SM58 est un choix idéal pour les chanteurs & chanteuses professionnels pour chaque prestation en direct. Même dans des circonstances extrêmes, le SM58 reste en mesure de capturer uniquement la source principale sans prendre les sons d'arrière-plan. Sa directivité plus que précise explique son appréciation particulière parmi les DJs et présentateurs de clubs et de petites et grandes salles. C'est le 3310 des micros, il est increvable !</p><blockquote class="rami">Le SM58 est un incontournable pour tout professionnel, "for Shure!"</blockquote>
-						<ul><li>Type de micro : Dynamique</li><li>Directivité du micro : Cardioïde</li><li>Sensibilité : -54.5 dBV/Pa</li><li>Réponse fréquentielle (micro) : 50 Hz - 15 000 Hz</li><li>Filtre anti-pop intégré pour réduire les bruits de respiration et le souffle du vent.</li></ul>
+						<p class="justifier-texte">Le SDM50 est un micro chant à petit budget, suffisant pour ceux qui font des soirées karaoké ou qui ont besoin d'amplifier leur voix dans un groupe de musique.</p>
+						<ul><li>Type de micro : Dynamique</li><li>Directivité du micro : Cardioïde</li><li>Sensibilité : -54 dBV/Pa</li><li>Réponse fréquentielle (micro) : 50 Hz - 15 000 Hz</li><li>Étui incluant un câble fourni</li></ul>
 						<p>🟢 Disponible au magasin</p>
 						<button class="boutonPartager">🔗 Partager/copier le lien</button>
 					</div>
