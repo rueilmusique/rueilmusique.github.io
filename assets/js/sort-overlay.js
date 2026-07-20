@@ -1,5 +1,6 @@
 // Constantes : overlay = background ; overlayText = contenu texte ; carouselOverlay & track = images supp du produit ; boutonPrevious & boutonNext = boutons chevrons ; close = fermer l'overlay
 const overlay = document.getElementById("overlay");
+const overlayContent = overlay.querySelector(".overlay-content");
 const overlayText = document.getElementById("overlay-text");
 
 const carouselOverlay = document.querySelector(".carouselOverlay");
@@ -14,6 +15,9 @@ const close = document.getElementById("close");
 // Fonctions pour ouvrir l'overlay avec son contenu
 function ouvrirOverlay(produit) {
 	// Update dès l'ouverture pour éviter une animation de disparition dès l'ouverture
+	requestAnimationFrame(() => {
+		overlayContent.scrollTop = 0;
+	});
 	updateButtons();
 	
 	// Constantes autour du produit : détail, picture, et titre du produit

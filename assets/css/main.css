@@ -924,6 +924,11 @@ nav a:hover{
 .prix {
 	font-weight: 300;
 	font-size: 1rem;
+	/* filter: brightness(0%) saturate(100%) invert(21%) sepia(8%) saturate(95%) hue-rotate(314deg) brightness(97%) contrast(88%); */
+}
+
+.content:hover .prix {
+	/* filter: brightness(0) saturate(100%) invert(67%) sepia(44%) saturate(501%) hue-rotate(1deg) brightness(83%) contrast(89%); */
 }
 
 div :is(.instock, .sold, .occasion, .rare, .commande, .indelivery){
@@ -1025,6 +1030,7 @@ div :is(.instock, .sold, .occasion, .rare, .commande, .indelivery){
 	color: white;
 	text-shadow: 5px 5px 5px black;
 	transition: var(--transition-tres-rapide);
+	padding: 0.25em;
 }
 
 .boutonPrevious:hover, .boutonNext:hover{
@@ -1036,13 +1042,13 @@ div :is(.instock, .sold, .occasion, .rare, .commande, .indelivery){
 }
 
 .boutonPrevious{
-	left: 0.2em;
+	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
 }
 
 .boutonNext{
-	right: 0.2em;
+	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
 }
