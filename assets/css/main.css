@@ -883,6 +883,7 @@ nav a:hover{
 .produits{
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
+	/* grid-template-columns: repeat(auto-fit, minmax(min(13.2em, 100%), 1fr)); */
 	grid-gap: 1em 0.5em;
 	margin: 0.5em 0 0 0;
 }
@@ -989,6 +990,7 @@ div :is(.instock, .sold, .occasion, .rare, .commande, .indelivery){
 	position: relative;
 	display: grid;
 	grid-template-columns: 2fr 3fr;
+	margin: 0.5em;
 	
 	overscroll-behavior: none;
 	overflow: auto;
@@ -1006,7 +1008,60 @@ div :is(.instock, .sold, .occasion, .rare, .commande, .indelivery){
 	}
 }
 
-#overlay-img{
+/* #overlay-img{ */
+	/* height: 100%; */
+/* } */
+
+.overlay-content section:nth-of-type(1){
+	position: relative;
+}
+
+.boutonPrevious, .boutonNext{
+	position: absolute;
+	font-size: 3rem;
+	background: none;
+	border: 0;
+	text-align: center;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+	transition: var(--transition-tres-rapide);
+}
+
+.boutonPrevious:hover, .boutonNext:hover{
+	color: var(--couleur-carte-hover);
+}
+
+.boutonPrevious:disabled, .boutonNext:disabled{
+	opacity: 0;
+}
+
+.boutonPrevious{
+	left: 0.2em;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.boutonNext{
+	right: 0.2em;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.track{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.track picture{
+	flex-shrink: 0;
+	scroll-snap-align: center;
+	width: 100%;
+}
+
+.carouselOverlay{
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
 	height: 100%;
 }
 
@@ -1065,6 +1120,7 @@ div :is(.instock, .sold, .occasion, .rare, .commande, .indelivery){
 	justify-content: center;
 	border: 2px solid #d26767;
 	box-shadow: 0px 0px 9px 4px #0000006b;
+	z-index: 1;
 }
 
 #close:hover{
@@ -1373,7 +1429,6 @@ tr{
 		grid-template-columns: 1fr;
 		max-height: 90vh;
 		overflow-y: auto;
-		margin: 0.5em;
 		section{
 			margin-right: 0;
 			h2{
@@ -1397,6 +1452,10 @@ tr{
 	
 	#overlay-text p:last-of-type{
 		display: block;
+	}
+	
+	.boutonPrevious, .boutonNext{
+		font-size: 4rem;
 	}
 	
 	.texteImage{
