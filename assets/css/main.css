@@ -633,6 +633,8 @@ nav a:hover{
 	cursor: pointer;
 	font-size: 1.5em;
 	font-weight: bold;
+	touch-action: manipulation;
+	user-select: none;
 }
 
 .boutonsAlaune{
@@ -1031,6 +1033,8 @@ div :is(.instock, .sold, .occasion, .rare, .commande, .indelivery){
 	text-shadow: 5px 5px 5px black;
 	transition: var(--transition-tres-rapide);
 	padding: 0.25em;
+	touch-action: manipulation;
+	user-select: none;
 }
 
 .boutonPrevious:hover, .boutonNext:hover{
@@ -1069,6 +1073,7 @@ div :is(.instock, .sold, .occasion, .rare, .commande, .indelivery){
 	overflow-x: scroll;
 	scroll-snap-type: x mandatory;
 	height: 100%;
+	scrollbar-width: none;
 }
 
 #overlay-text{
