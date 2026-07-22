@@ -96,7 +96,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-electriques/js400_vintage-yellow.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/js300_sea-foam-green.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -209,6 +209,10 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/js300_sunburst.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/js400_vintage-yellow.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -410,15 +414,15 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/casques-micros/dt770pro.avif</image:loc>
-    </image:image>
-    
-    <image:image>
         <image:loc>https://rueil-musique.fr/images/casques-micros/dt990pro.avif</image:loc>
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/casques-micros/sdm50.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/casques-micros/sm58.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/casques-micros/dt770pro.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -430,7 +434,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/casques-micros/sm58.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/casques-micros/sdm50.avif</image:loc>
     </image:image>
     
 
@@ -540,6 +544,10 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/fairmountch.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/mswscwgt.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -680,10 +688,6 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/om250ce.avif</image:loc>
-    </image:image>
-    
-    <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/mswscwgt.avif</image:loc>
     </image:image>
     
     <image:image>

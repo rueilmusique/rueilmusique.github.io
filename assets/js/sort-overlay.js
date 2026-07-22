@@ -11,6 +11,7 @@ const boutonNext = overlay.querySelector(".boutonNext");
 
 const close = document.getElementById("close");
 
+const carouselDots = overlay.querySelector(".carouselDots");
 
 // Fonctions pour ouvrir l'overlay avec son contenu
 function ouvrirOverlay(produit) {
@@ -28,8 +29,6 @@ function ouvrirOverlay(produit) {
 	// Le contenu du overlayText est rempli en fonction du détail du produit
     overlayText.innerHTML = detail.innerHTML;
 	
-	// Constante images : on récupère le(s) nom(s) des images via le data-images du produit, séparées d'une virgule
-	const images = [picture.cloneNode(true),...(produit.dataset.images ? produit.dataset.images.split(",") : [])];
 	requestAnimationFrame(() => {
 		carouselOverlay.scrollLeft = 0;
 		updateButtons();
@@ -38,6 +37,7 @@ function ouvrirOverlay(produit) {
 	track.replaceChildren();
 	track.appendChild(picture.cloneNode(true));
 	
+	// On récupère le(s) nom(s) des images via le data-images du produit, séparées d'une virgule
 	(produit.dataset.images || "").split(",").filter(Boolean).forEach(image => {
 		const vue = document.createElement("picture");
 		vue.innerHTML = `
@@ -47,6 +47,7 @@ function ouvrirOverlay(produit) {
 		track.appendChild(vue);
 	});
 	
+	creerPastilles();
 	overlay.dataset.produitId = produit.id;
 	
 	// On ajoute à l'URL l'ID du produit
@@ -84,10 +85,35 @@ function fermerOverlay() {
 	history.replaceState(null, "", location.pathname);
 }
 
+function creerPastilles() {
+	carouselDots.replaceChildren();
+	if(track.children.length > 1){
+		for (let i = 0; i < track.children.length; i++) {
+			const dot = document.createElement("button");
+			dot.className = "dot";
+			dot.addEventListener("click", () => {
+				carouselOverlay.scrollTo({
+					left: i * carouselOverlay.clientWidth,
+					behavior: "smooth"
+				});
+			});
+			carouselDots.appendChild(dot);
+		}
+	}
+}
+
 // Fonction pour mettre à jour les chevrons du carrousel en fonction du nombre d'images
 function updateButtons() {
     boutonPrevious.disabled = carouselOverlay.scrollLeft <= 1;
     boutonNext.disabled = carouselOverlay.scrollLeft >= carouselOverlay.scrollWidth - carouselOverlay.clientWidth - 1;
+	
+	const index = Math.round(
+		carouselOverlay.scrollLeft / carouselOverlay.clientWidth
+	);
+	
+	carouselDots.querySelectorAll(".dot").forEach((dot, i) => {
+		dot.classList.toggle("active", i === index);
+	});
 }
 
 
