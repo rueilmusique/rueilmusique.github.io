@@ -33,10 +33,6 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-classiques/eucs.avif</image:loc>
-    </image:image>
-    
-    <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-classiques/4p.avif</image:loc>
     </image:image>
     
@@ -86,6 +82,10 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-classiques/alba14.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-classiques/eucs.avif</image:loc>
     </image:image>
     
 
@@ -228,10 +228,6 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-electriques/squiercy.avif</image:loc>
-    </image:image>
-    
-    <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/js400_sunburst.avif</image:loc>
     </image:image>
     
@@ -257,10 +253,6 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/js400_mat-black.avif</image:loc>
-    </image:image>
-    
-    <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-electriques/pacifica112j.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -349,6 +341,14 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-electriques/snat90s_2501.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/pacifica112j.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-electriques/squiercy.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -551,6 +551,10 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/om260ce.avif</image:loc>
+    </image:image>
+    
+    <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/s6.avif</image:loc>
     </image:image>
     
@@ -583,10 +587,6 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/amicedar_black.avif</image:loc>
-    </image:image>
-    
-    <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/bat4mce.avif</image:loc>
     </image:image>
     
@@ -608,6 +608,14 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/legacychcw_faded-black.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/m10ce.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/m10mop.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -655,10 +663,6 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/jjrm.avif</image:loc>
-    </image:image>
-    
-    <image:image>
         <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/trescubano.avif</image:loc>
     </image:image>
     
@@ -667,11 +671,15 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/om260cedb.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/metropolisncsgeq.avif</image:loc>
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/om260ce.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/jjrm.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/om260cedb.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -691,7 +699,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/metropolisncsgeq.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/guitares-acoustiques/amicedar_black.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -726,7 +734,27 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
     
     <image:image>
+        <image:loc>https://rueil-musique.fr/images/pedales-effets/ecstasy.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/pedales-effets/rc500.avif</image:loc>
+    </image:image>
+    
+    <image:image>
         <image:loc>https://rueil-musique.fr/images/pedales-effets/fc02.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/pedales-effets/fc03.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/pedales-effets/fc19.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/pedales-effets/fc05.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -739,10 +767,6 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/pedales-effets/ndl3.avif</image:loc>
-    </image:image>
-    
-    <image:image>
-        <image:loc>https://rueil-musique.fr/images/pedales-effets/fc03.avif</image:loc>
     </image:image>
     
     <image:image>
@@ -786,31 +810,15 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/pedales-effets/ecstasy.avif</image:loc>
-    </image:image>
-    
-    <image:image>
-        <image:loc>https://rueil-musique.fr/images/pedales-effets/fc19.avif</image:loc>
-    </image:image>
-    
-    <image:image>
         <image:loc>https://rueil-musique.fr/images/pedales-effets/nod2.avif</image:loc>
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/pedales-effets/rc500.avif</image:loc>
-    </image:image>
-    
-    <image:image>
-        <image:loc>https://rueil-musique.fr/images/pedales-effets/fc05.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/pedales-effets/63diamond.avif</image:loc>
     </image:image>
     
     <image:image>
         <image:loc>https://rueil-musique.fr/images/pedales-effets/mfuzz.avif</image:loc>
-    </image:image>
-    
-    <image:image>
-        <image:loc>https://rueil-musique.fr/images/pedales-effets/63diamond.avif</image:loc>
     </image:image>
     
 
@@ -837,10 +845,6 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/ukuleles/s006.avif</image:loc>
-    </image:image>
-    
-    <image:image>
         <image:loc>https://rueil-musique.fr/images/ukuleles/nuc310.avif</image:loc>
     </image:image>
     
@@ -849,11 +853,15 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/ukuleles/k021.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/ukuleles/ukts.avif</image:loc>
     </image:image>
     
     <image:image>
-        <image:loc>https://rueil-musique.fr/images/ukuleles/ukts.avif</image:loc>
+        <image:loc>https://rueil-musique.fr/images/ukuleles/s006.avif</image:loc>
+    </image:image>
+    
+    <image:image>
+        <image:loc>https://rueil-musique.fr/images/ukuleles/k021.avif</image:loc>
     </image:image>
     
 
