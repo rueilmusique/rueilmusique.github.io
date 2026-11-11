@@ -1,7 +1,7 @@
 document.querySelectorAll(".listeAlaune-wrapper").forEach(wrapper => {
 
     const list = wrapper.querySelector(".listeAlaune");
-    const item = wrapper.querySelector(".item");
+    const item = wrapper.querySelector(".listeAlaune > li");
 
     function getScrollWidth() {
         const itemWidth = item.offsetWidth;
